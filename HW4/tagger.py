@@ -5,8 +5,8 @@
 
 import itertools
 
-def load_pos_file(file_path):
-    # read in a .pos file
+def load_tagged_pos_file(file_path):
+    # read in a .pos file of training data
     # returns POS list where each element is [word, pos]
     with open(file_path, "r") as f:
         data_raw = f.readlines()
@@ -15,6 +15,18 @@ def load_pos_file(file_path):
         pos_list = [line if line == "\n" else line.rstrip().split("\t") for line in data_raw]
     
     return(pos_list)
+
+
+def load_test_words_file(file_path):
+    # Load a .words file of test data
+    # returns list of words
+    with open(file_path, "r") as f:
+        data_raw = f.readlines()
+
+    test_observations = [line if line == "\n" else line.rstrip() for line in data_raw]
+
+    return(test_observations)
+
 
 def calculate_word_emission_counts(pos_list):
     # calculate word emission counts from POS_list
@@ -52,8 +64,8 @@ def convert_counts_probabilities(count_dict):
     return(count_dict)
 
 
-def group_pos_data_sentences(pos_list):
-    # Takes a list of POS [ [word, pos], [word, pos]...] and converts it into list of sentences [ [[sentence1_word, pos], [sentence1_word, pos], ...], [[sentence2_word, pos], ...], ... ]
+def group_words_sentences(pos_list):
+    # Takes a list of POS [ [word, pos], [word, pos]...] or a list of test words [word, word,...] and converts it into list of sentences [ [[sentence1_word, pos], [sentence1_word, pos], ...], [[sentence2_word, pos], ...], ... ]
     # thanks itertools
 
     sentences_list = []
@@ -64,6 +76,7 @@ def group_pos_data_sentences(pos_list):
 
     return(sentences_list)
 
+
 def calculate_transition_counts(sentences_data):
     # calculates state transition counts from list of sentences from group_pos_data_sentences
     transitions = dict()
@@ -71,7 +84,7 @@ def calculate_transition_counts(sentences_data):
     for sentence in sentences_data:
         pos_sequence = [term[1] for term in sentence]
 
-        pos_transitions = list(zip(["start"] + pos_sequence, pos_sequence + ["end"])) # zips a list of tuples of all transition pairs including start and end
+        pos_transitions = list(zip(["START"] + pos_sequence, pos_sequence + ["END"])) # zips a list of tuples of all transition pairs including start and end
 
         for pair in pos_transitions:
             this_state = pair[0]
@@ -88,12 +101,60 @@ def calculate_transition_counts(sentences_data):
     return(transitions)
 
 
-# Load WSJ 02-21 training data
-filepath_0221 = "/Users/lesliehuang/nlp-vc/WSJ_POS_CORPUS_FOR_STUDENTS/WSJ_02-21.pos"
-training_data = load_pos_file(filepath_0221)
+######################################################
+# Viterbi algorithm
+def viterbi(training_filepath, test_filepath):
 
-training_emission_counts = calculate_word_emission_counts(training_data)
-training_emissions = convert_counts_probabilities(training_emission_counts) # this is word emissions probability
+    # load training data and calculate transition and emission probabilities
+    training_data = load_tagged_pos_file(training_filepath)
 
-training_transition_counts = calculate_transition_counts(group_pos_data_sentences(training_data))
-training_transitions = convert_counts_probabilities(training_transition_counts) # this is state transitions probability
+    training_emissions = convert_counts_probabilities(calculate_word_emission_counts(training_data)
+                                                        ) 
+
+    training_transitions = convert_counts_probabilities(calculate_transition_counts(
+                                                                                    group_words_sentences(training_data)
+                                                                                    )
+                                                                                    ) 
+
+    # load test data as list of sentences (sentence = list of words)
+    test_observations = group_words_sentences(load_test_words_file(test_filepath))
+
+    # tag each sentence one at a time
+    all_sentences_tags = []
+
+    for sentence in test_observation:
+        this_sentence_tags = []
+
+        prior_probability = 1 # set this to 1 for initial start state
+
+        last_state = "START"
+
+        for word in sentence:
+
+            possible_state_transitions = training_transitions[last_state] # dict of all the states that last_state can transition to (keys), and their probabilities (values)
+
+            possible_state_transitions = { (state, prob * prior_probability) for (state, prob) in possible_state_transitions.items() } # multiply by prior_probability
+            
+            #deal with unknown words later
+
+            for possible_state in possible_state_transitions.keys():
+                if training_emissions[possible_state][word]: # if this word has ever been emitted from this state
+                    possible_state_transitions[possible_state] = possible_state_transitions[possible_state] * training_emissions[possible_state][word] # multiply transition probability by word emission probability
+                
+                else: # if this word has never been emitted from this state
+                    possible_state_transitions[possible_state] = 0 # it's zero
+
+                # now we have multipled (STATE | PRIOR STATE) * (WORD | STATE) for all possible states
+
+            # Then locate the state that emitted the word with the highest probability
+            max_state_and_word = { trans_state: emission_prob for trans_state, emission_prob in possible_state_transitions.items() if emission_prob == max(possible_state_transitions.values()) }
+
+
+
+
+# Run it
+training_filepath = "/Users/lesliehuang/nlp-vc/HW4/WSJ_POS_CORPUS_FOR_STUDENTS/WSJ_02-21.pos"
+
+test_filepath = "/Users/lesliehuang/nlp-vc/HW4/WSJ_POS_CORPUS_FOR_STUDENTS/WSJ_24.words"
+
+viterbi(training_filepath, test_filepath)
