@@ -4,6 +4,7 @@
 # HW 4 Tagger
 
 import itertools
+import numpy as np
 
 def load_tagged_pos_file(file_path):
     # read in a .pos file of training data
@@ -29,7 +30,7 @@ def load_test_words_file(file_path):
 
 
 def calculate_word_emission_counts(pos_list):
-    # calculate word emission counts from POS_list
+    # calculate word emission counts from training POS_list
     word_emissions = dict()
 
     # First get the word counts
@@ -102,6 +103,21 @@ def calculate_transition_counts(sentences_data):
 
 
 ######################################################
+# Viterbi helper functions
+
+def get_possible_states(transition_prob_dict):
+    # takes a transition Pr dict and returns a list of all possible states
+
+    possible_from_state = list(transition_prob_dict.keys()) # get all the states that are transitioned FROM (keys of outer dict)
+    possible_to_state = list(list(v.keys()) for s, v in transition_prob_dict.items() ) # all the states that are transitioned TO (keys of inner dicts)
+    possible_to_state = set([item for sublist in possible_to_state for item in sublist]) # flatten this
+
+    possible_states = list(set(possible_from_state).union(possible_to_state)) # take the set of the union
+
+    possible_states.append("START")    # add start state!
+
+    return possible_states
+
 # Viterbi algorithm
 def viterbi(training_filepath, test_filepath):
 
@@ -111,10 +127,10 @@ def viterbi(training_filepath, test_filepath):
     training_emissions = convert_counts_probabilities(calculate_word_emission_counts(training_data)
                                                         ) 
 
-    training_transitions = convert_counts_probabilities(calculate_transition_counts(
-                                                                                    group_words_sentences(training_data)
-                                                                                    )
-                                                                                    ) 
+    training_transitions = convert_counts_probabilities(calculate_transition_counts(group_words_sentences(training_data)))
+
+    possible_states = get_possible_states(training_transitions) # unique possible states (incl START and END)
+
 
     # load test data as list of sentences (sentence = list of words)
     test_observations = group_words_sentences(load_test_words_file(test_filepath))
@@ -122,33 +138,90 @@ def viterbi(training_filepath, test_filepath):
     # tag each sentence one at a time
     all_sentences_tags = []
 
-    for sentence in test_observation:
+    for sentence in test_observations:
         this_sentence_tags = []
 
-        prior_probability = 1 # set this to 1 for initial start state
+        trellis = np.empty([len(possible_states), len(sentence)]) #setup the Viterbi matrix, cols = words, rows = possible states
 
-        last_state = "START"
+        print(trellis.shape)
 
-        for word in sentence:
-
-            possible_state_transitions = training_transitions[last_state] # dict of all the states that last_state can transition to (keys), and their probabilities (values)
-
-            possible_state_transitions = { (state, prob * prior_probability) for (state, prob) in possible_state_transitions.items() } # multiply by prior_probability
-            
-            #deal with unknown words later
-
-            for possible_state in possible_state_transitions.keys():
-                if training_emissions[possible_state][word]: # if this word has ever been emitted from this state
-                    possible_state_transitions[possible_state] = possible_state_transitions[possible_state] * training_emissions[possible_state][word] # multiply transition probability by word emission probability
+        for col in range(trellis.shape[1]):
+            for row in range(trellis.shape[0]):
                 
-                else: # if this word has never been emitted from this state
-                    possible_state_transitions[possible_state] = 0 # it's zero
+                this_word = sentence[col]
+                this_possible_state = possible_states[row]
 
-                # now we have multipled (STATE | PRIOR STATE) * (WORD | STATE) for all possible states
+                if col == 0: # populate the first state that transitioned from START
+                    prior_pr = 1.0
 
-            # Then locate the state that emitted the word with the highest probability
-            max_state_and_word = { trans_state: emission_prob for trans_state, emission_prob in possible_state_transitions.items() if emission_prob == max(possible_state_transitions.values()) }
+                    # get transition probability from START
+                    try:
+                        transition_pr = training_transitions["START"][this_possible_state]
+                    except:
+                        transition_pr = 0
 
+                    # get word emission from state
+                    try:
+                        emission_pr = training_emissions[this_possible_state][this_word]
+                    except:
+                        emission_pr = 0
+
+                    trellis[row][col] = prior_pr * transition_pr * emission_pr
+                
+                else: # populate cols 2-n
+                    
+                    possible_transitions_to = []
+                    prior_path_probabilities = []
+
+                    for possible_prior_state in possible_states: # get transition probabilites from any state TO current state
+                        try:
+                            transition_to_state_pr = training_transitions[possible_prior_state][this_possible_state]
+                        except: 
+                            transition_to_state_pr = 0
+
+                        possible_transitions_to.append(possible_prior_state)
+
+                        prior_path_probabilities.append( trellis[possible_states.index(possible_prior_state)][col - 1] )
+                    
+                    # find the max
+                    max_path_probability = max([prior * transition for prior, transition in zip(prior_path_probabilities, possible_transitions_to) ])
+                    
+                    # get word emission from state
+                    try:
+                        emission_pr = training_emissions[this_possible_state][this_word]
+                    except:
+                        emission_pr = 0
+
+                    trellis[row][col] = max_path_probability * emission_pr
+                    
+        print(trellis)
+
+
+        # prior_probability = 1 # set this to 1 for initial start state
+        # last_state = "START" # initialize
+        # for word in sentence:
+        #     possible_state_transitions = training_transitions[last_state] # dict of all the states that last_state can transition to (keys), and their probabilities (values)
+
+        #     possible_state_transitions = { (state, prob * prior_probability) for (state, prob) in possible_state_transitions.items() } # multiply by prior_probability
+            
+        #     #deal with unknown words later
+
+        #     for possible_state in possible_state_transitions.keys():
+        #         if training_emissions[possible_state][word]: # if this word has ever been emitted from this state
+        #             possible_state_transitions[possible_state] = possible_state_transitions[possible_state] * training_emissions[possible_state][word] # multiply transition probability by word emission probability
+                
+        #         else: # if this word has never been emitted from this state
+        #             possible_state_transitions[possible_state] = 0 # it's zero
+
+        #         # now we have multipled (STATE | PRIOR STATE) * (WORD | STATE) for all possible states
+
+        #     # Then locate the state that emitted the word with the highest probability
+        #     max_state_and_word = { trans_state: emission_prob for trans_state, emission_prob in possible_state_transitions.items() if emission_prob == max(possible_state_transitions.values()) }
+
+        #     # add the most likely tag to the sequence for this sentence
+        #     this_sentence_tags.append(max_state_and_word.keys())
+
+        #     prior_probability = max_state_and_word.values()
 
 
 
