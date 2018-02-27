@@ -107,11 +107,11 @@ def calculate_transition_counts(sentences_data):
 ######################################################
 # Viterbi helper functions
 
-def get_possible_states(transition_prob_dict):
+def get_possible_states(transition_pr_dict):
     # takes a transition Pr dict and returns a list of all possible states
 
-    possible_from_state = list(transition_prob_dict.keys()) # get all the states that are transitioned FROM (keys of outer dict)
-    possible_to_state = list(list(v.keys()) for s, v in transition_prob_dict.items() ) # all the states that are transitioned TO (keys of inner dicts)
+    possible_from_state = list(transition_pr_dict.keys()) # get all the states that are transitioned FROM (keys of outer dict)
+    possible_to_state = list(list(v.keys()) for s, v in transition_pr_dict.items() ) # all the states that are transitioned TO (keys of inner dicts)
     possible_to_state = set([item for sublist in possible_to_state for item in sublist]) # flatten this
 
     possible_states = list(set(possible_from_state).union(possible_to_state)) # take the set of the union
@@ -128,6 +128,17 @@ def get_vocab(word_emissions_dict):
 
     return vocab
 
+
+def compute_final_probabilities(possible_states, transition_pr_dict):
+    # computes list of Pr(END|possible_prior_state) from all possible_prior_state
+        termination_probabilities = []
+        for state in possible_states:
+            try: 
+                termination_probabilities.append(transition_pr_dict[state]["END"])
+            except:
+                termination_probabilities.append(0)
+
+        return termination_probabilities
 
 def backtrace_best_path(sentence, trellis, backtracer):
     # takes a sentence, Viterbi matrix, and backtrace array and returns a list of predicted POS tags for that sentence
@@ -157,7 +168,7 @@ def generate_pos_predictions(test_filepath, all_sentences_tags):
             tagged_line = "{}\t{}\n".format(line.rstrip(), flattened_tags[i])
             i += 1
             tagged_lines.append(tagged_line)
-            
+
         else:
             tagged_lines.append(line)
 
@@ -192,7 +203,8 @@ def viterbi(training_filepath, test_filepath):
                 this_word = sentence[col]
                 this_possible_state = possible_states[row]
 
-                if col == 0: # populate the initial state that transitioned from START
+                # populate the initial state that transitioned from START
+                if col == 0: 
 
                     # get Pr(state|START)
                     try:
@@ -211,13 +223,15 @@ def viterbi(training_filepath, test_filepath):
 
                     trellis[row][col] = transition_pr * emission_pr # fill in the first column: initial state following START
                 
-                else: # populate cols 2-n
+                # populate cols 2-n
+                else: 
                     # We will calculate Pr(prior_state) * Pr(this_possible_state|prior_state) for each possible prior_state,
                     # in order to select the path with the maximum likelihood
                     
                     prior_pr_for_each_path = list(trellis[:][col - 1]) # Pr(prior_state) is the previous column in Viterbi matrix
 
                     pr_transition_to_this_state = []
+
                     for possible_prior_state in possible_states: # get Pr(this_possible_state|previous_state) for all possible previous states
                         try:
                             transition_to_state_pr = training_transitions[possible_prior_state][this_possible_state]
@@ -242,17 +256,21 @@ def viterbi(training_filepath, test_filepath):
                     else:
                         emission_pr = 1 / len(possible_states) # assign uniform probability if the word is unknown
 
-                    trellis[row][col] = max_path_probability * emission_pr
+                    trellis[row][col] = max_path_probability * emission_pr 
 
+        # termination state
 
-
-    # print(possible_states)
-    # print(backtracer)
-    # print(trellis)             
-           
-        # find the highest probability path in reverse
+        termination_probabilities = compute_final_probabilities(possible_states, training_transitions) # computes list of Pr(END|possible_prior_state) from all possible_prior_state
+    
+        final_probabilities = [transition_to_end * prior_pr for transition_to_end, prior_pr in zip(trellis[:][len(sentence) - 1], termination_probabilities) ]
+        max_final_pr = max(final_probabilities)
+        last_state = possible_states[np.argmax(max_final_pr)]
+    
+        # for the sentence, find the highest probability path in reverse
         all_sentences_tags.append(backtrace_best_path(sentence, trellis, backtracer))
 
+    # finally generate pos predictions and write to file
+    
     generate_pos_predictions(test_filepath, all_sentences_tags)
     
     
