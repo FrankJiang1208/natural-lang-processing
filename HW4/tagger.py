@@ -116,7 +116,7 @@ def get_possible_states(transition_pr_dict):
 
     possible_states = list(set(possible_from_state).union(possible_to_state)) # take the set of the union
 
-    possible_states.remove("END")
+    possible_states.remove("END") # special termination state will handle END
 
     return possible_states
 
@@ -129,7 +129,22 @@ def get_vocab(word_emissions_dict):
     return vocab
 
 
-def compute_final_probabilities(possible_states, transition_pr_dict):
+def calculate_word_emission_probability(this_word, this_possible_state, word_emissions_dict, vocab):
+    # calculate Pr(word|this_possible_state) 
+    # Handling of unknown words: assigns uniform probability
+    # returns value of probability
+    if this_word in vocab:
+        try:
+            emission_pr = word_emissions_dict[this_possible_state][this_word]
+        except:
+            emission_pr = 0
+    else:
+        emission_pr = 1 / len(possible_states) # assign uniform probability if the word is unknown
+
+    return emission_pr
+
+
+def compute_termination_probabilities(possible_states, transition_pr_dict):
     # computes list of Pr(END|possible_prior_state) from all possible_prior_state
         termination_probabilities = []
         for state in possible_states:
@@ -206,22 +221,16 @@ def viterbi(training_filepath, test_filepath):
                 # populate the initial state that transitioned from START
                 if col == 0: 
 
-                    # get Pr(state|START)
+                    # get Pr(state|START) for this_possible_state
                     try:
                         transition_pr = training_transitions["START"][this_possible_state]
                     except:
                         transition_pr = 0
 
-                    # get Pr(emission|START)
-                    if this_word in vocab:
-                        try:
-                            emission_pr = training_emissions[this_possible_state][this_word]
-                        except:
-                            emission_pr = 0
-                    else:
-                        emission_pr = 1 / len(possible_states) # assign uniform probability if the word is unknown
+                    # get Pr(emission|state)
+                    emission_pr = calculate_word_emission_probability(this_word, this_possible_state, training_emissions, vocab)
 
-                    trellis[row][col] = transition_pr * emission_pr # fill in the first column: initial state following START
+                    trellis[row][col] = transition_pr * emission_pr # fill in the cell: initial state following START
                 
                 # populate cols 2-n
                 else: 
@@ -248,19 +257,13 @@ def viterbi(training_filepath, test_filepath):
                     backtracer[row][col - 1] = best_previous_state # fill in the backtrace column
 
                     # get Pr(emission|this_possible_state)
-                    if this_word in vocab:
-                        try:
-                            emission_pr = training_emissions[this_possible_state][this_word]
-                        except:
-                            emission_pr = 0
-                    else:
-                        emission_pr = 1 / len(possible_states) # assign uniform probability if the word is unknown
+                    emission_pr = calculate_word_emission_probability(this_word, this_possible_state, training_emissions, vocab)
 
                     trellis[row][col] = max_path_probability * emission_pr 
 
         # termination state
 
-        termination_probabilities = compute_final_probabilities(possible_states, training_transitions) # computes list of Pr(END|possible_prior_state) from all possible_prior_state
+        termination_probabilities = compute_termination_probabilities(possible_states, training_transitions) # computes list of Pr(END|possible_prior_state) from all possible_prior_state
     
         final_probabilities = [transition_to_end * prior_pr for transition_to_end, prior_pr in zip(trellis[:][len(sentence) - 1], termination_probabilities) ]
         max_final_pr = max(final_probabilities)
