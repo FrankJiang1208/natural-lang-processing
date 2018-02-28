@@ -97,7 +97,7 @@ Results
 My minimal implementation of the Viterbi algorithm on the WSJ_24 development
  corpus achieved accuracy of 94.874136%.
  After implementing changes to the handling of unknown words, my tagger
- achieved accuracy of 95.345935% on the WSJ_24 development corpus.
+ achieved accuracy of 95.342891% on the WSJ_24 development corpus.
 \end_layout
 
 \begin_layout Subsection*

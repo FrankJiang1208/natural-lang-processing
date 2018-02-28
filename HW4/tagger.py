@@ -57,13 +57,12 @@ def calculate_word_emission_counts(pos_list):
         if elem != "\n":
             word, pos = elem
 
-            # add POS key to outer dict if not already included
-            if pos not in word_emissions.keys():
-                word_emissions[pos] = {}
+            word_emissions.setdefault(pos, {}) # add POS key to outer dict if not already included
 
             # add word key to POS dict, if not already included
-            if word not in word_emissions[pos].keys():
-                word_emissions[pos][word] = 0 # initialize here; can initialize to 1 for word smoothing
+            word_emissions[pos].setdefault(word, 0)
+            # if word not in word_emissions[pos].keys():
+            #     word_emissions[pos][word] = 0 # initialize here; can initialize to 1 for word smoothing
 
             # POS and word must exist by now. increment the count
             word_emissions[pos][word] += 1
@@ -81,7 +80,7 @@ def convert_counts_probabilities(count_dict):
         Dict of dicts. Same as before except innder dict values are Pr("word"|"POS")
     """
     for outer_key in count_dict:
-        denom = sum(count_dict[outer_key][inner_key] for inner_key in count_dict[outer_key].keys() ) # get sum of all word emissions for a state
+        denom = sum(count_dict.get(outer_key, {}).values()) # get sum of all word emissions for a state
 
         for inner_key in count_dict[outer_key].keys():
             count_dict[outer_key][inner_key] = count_dict[outer_key][inner_key] / denom
@@ -125,15 +124,15 @@ def calculate_transition_counts(sentences_list):
         for pair in pos_transitions:
             this_state, next_state = pair
 
-            if this_state not in transitions.keys():
-                transitions[this_state] = dict()
+            transitions.setdefault(this_state, dict()) # add key for this_state to outer dict if it doesn't already exist
 
-            if next_state not in transitions[this_state].keys():
-                transitions[this_state][next_state] = 0
+            transitions[this_state].setdefault(next_state, 0)
+            # if next_state not in transitions[this_state].keys():
+            #     transitions[this_state][next_state] = 0
 
             transitions[this_state][next_state] += 1
 
-    return(transitions)
+    return transitions
 
 
 # Viterbi helper functions
@@ -182,11 +181,14 @@ def calculate_word_emission_probability(this_word, this_possible_state, word_emi
     Returns:
         Probability as float. Uniform probability if word is unknown
     """
-
     return (
         word_emissions_dict.get(this_possible_state, {}).get(this_word, 0)
         if this_word in vocab else
-        handle_unknown_words(this_word, this_possible_state, word_emissions_dict, vocab, possible_states) # if the word is unknown
+        handle_unknown_words(this_word,
+                                this_possible_state,
+                                word_emissions_dict,
+                                vocab,
+                                possible_states) # if the word is unknown
     )
 
 def handle_unknown_words(this_word, this_possible_state, word_emissions_dict, vocab, possible_states):
@@ -202,16 +204,16 @@ def handle_unknown_words(this_word, this_possible_state, word_emissions_dict, vo
         Probability as float.
     """
     if not bool(re.match("[a-zA-z]", this_word)):
-        if this_possible_state == "CD": # unknown numbers most likely emitted from CD
-            return sum(prob for prob in word_emissions_dict[this_possible_state].values() ) / len(word_emissions_dict[this_possible_state].values())
-        else:
-            return 0 # numbers aren't emitted from any other class
+        return ( sum(prob for prob in word_emissions_dict[this_possible_state].values() ) / len(word_emissions_dict[this_possible_state].values())
+                if this_possible_state == "CD" # unknown numbers most likely emitted from CD
+                else 0) # numbers aren't emitted from any other class
 
     elif this_word.upper() == this_word or this_word.title() == this_word: # allcaps = acronyms, title case = proper nouns emitted from NNP
-        if this_possible_state == "NNP":
-            return sum(prob for prob in word_emissions_dict[this_possible_state].values() ) / len(word_emissions_dict[this_possible_state].values())
-        else:
-            return 0
+
+
+        return ( sum(prob for prob in word_emissions_dict[this_possible_state].values() ) / len(word_emissions_dict[this_possible_state].values())
+                if this_possible_state == "NNP"
+                    else 0 )
 
     else:
         return (1 / len(possible_states))
