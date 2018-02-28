@@ -3,6 +3,7 @@
 # Leslie Huang (LH1036)
 # HW 4 Viterbi POS Tagger
 
+import argparse
 import itertools
 import numpy as np
 
@@ -16,7 +17,7 @@ def load_tagged_pos_file(file_path):
 
         # convert to format: [ [word, pos], [word, pos], "\n" ], newlines to designate end of sentence
         pos_list = [line if line == "\n" else line.rstrip().split("\t") for line in data_raw]
-    
+
     return pos_list
 
 
@@ -45,14 +46,14 @@ def calculate_word_emission_counts(pos_list):
             # add POS key to outer dict if not already included
             if pos not in word_emissions.keys():
                 word_emissions[pos] = {}
-            
+
             # add word key to POS dict, if not already included
             if word not in word_emissions[pos].keys():
                 word_emissions[pos][word] = 0 # initialize here; can initialize to 1 for word smoothing
-            
+
             # POS and word must exist by now, so we can increment the count
             word_emissions[pos][word] += 1
-    
+
     return word_emissions
 
 
@@ -96,10 +97,10 @@ def calculate_transition_counts(sentences_data):
 
             if this_state not in transitions.keys():
                 transitions[this_state] = dict()
-            
+
             if next_state not in transitions[this_state].keys():
                 transitions[this_state][next_state] = 0
-            
+
             transitions[this_state][next_state] += 1
 
     return(transitions)
@@ -109,7 +110,7 @@ def calculate_transition_counts(sentences_data):
 # Viterbi helper functions
 
 def get_possible_states(transition_pr_dict):
-    # @param transition_pr_dict a transition Pr dict 
+    # @param transition_pr_dict a transition Pr dict
     # returns a list of all possible states
 
     possible_from_state = list(transition_pr_dict.keys()) # get all the states that are transitioned FROM (keys of outer dict)
@@ -123,7 +124,7 @@ def get_possible_states(transition_pr_dict):
 
 
 def get_vocab(word_emissions_dict):
-    # @param word_emissions_dict a word emissions dict (outer dict key: state, inner dict key: word, inner dict value: Pr(word|state)) 
+    # @param word_emissions_dict a word emissions dict (outer dict key: state, inner dict key: word, inner dict value: Pr(word|state))
     # returns a set of all unique words in the vocabulary
     vocab = [list(v.keys()) for s, v in word_emissions_dict.items()] # all the words that are can be emitted (keys of inner dicts)
     vocab = set(item for sublist in vocab for item in sublist) # flatten
@@ -137,7 +138,7 @@ def calculate_word_emission_probability(this_word, this_possible_state, word_emi
     # @param word_emissions_dict dictionary of training word emissions
     # @param vocab set of all words in the training data
     #
-    # Calculate Pr(word|this_possible_state) 
+    # Calculate Pr(word|this_possible_state)
     # Handling of unknown words: assigns uniform probability
     # Returns value of probability
     return (
@@ -164,7 +165,7 @@ def compute_termination_probabilities(possible_states, transition_pr_dict):
 
 def compute_termination_pr(state, transition_pr_dict):
     return transition_pr_dict.get(state, {}).get("END", 0)
-    
+
 
 def backtrace_best_path(sentence, trellis, backtracer):
     # @param sentence A sentence as a list of words
@@ -174,18 +175,18 @@ def backtrace_best_path(sentence, trellis, backtracer):
     tags = []
     num_obs = len(sentence)
 
-    for col in reversed(range(num_obs)):
-        max_pr = max(trellis[:][col + 1])
-        index_of_highest_pr_state_in_col = np.argmax(trellis[:][col + 1])
+    best_state = max(trellis[-1].items(), key=lambda item: item[1])[0]
 
-        best_state_for_this_word = backtracer[index_of_highest_pr_state_in_col][col]
+    for col in reversed(range(1, num_obs)):
+        tags.append(best_state)
+        best_state = backtracer[col][best_state]
 
-        tags.append(best_state_for_this_word)
-        
+    tags.append(best_state)
+
     return list(reversed(tags))
 
 def generate_pos_predictions(test_filepath, all_sentences_tags):
-    # @param test_filepath path to a .words file of test data 
+    # @param test_filepath path to a .words file of test data
     # @param all_sentences_tags a list of lists (each inner list = POS for a sentence) of tags
     # writes new .pos file with predicted POS
     with open(test_filepath, "r") as f:
@@ -193,20 +194,14 @@ def generate_pos_predictions(test_filepath, all_sentences_tags):
 
     flattened_tags = [item for sublist in all_sentences_tags for item in sublist] # flatten the list
 
-    tagged_lines = []
     i = 0
 
     for line in data_raw:
         if line != "\n":
-            tagged_line = "{}\t{}\n".format(line.rstrip(), flattened_tags[i])
+            print("{}\t{}\n".format(line.rstrip(), flattened_tags[i]))
             i += 1
-            tagged_lines.append(tagged_line)
-
         else:
-            tagged_lines.append(line)
-
-    with open("predicted_24.pos", "w") as f:
-        f.writelines(tagged_lines)
+            print(line)
 
 ######################################################
 # Viterbi algorithm
@@ -214,7 +209,7 @@ def viterbi(training_filepath, test_filepath):
 
     # load training data and generate transition probability dictionary and emission probability dictionary
     training_data = load_tagged_pos_file(training_filepath)
-    training_emissions = convert_counts_probabilities(calculate_word_emission_counts(training_data)) 
+    training_emissions = convert_counts_probabilities(calculate_word_emission_counts(training_data))
     training_transitions = convert_counts_probabilities(calculate_transition_counts(group_words_sentences(training_data)))
 
     possible_states = get_possible_states(training_transitions) # unique possible states (excl START and END)
@@ -227,78 +222,75 @@ def viterbi(training_filepath, test_filepath):
     for sentence in test_observations:
         num_obs = len(sentence)
 
-        trellis = np.empty([len(possible_states), num_obs]) # setup the Viterbi matrix, cols = words, rows = possible states (add col for END)
-        backtracer = np.empty([len(possible_states), num_obs - 1], dtype = "object") # setup the backward pointer
-        
+        # trellis = np.empty([len(possible_states), num_obs]) # setup the Viterbi matrix, cols = words, rows = possible states (add col for END)
+        # backtracer = np.empty([len(possible_states), num_obs - 1], dtype = "object") # setup the backward pointer
 
-        for col in range(trellis.shape[1]):
-            if col < trellis.shape[1] - 1: # all columns except the last one which is reserved for TERMINATION state
-                this_word = sentence[col]
+        trellis = []
+        backtracer = []
 
-                for row in range(trellis.shape[0]): # fill in the cell at trellis[row, col]               
-                    this_possible_state = possible_states[row]
+        for col, this_word in enumerate(sentence):
+            probabilities = {}
+            backtrace_states = {}
 
-                    # populate the initial state that transitioned from START
-                    if col == 0: 
-                        transition_pr = calculate_state_transition_pr("START", this_possible_state, training_transitions) # Pr(state|START) for this_possible_state
-                        
-                        emission_pr = calculate_word_emission_probability(this_word, this_possible_state, training_emissions, vocab, possible_states) # Pr(emission|state)
+            for this_possible_state in possible_states:
+                # populate the initial state that transitioned from START
+                if col == 0:
+                    transition_pr = calculate_state_transition_pr("START", this_possible_state, training_transitions) # Pr(state|START) for this_possible_state
 
-                        trellis[row][col] = transition_pr * emission_pr # fill in the cell: initial state following START
-                    
-                    # populate cols 2 through N-1
-                    else: 
-                        # We will calculate Pr(prior_state) * Pr(this_possible_state|prior_state) for each possible prior_state,
-                        # in order to select the highest probability path into this_possible_state
-                        
-                        prior_pr_for_each_path = list(trellis[:][col - 1]) # Pr(prior_state) is the previous column in Viterbi matrix
+                    emission_pr = calculate_word_emission_probability(this_word, this_possible_state, training_emissions, vocab, possible_states) # Pr(emission|state)
 
-                        pr_all_transitions_to_this_state = []
+                    probabilities[this_possible_state] = transition_pr * emission_pr # fill in the cell: initial state following START
+                # populate cols 2 through N-1
+                else:
+                    # We will calculate Pr(prior_state) * Pr(this_possible_state|prior_state) for each possible prior_state,
+                    # in order to select the highest probability path into this_possible_state
 
-                        for possible_prior_state in possible_states: # get Pr(this_possible_state|previous_state) for all possible previous states
-                            state_transition_pr = calculate_state_transition_pr(possible_prior_state, this_possible_state, training_transitions)
-                            pr_all_transitions_to_this_state.append(state_transition_pr)
+                    prior_pr_for_each_path = trellis[-1] # Pr(prior_state) is the previous column in Viterbi matrix
 
-                        path_probabilities = [prior * transition for prior, transition in zip(prior_pr_for_each_path, pr_all_transitions_to_this_state) ] # Pr(this_state|prior_state)*Pr(prior_state) for each possible prior_state
+                    # get Pr(this_possible_state|previous_state) for all possible previous states
+                    pr_all_transitions_to_this_state = {
+                        possible_prior_state: calculate_state_transition_pr(possible_prior_state, this_possible_state, training_transitions)
+                        for possible_prior_state in possible_states
+                    }
 
-                        max_path_probability = max(path_probabilities) # find the max
+                    # Pr(this_state|prior_state)*Pr(prior_state) for each possible prior_state
+                    path_probabilities = {
+                        state: prior_pr_for_each_path[state] * pr_all_transitions_to_this_state[state]
+                        for state in possible_states
+                    }
 
-                        best_previous_state = possible_states[np.argmax(path_probabilities)] # find which previous state had the highest probability
-                        backtracer[row][col - 1] = best_previous_state # fill in the backtrace column
+                    best_previous_state, max_path_probability = max(path_probabilities.items(), key=lambda item: item[1]) # find the max
 
-                        emission_pr = calculate_word_emission_probability(this_word, this_possible_state, training_emissions, vocab, possible_states) # get Pr(emission|this_possible_state)
+                    backtrace_states[this_possible_state] = best_previous_state # fill in the backtrace column
 
-                        trellis[row][col] = max_path_probability * emission_pr # fill in the trellis cell
+                    emission_pr = calculate_word_emission_probability(this_word, this_possible_state, training_emissions, vocab, possible_states) # get Pr(emission|this_possible_state)
 
-            else: # termination state (last column of the matrix)
-                for row in range(trellis.shape[0]): # fill in the cell at trellis[row, col]               
-                    this_possible_state = possible_states[row]
+                    probabilities[this_possible_state] = max_path_probability * emission_pr # fill in the trellis cell
 
-                    prior_pr = trellis[row][col - 1]
-                    termination_pr = compute_termination_pr(this_possible_state, training_transitions) # Pr(END|this_possible_state)
+            trellis.append(probabilities)
+            backtracer.append(backtrace_states)
 
-                    trellis[row][col] = termination_pr * prior_pr # no emission in END state 
+        end_probabilties = {}
+        for this_possible_state in possible_states: # fill in the cell at trellis[row, col]
+            prior_pr = trellis[-1][this_possible_state]
+            termination_pr = compute_termination_pr(this_possible_state, training_transitions) # Pr(END|this_possible_state)
+            end_probabilties[this_possible_state] = termination_pr * prior_pr # no emission in END state
+
+        trellis.append(end_probabilties)
 
         # now use the backtracer
-        top_final_pr = max(trellis[:][num_obs + 1])
-        most_likely_last_state = possible_states[np.argmax(trellis[:][num_obs + 1])] # i.e. the state before END
-        
-        print(most_likely_last_state)
-        print(backtracer)
-
         this_sentence_sequence = backtrace_best_path(sentence, trellis, backtracer)
-    
+
         # for the sentence, find the highest probability path in reverse
         all_sentences_tags.append(this_sentence_sequence)
 
     generate_pos_predictions(test_filepath, all_sentences_tags) # finally generate pos predictions and write to file
-    
-    
 
-######################################################
-# Run it
-training_filepath = "/Users/lesliehuang/nlp-vc/HW4/WSJ_POS_CORPUS_FOR_STUDENTS/WSJ_02-21.pos"
 
-test_filepath = "/Users/lesliehuang/nlp-vc/HW4/WSJ_POS_CORPUS_FOR_STUDENTS/test.words"
 
-viterbi(training_filepath, test_filepath)
+if __name__ == '__main__':
+    parser = argparse.ArgumentParser()
+    parser.add_argument('training', help='path to the training data')
+    parser.add_argument('test', help='path to the test data')
+    args = parser.parse_args()
+    viterbi(args.training, args.test)
