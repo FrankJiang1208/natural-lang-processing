@@ -94,10 +94,8 @@ Results
 \end_layout
 
 \begin_layout Standard
-My minimal implementation of the Viterbi algorithm on the WSJ_24 development
- corpus achieved accuracy of 94.874136%.
- After implementing changes to the handling of unknown words, my tagger
- achieved accuracy of 95.342891% on the WSJ_24 development corpus.
+After implementing changes to the handling of unknown words, my tagger achieved
+ accuracy of 95.352023% on the WSJ_24 development corpus.
 \end_layout
 
 \begin_layout Subsection*
@@ -203,6 +201,33 @@ NNP.
 \begin_layout Itemize
 For unknown words that don't meet the above criteria, I assign a small emission
  probability for all of the possible states.
+\end_layout
+
+\begin_layout Standard
+Additionally,
+\end_layout
+
+\begin_layout Itemize
+I handle the following (rare) situation: It is theoretically possible that
+ two or more possible prior states at 
+\begin_inset Formula $t-1$
+\end_inset
+
+ correspond to the maximum path probability to a given state at time 
+\begin_inset Formula $t$
+\end_inset
+
+.
+ Which of these prior states was the most likely path? In this situation,
+ I set the best prior state deterministically by setting it to 
+\begin_inset Quotes eld
+\end_inset
+
+NN
+\begin_inset Quotes erd
+\end_inset
+
+ (one of the most common POS).
 \end_layout
 
 \begin_layout Standard

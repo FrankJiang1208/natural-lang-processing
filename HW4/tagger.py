@@ -4,6 +4,7 @@
 # HW 4 Viterbi POS Tagger
 
 import argparse
+from collections import OrderedDict
 import itertools
 import numpy as np
 import re
@@ -59,10 +60,7 @@ def calculate_word_emission_counts(pos_list):
 
             word_emissions.setdefault(pos, {}) # add POS key to outer dict if not already included
 
-            # add word key to POS dict, if not already included
-            word_emissions[pos].setdefault(word, 0)
-            # if word not in word_emissions[pos].keys():
-            #     word_emissions[pos][word] = 0 # initialize here; can initialize to 1 for word smoothing
+            word_emissions[pos].setdefault(word, 0) # add word key to POS dict, if not already included
 
             # POS and word must exist by now. increment the count
             word_emissions[pos][word] += 1
@@ -126,9 +124,7 @@ def calculate_transition_counts(sentences_list):
 
             transitions.setdefault(this_state, dict()) # add key for this_state to outer dict if it doesn't already exist
 
-            transitions[this_state].setdefault(next_state, 0)
-            # if next_state not in transitions[this_state].keys():
-            #     transitions[this_state][next_state] = 0
+            transitions[this_state].setdefault(next_state, 0) # add inner key if it doesn't already exist
 
             transitions[this_state][next_state] += 1
 
@@ -152,7 +148,7 @@ def get_possible_states(transition_pr_dict):
     possible_states = list(set(possible_from_state).union(possible_to_state)) # take the set of the union
     possible_states.remove("END") # remove END (END is handled in special termination state)
 
-    return possible_states
+    return sorted(possible_states)
 
 
 def get_vocab(word_emissions_dict):
@@ -190,6 +186,7 @@ def calculate_word_emission_probability(this_word, this_possible_state, word_emi
                                 vocab,
                                 possible_states) # if the word is unknown
     )
+
 
 def handle_unknown_words(this_word, this_possible_state, word_emissions_dict, vocab, possible_states):
     """
@@ -258,7 +255,8 @@ def backtrace_best_path(sentence, trellis, backtracer):
 
     # Starting with the best final state: for the last word in the sentence and last dict (column) in the Viterbi matrix,
     # retrieve key corresponding to the highest value in the column
-    best_state = max(trellis[-1].items(), key=lambda item: item[1])[0]
+    # best_state = max(trellis[-1].items(), key=lambda item: item[1])[0]
+    best_state = max_handle_ties(trellis[-1])[0]
 
     for col in reversed(range(1, num_obs)):
         tags.append(best_state)
@@ -267,6 +265,24 @@ def backtrace_best_path(sentence, trellis, backtracer):
     tags.append(best_state) # the for loop does not append the final best_state corresponding to the first word in the sentence
 
     return list(reversed(tags))
+
+
+def max_handle_ties(generic_pr_dict):
+    """
+    Modified version of the max() function that follows specific behavior if there are any ties (e.g. if probabilities all = 0)
+    Args:
+        generic_pr_dict Dict in which the max of the values needs to be obtained
+    Returns:
+        Max value and best state
+    """
+    base_max_state, base_max_pr = max(generic_pr_dict.items(), key = lambda item: item[1])
+
+    # is there more than one max?
+    if len([key for key, value in generic_pr_dict.items() if value == base_max_pr]) > 1:
+        return ("NN", base_max_pr)
+
+    else:
+        return (base_max_state, base_max_pr )
 
 
 # The main function!
@@ -282,15 +298,15 @@ def viterbi(sentence, transition_pr_dict, word_emissions_dict, possible_states, 
     Returns:
         List of most likely POS tags for a sentence.
     """
-    trellis = [] # Viterbi matrix: Will be list of dicts
+    trellis = [] # Viterbi matrix: Will be list of OrderedDicts
     # each dict corresponds to a "column" of the Viterbi matrix i.e. one of the words in the sentence
 
-    backtracer = [] # Backtrace matrix: Will be list of dicts
+    backtracer = [] # Backtrace matrix: Will be list of OrderedDicts
     # Each dict corresponds to a "column" of the backtrace matrix
 
     for col, this_word in enumerate(sentence):
-        probabilities = {} # Dict that goes into trellis
-        backtrace_states = {} # Dict that goes into backtracer.
+        probabilities = OrderedDict({}) # Dict corresponding to a "column", to populate the trellis
+        backtrace_states = OrderedDict({}) # Dict to populate the backtracer
 
         for this_possible_state in possible_states:
             if col == 0: # populate the initial state that transitioned from START
@@ -315,23 +331,24 @@ def viterbi(sentence, transition_pr_dict, word_emissions_dict, possible_states, 
 
                 # Construct dict of transition probabilities to this state
                 # { key: possible_prior_state, value: Pr(this_possible_state|previous_state), ... }
-                pr_all_transitions_to_this_state = {
+                pr_all_transitions_to_this_state = OrderedDict({
                     possible_prior_state: calculate_state_transition_pr(possible_prior_state,
                                                                         this_possible_state,
                                                                         transition_pr_dict
                                                                         )
                     for possible_prior_state in possible_states
-                }
+                })
 
                 # in order to select the highest probability path into this_possible_state,
                 # Construct dict { key: possible_prior_state, value: Pr(this_state|possible_prior_state) * Pr(prior_state, ... }
-                path_probabilities = {
+                path_probabilities = OrderedDict({
                     state: prior_pr_for_each_path[state] * pr_all_transitions_to_this_state[state]
                     for state in possible_states
-                }
+                })
 
                 # get the max path to this_possible_state and the prior state on that path
-                best_previous_state, max_path_probability = max(path_probabilities.items(), key = lambda item: item[1])
+                # best_previous_state, max_path_probability = max(path_probabilities.items(), key = lambda item: item[1])
+                best_previous_state, max_path_probability = max_handle_ties(path_probabilities)
 
                 backtrace_states[this_possible_state] = best_previous_state # fill in the backtrace "column"
 
