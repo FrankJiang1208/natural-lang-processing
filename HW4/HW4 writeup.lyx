@@ -246,7 +246,6 @@ To run my program, the following arguments should be specified in the command
 \end_layout
 
 \begin_layout Verbatim
-
 python3 tagger.py trainingdata.pos testdata.words -o outputfilename.pos
 \end_layout
 
@@ -256,9 +255,7 @@ e.g.
 \end_layout
 
 \begin_layout Verbatim
-
-python3 tagger.py WSJ_POS_CORPUS_FOR_STUDENTS/combined_WSJ_02-21_24.pos WSJ_POS_CO
-RPUS_FOR_STUDENTS/WSJ_23.words -o wsj_23.pos
+python3 tagger.py combined_WSJ_02-21_24.pos WSJ_23.words -o wsj_23.pos
 \end_layout
 
 \end_body
