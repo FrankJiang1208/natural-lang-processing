@@ -17,7 +17,8 @@ class FeatureBuilder(object):
         self.is_training = is_training
         self.data = self.load_data()
 
-    ### Methods for loading the data ###
+    ### Methods for loading data ###
+
     def load_data(self):
         """
         Load training or test data and convert to List-of-Dicts format.
@@ -26,7 +27,7 @@ class FeatureBuilder(object):
             training: Bool, True if data is training (incl. token, POS, chunk, and name).
                     False if data is dev/test (token, POS, and chunk only)
         Returns:
-            Data processed into List-of-Dicts.
+            Data converted into test/training format for MaxEnt
         """
         with open(self.filepath, "r") as f:
             raw_data = f.readlines()
@@ -40,7 +41,7 @@ class FeatureBuilder(object):
             raw_data: Test or training data read into List-of-Strings
             training: Bool, True if data is training else False.
         Returns:
-            Data processed into List-of-Dicts.
+            Data converted into test/training format for MaxEnt
         """
         features_list = [
                         line if line == "\n" else line.split("\t") for line in raw_data
@@ -69,19 +70,24 @@ class FeatureBuilder(object):
 
     def convert_sentence(self, sentence, is_training):
         """
-        Converts a sentence (list of lists, inner list = each word and its tags) into a list of dicts
+        Converts a sentence (list of lists, inner list = each word and its tags) into correct format for MaxEnt
         Args:
             sentence: each sentence is a list of lists. Each element of the outer list is an inner list that corresponds to a word and its tags
         Returns:
-            List of dicts, each dict corresponds to a word
+            If training data: [ ({dict of features for a token}, nametag), ...]
+            If test data: [ {dict of features for a token}, {dict of features for a token}, ...]
         """
         if is_training:
-            return ( [{"token": feature_vector[0],
-                        "pos": feature_vector[1],
-                        "chunk": feature_vector[2],
-                        "name": feature_vector[3].strip(), # remove newline
-                        }
-                    for feature_vector in sentence ] )
+            return ( [
+                        (
+                            {"token": feature_vector[0],
+                            "pos": feature_vector[1],
+                            "chunk": feature_vector[2],
+                            },
+                            feature_vector[3].strip()
+                        )
+                    for feature_vector in sentence
+                        ] )
         else:
             return ( [{"token": feature_vector[0],
                     "pos":feature_vector[1],
