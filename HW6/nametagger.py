@@ -13,21 +13,6 @@ from nltk.corpus import stopwords
 
 ### Methods for loading data ###
 
-def load_data(filepath, is_training = True):
-    """
-    Load training or test data and convert to List-of-Dicts format.
-    Args:
-        filepath: Path to test or training data
-        training: Bool, True if data is training (incl. token, POS, chunk, and name).
-                False if data is dev/test (token, POS, and chunk only)
-    Returns:
-        Data converted into test/training format for MaxEnt
-    """
-    with open(filepath, "r") as f:
-        raw_data = f.readlines()
-
-    return convert_data(raw_data, is_training)
-
 def convert_data(raw_data, is_training):
     """
     Helper function to convert List-of-RawData-Lines to List-of-Dicts
@@ -67,7 +52,7 @@ def feature_dict(feature_vector):
     return {
         "token": feature_vector[0],
         "pos": feature_vector[1],
-        "chunk": feature_vector[2],
+        "chunk": feature_vector[2].strip(),
     }
 
 
@@ -90,10 +75,26 @@ def convert_sentence(sentence, is_training):
 
 
 class FeatureBuilder:
-    def __init__(self, data, is_training = True):
+    def __init__(self, data, is_training):
         self.data = data
         self.is_training = is_training
 
+
+    @classmethod
+    def load(cls, filepath, is_training):
+        """
+        Load training or test data and convert to List-of-Dicts format.
+        Args:
+            filepath: Path to test or training data
+            training: Bool, True if data is training (incl. token, POS, chunk, and name).
+                    False if data is dev/test (token, POS, and chunk only)
+        Returns:
+            Data converted into test/training format for MaxEnt
+        """
+        with open(filepath, "r") as f:
+            raw_data = f.readlines()
+
+        return cls(convert_data(raw_data, is_training), is_training)
 
     ###########################################################
     ### Sentence-level features ###
@@ -185,10 +186,10 @@ class FeatureBuilder:
         features_dict["nltk_stopword"] = features_dict["token"] in stopwords.words("english")
 
     def add_nltk_name_feat(self, features_dict):
-        features_dict["is_nltk_name"] = features_dict["token"].lower() in (lower == n.lower() for n in names.words())
+        features_dict["is_nltk_name"] = features_dict["token"].lower() in (n.lower() for n in names.words())
 
     def add_geo_feat(self, features_dict):
-        features_dict["is_geo_place"] = (GeoText(features_dict["token"]).cities or GeoText(features_dict["token"]).countries)
+        features_dict["is_geo_place"] = bool(GeoText(features_dict["token"]).cities or GeoText(features_dict["token"]).countries)
 
     def add_all_token_features(self):
         if self.is_training:
@@ -210,18 +211,18 @@ class FeatureBuilder:
 
 if __name__ == '__main__':
 
-    training_fb = FeatureBuilder("CONLL_train.pos-chunk-name", is_training = True)
+    training_fb = FeatureBuilder.load("CONLL_train.pos-chunk-name", is_training=True)
 
     training_fb.add_all_sentence_features()
     training_fb.add_all_token_features()
 
-    test_fb = FeatureBuilder("CONLL_dev.pos-chunk", is_training = False)
+    test_fb = FeatureBuilder.load("CONLL_dev.pos-chunk", is_training = False)
 
     test_fb.add_all_sentence_features()
     test_fb.add_all_token_features()
 
-    classifier = MaxentClassifier.train(training_fb.data, max_iter = 10)
+    classifier = MaxentClassifier.train(training_fb.data, max_iter = 2)
 
-    classifier.classify_many(test_fb.data)
+    print(classifier.classify_many(test_fb.data))
 
     print(classifier.show_most_informative_features(10))
