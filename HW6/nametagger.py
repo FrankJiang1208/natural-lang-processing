@@ -4,14 +4,15 @@
 # Natural Language Processing Assignment 6
 # March 22, 2018
 
+import argparse
+import collections
 import itertools
-import multiprocessing as mp
 from geotext import GeoText
 from nltk.classify import MaxentClassifier
 from nltk.corpus import names
 from nltk.corpus import stopwords
 
-### Methods for loading data ###
+### Functions for loading data ###
 
 def convert_data(raw_data, is_training):
     """
@@ -54,7 +55,6 @@ def feature_dict(feature_vector):
         "pos": feature_vector[1],
         "chunk": feature_vector[2].strip(),
     }
-
 
 def convert_sentence(sentence, is_training):
     """
@@ -208,21 +208,43 @@ class FeatureBuilder:
 
         return self
 
+def label_test_data(predicted_classifications, test_fb, output):
 
-if __name__ == '__main__':
+    for (features, label) in zip(test_fb, predicted_classifications):
+        print("{}, {}".format(features, label), file = output)
+    print(file = output)
 
-    training_fb = FeatureBuilder.load("CONLL_train.pos-chunk-name", is_training=True)
 
+
+if __name__ == "__main__":
+    parser = argparse.ArgumentParser()
+    parser.add_argument("training", help = "path to the training data")
+    parser.add_argument("test", help="path to the test data")
+    parser.add_argument("-o", "--output", help = "file path to write to") # optional
+    args = parser.parse_args()
+
+    training_fb = FeatureBuilder.load(args.training, is_training = True)
     training_fb.add_all_sentence_features()
     training_fb.add_all_token_features()
 
-    test_fb = FeatureBuilder.load("CONLL_dev.pos-chunk", is_training = False)
-
+    test_fb = FeatureBuilder.load(args.test, is_training = False)
     test_fb.add_all_sentence_features()
     test_fb.add_all_token_features()
 
-    classifier = MaxentClassifier.train(training_fb.data, max_iter = 2)
+    # run maxent
+    classifier = MaxentClassifier.train(training_fb.data, max_iter = 10)
 
-    print(classifier.classify_many(test_fb.data))
+    predicted_classifications = classifier.classify_many(test_fb.data)
+
+    #label_counts = [(key, len(list(group))) for key, group in itertools.groupby(predicted_labels)]
+    counter = collections.Counter(predicted_labels)
+    print(counter)
 
     print(classifier.show_most_informative_features(10))
+
+    if args.output is not None:
+        with open(args.output, "w") as f:
+            label_test_data(predicted_classifications, test_fb, f)
+    else:
+        label_test_data(predicted_classifications, test_fb, sys.stdout) # prints results to stdout if no output file is specified
+
