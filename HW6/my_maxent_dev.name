@@ -1,5 +1,4 @@
--DOCSTART-	-X-	O
-
+-DOCSTART-	O
 
 
 CRICKET	O
@@ -15,7 +14,7 @@ VICTORY	O
 .	O
 
 
-LONDON	O
+LONDON	I-LOC
 1996-08-30	O
 
 
@@ -69,7 +68,7 @@ short-lived	O
 as	O
 title	O
 rivals	O
-Essex	O
+Essex	I-ORG
 ,	O
 Derbyshire	O
 and	O
@@ -161,7 +160,7 @@ for	O
 .	O
 
 
-Essex	O
+Essex	I-ORG
 ,	O
 however	O
 ,	O
@@ -215,7 +214,7 @@ the	O
 season	O
 ,	O
 as	O
-Essex	O
+Essex	I-ORG
 reached	O
 372	O
 and	O
@@ -449,12 +448,12 @@ gritty	O
 84	O
 from	O
 Paul	O
-Johnson	O
+Johnson	I-PER
 but	O
 ex-England	O
 fast	O
 bowler	O
-Martin	O
+Martin	I-PER
 McCague	O
 took	O
 four	O
@@ -474,8 +473,7 @@ three	O
 .	O
 
 
--DOCSTART-	-X-	O
-
+-DOCSTART-	O
 
 
 CRICKET	O
@@ -487,7 +485,7 @@ SCORES	O
 .	O
 
 
-LONDON	O
+LONDON	I-LOC
 1996-08-30	O
 
 
@@ -521,7 +519,7 @@ runs	O
 .	O
 
 
-Somerset	O
+Somerset	I-ORG
 83	O
 and	O
 174	O
@@ -565,7 +563,7 @@ Blenkiron	O
 4-43	O
 )	O
 ,	O
-Durham	O
+Durham	I-ORG
 114	O
 (	O
 S.	O
@@ -584,7 +582,7 @@ Nottinghamshire	O
 214	O
 (	O
 P.	O
-Johnson	O
+Johnson	I-PER
 84	O
 ;	O
 M.	O
@@ -597,7 +595,7 @@ Kent	O
 .	O
 
 
-London	O
+London	I-LOC
 (	O
 The	O
 Oval	O
@@ -648,7 +646,7 @@ Drakes	O
 52	O
 ;	O
 I.	O
-Austin	O
+Austin	I-PER
 4-37	O
 )	O
 ,	O
@@ -661,7 +659,7 @@ Hegg	O
 )	O
 
 
-Portsmouth	O
+Portsmouth	I-ORG
 :	O
 Middlesex	O
 199	O
@@ -688,7 +686,7 @@ and	O
 .	O
 
 
-Chesterfield	O
+Chesterfield	I-ORG
 :	O
 Worcestershire	O
 238	O
@@ -717,7 +715,7 @@ Moody	O
 )	O
 
 
-Bristol	O
+Bristol	I-ORG
 :	O
 Gloucestershire	O
 183	O
@@ -745,8 +743,7 @@ Smith	O
 .	O
 
 
--DOCSTART-	-X-	O
-
+-DOCSTART-	O
 
 
 CRICKET	O
@@ -757,11 +754,11 @@ INTINERARY	O
 .	O
 
 
-LONDON	O
+LONDON	I-LOC
 1996-08-30	O
 
 
-Australia	O
+Australia	I-LOC
 will	O
 defend	O
 the	O
@@ -801,7 +798,7 @@ Friday	O
 .	O
 
 
-Australia	O
+Australia	I-LOC
 will	O
 also	O
 play	O
@@ -943,7 +940,7 @@ Oval	O
 ,	O
 
 
-London	O
+London	I-LOC
 )	O
 
 
@@ -957,7 +954,7 @@ at	O
 Lord	O
 's	O
 ,	O
-London	O
+London	I-LOC
 )	O
 
 
@@ -1002,7 +999,7 @@ match	O
 at	O
 Edgbaston	O
 ,	O
-Birmingham	O
+Birmingham	I-LOC
 )	O
 
 
@@ -1147,7 +1144,7 @@ at	O
 Trent	O
 Bridge	O
 ,	O
-Nottingham	O
+Nottingham	I-LOC
 )	O
 
 
@@ -1170,13 +1167,12 @@ at	O
 The	O
 Oval	O
 ,	O
-London	O
+London	I-LOC
 )	O
 .	O
 
 
--DOCSTART-	-X-	O
-
+-DOCSTART-	O
 
 
 SOCCER	O
@@ -1189,7 +1185,7 @@ CAPTAIN	O
 .	O
 
 
-LONDON	O
+LONDON	I-LOC
 1996-08-30	O
 
 
@@ -1270,7 +1266,7 @@ World	O
 Cup	O
 qualifier	O
 against	O
-Moldova	O
+Moldova	I-LOC
 on	O
 Sunday	O
 .	O
@@ -1458,8 +1454,7 @@ Ferdinand	O
 .	O
 
 
--DOCSTART-	-X-	O
-
+-DOCSTART-	O
 
 
 BASKETBALL	O
@@ -1495,7 +1490,7 @@ Yugoslavia	O
 beat	O
 Dinamo	O
 (	O
-Russia	O
+Russia	I-LOC
 )	O
 92-90	O
 (	O
@@ -1506,15 +1501,14 @@ halftime	O
 )	O
 
 
--DOCSTART-	-X-	O
-
+-DOCSTART-	O
 
 
 SOCCER	O
 -	O
-ROMANIA	O
+ROMANIA	I-LOC
 BEAT	O
-LITHUANIA	O
+LITHUANIA	I-LOC
 IN	O
 UNDER-21	O
 MATCH	O
@@ -1525,9 +1519,9 @@ BUCHAREST	O
 1996-08-30	O
 
 
-Romania	O
+Romania	I-LOC
 beat	O
-Lithuania	O
+Lithuania	I-LOC
 2-1	O
 (	O
 halftime	O
@@ -1548,7 +1542,7 @@ Scorers	O
 :	O
 
 
-Romania	O
+Romania	I-LOC
 -	O
 Cosmin	O
 Contra	O
@@ -1563,7 +1557,7 @@ Tararache	O
 )	O
 
 
-Lithuania	O
+Lithuania	I-LOC
 -	O
 Danius	O
 Gleveckas	O
@@ -1577,8 +1571,7 @@ Attendance	O
 200	O
 
 
--DOCSTART-	-X-	O
-
+-DOCSTART-	O
 
 
 SOCCER	O
@@ -1598,7 +1591,7 @@ MOSCOW	O
 
 
 Rotor	O
-Volgograd	O
+Volgograd	I-ORG
 must	O
 play	O
 their	O
@@ -1616,7 +1609,7 @@ and	O
 stones	O
 at	O
 Dynamo	O
-Moscow	O
+Moscow	I-LOC
 players	O
 during	O
 a	O
@@ -1718,7 +1711,7 @@ and	O
 two	O
 behind	O
 Dynamo	O
-Moscow	O
+Moscow	I-LOC
 ,	O
 the	O
 Volgograd	O
@@ -1735,18 +1728,17 @@ and	O
 two	O
 over	O
 the	O
-Moscow	O
+Moscow	I-LOC
 club	O
 .	O
 
 
--DOCSTART-	-X-	O
-
+-DOCSTART-	O
 
 
 BOXING	O
 -	O
-PANAMA	O
+PANAMA	I-LOC
 'S	O
 ROBERTO	O
 DURAN	O
@@ -1758,7 +1750,7 @@ TIME	O
 .	O
 
 
-PANAMA	O
+PANAMA	I-ORG
 CITY	O
 1996-08-30	O
 
@@ -1800,7 +1792,7 @@ on	O
 little-known	O
 Mexican	O
 Ariel	O
-Cruz	O
+Cruz	I-PER
 ,	O
 30	O
 ,	O
@@ -1811,7 +1803,7 @@ middleweight	O
 non-title	O
 bout	O
 in	O
-Panama	O
+Panama	I-LOC
 City	O
 .	O
 
@@ -1974,7 +1966,7 @@ Panamanian	O
 Boxing	O
 Association	O
 President	O
-Ramon	O
+Ramon	I-PER
 Manzanares	O
 said	O
 .	O
@@ -2034,8 +2026,7 @@ fight	O
 .	O
 
 
--DOCSTART-	-X-	O
-
+-DOCSTART-	O
 
 
 SQUASH	O
@@ -2074,7 +2065,7 @@ seeding	O
 Jansher	O
 Khan	O
 (	O
-Pakistan	O
+Pakistan	I-LOC
 )	O
 beat	O
 Mark	O
@@ -2090,13 +2081,13 @@ England	O
 Anthony	O
 Hill	O
 (	O
-Australia	O
+Australia	I-LOC
 )	O
 beat	O
 Dan	O
 Jenson	O
 (	O
-Australia	O
+Australia	I-LOC
 )	O
 15-9	O
 15-8	O
@@ -2115,7 +2106,7 @@ beat	O
 7	O
 -	O
 Chris	O
-Walker	O
+Walker	I-PER
 (	O
 England	O
 )	O
@@ -2130,13 +2121,13 @@ England	O
 Rodney	O
 Eyles	O
 (	O
-Australia	O
+Australia	I-LOC
 )	O
 beat	O
 Derek	O
 Ryan	O
 (	O
-Ireland	O
+Ireland	I-LOC
 )	O
 15-6	O
 15-9	O
@@ -2145,8 +2136,7 @@ Ireland	O
 .	O
 
 
--DOCSTART-	-X-	O
-
+-DOCSTART-	O
 
 
 SOCCER	O
@@ -2320,8 +2310,7 @@ Chonbuk	O
 0	O
 
 
--DOCSTART-	-X-	O
-
+-DOCSTART-	O
 
 
 BASEBALL	O
@@ -2362,17 +2351,17 @@ OB	O
 
 Lotte	O
 6	O
-Hyundai	O
+Hyundai	I-PER
 2	O
 
 
-Hyundai	O
+Hyundai	I-ORG
 6	O
 Lotte	O
 5	O
 
 
-Haitai	O
+Haitai	I-ORG
 2	O
 Samsung	O
 0	O
@@ -2380,7 +2369,7 @@ Samsung	O
 
 Samsung	O
 10	O
-Haitai	O
+Haitai	I-PER
 3	O
 
 
@@ -2439,7 +2428,7 @@ PCT	O
 GB	O
 
 
-Haitai	O
+Haitai	I-ORG
 64	O
 2	O
 43	O
@@ -2464,7 +2453,7 @@ Hanwha	O
 6	O
 
 
-Hyundai	O
+Hyundai	I-ORG
 57	O
 5	O
 49	O
@@ -2507,8 +2496,7 @@ OB	O
 1/2	O
 
 
--DOCSTART-	-X-	O
-
+-DOCSTART-	O
 
 
 TENNIS	O
@@ -2523,8 +2511,8 @@ OPEN	O
 .	O
 
 
-NEW	O
-YORK	O
+NEW	I-LOC
+YORK	I-LOC
 1996-08-30	O
 
 
@@ -2562,13 +2550,13 @@ round	O
 Sandrine	O
 Testud	O
 (	O
-France	O
+France	I-LOC
 )	O
 beat	O
 Ines	O
-Gorrochategui	O
+Gorrochategui	I-PER
 (	O
-Argentina	O
+Argentina	I-LOC
 )	O
 4-6	O
 6-2	O
@@ -2588,13 +2576,13 @@ round	O
 Goran	O
 Ivanisevic	O
 (	O
-Croatia	O
+Croatia	I-LOC
 )	O
 beat	O
 Scott	O
-Draper	O
+Draper	I-PER
 (	O
-Australia	O
+Australia	I-LOC
 )	O
 6-7	O
 (	O
@@ -2624,13 +2612,13 @@ U.S.	O
 Mark	O
 Philippoussis	O
 (	O
-Australia	O
+Australia	I-LOC
 )	O
 beat	O
-Andrei	O
+Andrei	I-PER
 Olhovskiy	O
 (	O
-Russia	O
+Russia	I-LOC
 )	O
 6	O
 -	O
@@ -2642,7 +2630,7 @@ Russia	O
 Sjeng	O
 Schalken	O
 (	O
-Netherlands	O
+Netherlands	I-LOC
 )	O
 beat	O
 David	O
@@ -2661,7 +2649,7 @@ Republic	O
 Guy	O
 Forget	O
 (	O
-France	O
+France	I-LOC
 )	O
 beat	O
 17	O
@@ -2669,7 +2657,7 @@ beat	O
 Felix	O
 Mantilla	O
 (	O
-Spain	O
+Spain	I-LOC
 )	O
 6-4	O
 7-5	O
@@ -2687,13 +2675,13 @@ round	O
 Alexander	O
 Volkov	O
 (	O
-Russia	O
+Russia	I-LOC
 )	O
 beat	O
 Mikael	O
 Tillstrom	O
 (	O
-Sweden	O
+Sweden	I-LOC
 )	O
 1-6	O
 6-	O
@@ -2709,7 +2697,7 @@ Sweden	O
 Jonas	O
 Bjorkman	O
 (	O
-Sweden	O
+Sweden	I-LOC
 )	O
 beat	O
 David	O
@@ -2735,7 +2723,7 @@ round	O
 8	O
 -	O
 Lindsay	O
-Davenport	O
+Davenport	I-PER
 (	O
 U.S.	O
 )	O
@@ -2743,7 +2731,7 @@ beat	O
 Anne-Gaelle	O
 Sidot	O
 (	O
-France	O
+France	I-LOC
 )	O
 6-0	O
 6-3	O
@@ -2752,12 +2740,12 @@ France	O
 4	O
 -	O
 Conchita	O
-Martinez	O
+Martinez	I-PER
 (	O
-Spain	O
+Spain	I-LOC
 )	O
 beat	O
-Helena	O
+Helena	I-PER
 Sukova	O
 (	O
 Czech	O
@@ -2777,7 +2765,7 @@ beat	O
 Irina	O
 Spirlea	O
 (	O
-Romania	O
+Romania	I-LOC
 )	O
 7-6	O
 (	O
@@ -2804,7 +2792,7 @@ beat	O
 Roberto	O
 Carretero	O
 (	O
-Spain	O
+Spain	I-LOC
 )	O
 4-6	O
 6	O
@@ -2815,13 +2803,13 @@ Spain	O
 Alex	O
 Corretja	O
 (	O
-Spain	O
+Spain	I-LOC
 )	O
 beat	O
 Filippo	O
 Veglio	O
 (	O
-Switzerland	O
+Switzerland	I-LOC
 )	O
 6-7	O
 (	O
@@ -2840,7 +2828,7 @@ singles	O
 ,	O
 third	O
 round	O
-Linda	O
+Linda	I-PER
 Wild	O
 (	O
 U.S.	O
@@ -2849,7 +2837,7 @@ beat	O
 Barbara	O
 Rittner	O
 (	O
-Germany	O
+Germany	I-LOC
 )	O
 6-4	O
 4-6	O
@@ -2857,15 +2845,15 @@ Germany	O
 Asa	O
 Carlsson	O
 (	O
-Sweden	O
+Sweden	I-LOC
 )	O
 beat	O
 15	O
 -	O
 Gabriela	O
-Sabatini	O
+Sabatini	I-PER
 (	O
-Argentina	O
+Argentina	I-LOC
 )	O
 7-5	O
 3-6	O
@@ -2887,7 +2875,7 @@ Sampras	O
 U.S.	O
 )	O
 beat	O
-Jiri	O
+Jiri	I-PER
 Novak	O
 (	O
 Czech	O
@@ -2907,7 +2895,7 @@ beat	O
 Michael	O
 Tebbutt	O
 (	O
-Australia	O
+Australia	I-LOC
 )	O
 1-	O
 6	O
@@ -2953,13 +2941,13 @@ round	O
 Hendrik	O
 Dreekmann	O
 (	O
-Germany	O
+Germany	I-LOC
 )	O
 beat	O
 Thomas	O
 Johansson	O
 (	O
-Sweden	O
+Sweden	I-LOC
 )	O
 
 
@@ -2972,16 +2960,16 @@ Sweden	O
 6-1	O
 
 
-Andrei	O
+Andrei	I-PER
 Medvedev	O
 (	O
-Ukraine	O
+Ukraine	I-LOC
 )	O
 beat	O
 Jan	O
 Kroslak	O
 (	O
-Slovakia	O
+Slovakia	I-LOC
 )	O
 6-4	O
 6-3	O
@@ -3054,15 +3042,15 @@ round	O
 12	O
 -	O
 Todd	O
-Martin	O
+Martin	I-PER
 (	O
 U.S.	O
 )	O
 beat	O
 Andrea	O
-Gaudenzi	O
+Gaudenzi	I-PER
 (	O
-Italy	O
+Italy	I-LOC
 )	O
 6-3	O
 6-2	O
@@ -3070,13 +3058,13 @@ Italy	O
 Stefan	O
 Edberg	O
 (	O
-Sweden	O
+Sweden	I-LOC
 )	O
 beat	O
 Bernd	O
 Karbacher	O
 (	O
-Germany	O
+Germany	I-LOC
 )	O
 3-6	O
 6-3	O
@@ -3089,8 +3077,7 @@ injury	O
 )	O
 
 
--DOCSTART-	-X-	O
-
+-DOCSTART-	O
 
 
 BASEBALL	O
@@ -3105,8 +3092,8 @@ GAMES	O
 .	O
 
 
-NEW	O
-YORK	O
+NEW	I-LOC
+YORK	I-LOC
 1996-08-30	O
 
 
@@ -3153,8 +3140,8 @@ PCT	O
 GB	O
 
 
-NEW	O
-YORK	O
+NEW	I-LOC
+YORK	I-LOC
 74	O
 59	O
 .556	O
@@ -3168,7 +3155,7 @@ BALTIMORE	O
 4	O
 
 
-BOSTON	O
+BOSTON	I-LOC
 69	O
 65	O
 .515	O
@@ -3192,18 +3179,18 @@ DETROIT	O
 1/2	O
 
 
-CENTRAL	O
+CENTRAL	I-ORG
 DIVISION	O
 
 
-CLEVELAND	O
+CLEVELAND	I-ORG
 80	O
 53	O
 .602	O
 -	O
 
 
-CHICAGO	O
+CHICAGO	I-ORG
 71	O
 64	O
 .526	O
@@ -3218,14 +3205,14 @@ MINNESOTA	O
 1/2	O
 
 
-MILWAUKEE	O
+MILWAUKEE	I-ORG
 64	O
 71	O
 .474	O
 17	O
 
 
-KANSAS	O
+KANSAS	I-ORG
 CITY	O
 61	O
 74	O
@@ -3237,21 +3224,21 @@ WESTERN	O
 DIVISION	O
 
 
-TEXAS	O
+TEXAS	I-ORG
 75	O
 58	O
 .564	O
 -	O
 
 
-SEATTLE	O
+SEATTLE	I-ORG
 70	O
 63	O
 .526	O
 5	O
 
 
-OAKLAND	O
+OAKLAND	I-ORG
 64	O
 72	O
 .471	O
@@ -3274,41 +3261,41 @@ AUGUST	O
 SCHEDULE	O
 
 
-KANSAS	O
+KANSAS	I-ORG
 CITY	O
 AT	O
 DETROIT	O
 
 
-CHICAGO	O
+CHICAGO	I-ORG
 AT	O
-TORONTO	O
+TORONTO	I-LOC
 
 
 MINNESOTA	O
 AT	O
-MILWAUKEE	O
+MILWAUKEE	I-ORG
 
 
-CLEVELAND	O
+CLEVELAND	I-ORG
 AT	O
-TEXAS	O
+TEXAS	I-ORG
 
 
-NEW	O
-YORK	O
+NEW	I-LOC
+YORK	I-LOC
 AT	O
 CALIFORNIA	O
 
 
-BOSTON	O
+BOSTON	I-LOC
 AT	O
-OAKLAND	O
+OAKLAND	I-ORG
 
 
 BALTIMORE	O
 AT	O
-SEATTLE	O
+SEATTLE	I-ORG
 
 
 NATIONAL	O
@@ -3325,7 +3312,7 @@ PCT	O
 GB	O
 
 
-ATLANTA	O
+ATLANTA	I-ORG
 83	O
 49	O
 .629	O
@@ -3339,33 +3326,33 @@ MONTREAL	O
 12	O
 
 
-FLORIDA	O
+FLORIDA	I-ORG
 64	O
 70	O
 .478	O
 20	O
 
 
-NEW	O
-YORK	O
+NEW	I-LOC
+YORK	I-LOC
 59	O
 75	O
 .440	O
 25	O
 
 
-PHILADELPHIA	O
+PHILADELPHIA	I-ORG
 54	O
 80	O
 .403	O
 30	O
 
 
-CENTRAL	O
+CENTRAL	I-ORG
 DIVISION	O
 
 
-HOUSTON	O
+HOUSTON	I-LOC
 72	O
 63	O
 .533	O
@@ -3381,14 +3368,14 @@ LOUIS	O
 1/2	O
 
 
-CINCINNATI	O
+CINCINNATI	I-ORG
 66	O
 67	O
 .496	O
 5	O
 
 
-CHICAGO	O
+CHICAGO	I-ORG
 65	O
 66	O
 .496	O
@@ -3406,7 +3393,7 @@ WESTERN	O
 DIVISION	O
 
 
-SAN	O
+SAN	I-LOC
 DIEGO	O
 75	O
 60	O
@@ -3422,14 +3409,14 @@ ANGELES	O
 2	O
 
 
-COLORADO	O
+COLORADO	I-ORG
 70	O
 65	O
 .519	O
 5	O
 
 
-SAN	O
+SAN	I-LOC
 FRANCISCO	O
 57	O
 74	O
@@ -3444,17 +3431,17 @@ AUGUST	O
 SCHEDULE	O
 
 
-ATLANTA	O
+ATLANTA	I-ORG
 AT	O
-CHICAGO	O
+CHICAGO	I-LOC
 
 
-FLORIDA	O
+FLORIDA	I-ORG
 AT	O
 CINCINNATI	O
 
 
-SAN	O
+SAN	I-LOC
 DIEGO	O
 AT	O
 MONTREAL	O
@@ -3463,29 +3450,28 @@ MONTREAL	O
 LOS	O
 ANGELES	O
 AT	O
-PHILADELPHIA	O
+PHILADELPHIA	I-ORG
 
 
-HOUSTON	O
+HOUSTON	I-LOC
 AT	O
-PITTSBURGH	O
+PITTSBURGH	I-ORG
 
 
-SAN	O
+SAN	I-LOC
 FRANCISCO	O
 AT	O
 NEW	O
-YORK	O
+YORK	I-LOC
 
 
-COLORADO	O
+COLORADO	I-ORG
 AT	O
 ST	O
 LOUIS	O
 
 
--DOCSTART-	-X-	O
-
+-DOCSTART-	O
 
 
 BASEBALL	O
@@ -3497,8 +3483,8 @@ THURSDAY	O
 .	O
 
 
-NEW	O
-YORK	O
+NEW	I-LOC
+YORK	I-LOC
 1996-08-30	O
 
 
@@ -3535,18 +3521,18 @@ City	O
 
 Minnesota	O
 6	O
-MILWAUKEE	O
+MILWAUKEE	I-ORG
 1	O
 
 
 CALIFORNIA	O
 14	O
 New	O
-York	O
+York	I-LOC
 3	O
 
 
-SEATTLE	O
+SEATTLE	I-ORG
 9	O
 Baltimore	O
 6	O
@@ -3556,29 +3542,29 @@ National	O
 League	O
 
 
-San	O
+San	I-LOC
 Diego	O
 3	O
 NEW	O
-YORK	O
+YORK	I-LOC
 2	O
 
 
-Chicago	O
+Chicago	I-LOC
 4	O
-HOUSTON	O
+HOUSTON	I-LOC
 3	O
 
 
-Cincinnati	O
+Cincinnati	I-ORG
 18	O
-COLORADO	O
+COLORADO	I-ORG
 7	O
 
 
-Atlanta	O
+Atlanta	I-LOC
 5	O
-PITTSBURGH	O
+PITTSBURGH	I-ORG
 1	O
 
 
@@ -3589,15 +3575,14 @@ MONTREAL	O
 1	O
 
 
-Florida	O
+Florida	I-LOC
 10	O
 ST	O
 LOUIS	O
 9	O
 
 
--DOCSTART-	-X-	O
-
+-DOCSTART-	O
 
 
 TENNIS	O
@@ -3605,7 +3590,7 @@ TENNIS	O
 TARANGO	O
 ,	O
 O'BRIEN	O
-SPRING	O
+SPRING	I-LOC
 TWIN	O
 UPSETS	O
 UNDER	O
@@ -3618,13 +3603,13 @@ Larry	O
 Fine	O
 
 
-NEW	O
-YORK	O
+NEW	I-LOC
+YORK	I-LOC
 1996-08-30	O
 
 
 Andre	O
-Agassi	O
+Agassi	I-PER
 escaped	O
 disaster	O
 on	O
@@ -3632,8 +3617,8 @@ Thursday	O
 but	O
 Wimbledon	O
 finalist	O
-MaliVai	O
-Washington	O
+MaliVai	I-PER
+Washington	I-LOC
 and	O
 Marcelo	O
 Rios	O
@@ -3655,7 +3640,7 @@ Open	O
 
 The	O
 11th-seeded	O
-Washington	O
+Washington	I-LOC
 fell	O
 short	O
 of	O
@@ -3738,7 +3723,7 @@ although	O
 sixth-seeded	O
 former	O
 champion	O
-Agassi	O
+Agassi	I-PER
 had	O
 to	O
 wriggle	O
@@ -3758,9 +3743,9 @@ last	O
 19	O
 games	O
 against	O
-India	O
+India	I-LOC
 's	O
-Leander	O
+Leander	I-PER
 Paes	O
 .	O
 
@@ -3775,7 +3760,7 @@ upstarts	O
 .	O
 
 
-Washington	O
+Washington	I-LOC
 ,	O
 who	O
 climbed	O
@@ -3794,7 +3779,7 @@ third	O
 set	O
 against	O
 Todd	O
-Martin	O
+Martin	I-PER
 in	O
 the	O
 Wimbledon	O
@@ -3836,7 +3821,7 @@ the	O
 third	O
 set	O
 before	O
-Washington	O
+Washington	I-LOC
 came	O
 charging	O
 back	O
@@ -3930,7 +3915,7 @@ ultimately	O
 subdue	O
 the	O
 never-say-die	O
-Washington	O
+Washington	I-LOC
 .	O
 
 
@@ -3946,7 +3931,7 @@ sixth	O
 game	O
 ,	O
 when	O
-Washington	O
+Washington	I-LOC
 ,	O
 after	O
 saving	O
@@ -3994,7 +3979,7 @@ point	O
 for	O
 victory	O
 when	O
-Washington	O
+Washington	I-LOC
 found	O
 the	O
 net	O
@@ -4042,7 +4027,7 @@ moments	O
 ,	O
 "	O
 said	O
-Washington	O
+Washington	I-LOC
 .	O
 "	O
 
@@ -4464,8 +4449,7 @@ razzle-dazzle	O
 "	O
 
 
--DOCSTART-	-X-	O
-
+-DOCSTART-	O
 
 
 NFL	O
@@ -4476,7 +4460,7 @@ RETIRES	O
 .	O
 
 
-PHILADELPHIA	O
+PHILADELPHIA	I-ORG
 1996-08-29	O
 
 
@@ -4521,7 +4505,7 @@ entire	O
 career	O
 with	O
 the	O
-Philadelphia	O
+Philadelphia	I-ORG
 Eagles	O
 .	O
 
@@ -4557,7 +4541,7 @@ the	O
 wonderful	O
 fans	O
 of	O
-Philadelphia	O
+Philadelphia	I-ORG
 for	O
 supporting	O
 me	O
@@ -4635,7 +4619,7 @@ his	O
 11	O
 years	O
 in	O
-Philadelphia	O
+Philadelphia	I-ORG
 ,	O
 Randall	O
 was	O
@@ -4654,7 +4638,7 @@ moments	O
 to	O
 fans	O
 in	O
-Philadelphia	O
+Philadelphia	I-ORG
 as	O
 well	O
 as	O
@@ -4699,8 +4683,7 @@ broadcaster	O
 .	O
 
 
--DOCSTART-	-X-	O
-
+-DOCSTART-	O
 
 
 GOLF	O
@@ -4709,12 +4692,12 @@ LEADING	O
 SCORES	O
 AT	O
 GREATER	O
-MILWAUKEE	O
+MILWAUKEE	I-ORG
 OPEN	O
 .	O
 
 
-MILWAUKEE	O
+MILWAUKEE	I-ORG
 ,	O
 Wisconsin	O
 1996-08-29	O
@@ -4781,7 +4764,7 @@ Waldorf	O
 Jesper	O
 Parnevik	O
 (	O
-Sweden	O
+Sweden	I-LOC
 )	O
 
 
@@ -4792,7 +4775,7 @@ Lancaster	O
 Dave	O
 Barr	O
 (	O
-Canada	O
+Canada	I-LOC
 )	O
 ,	O
 Mike	O
@@ -4829,7 +4812,7 @@ Mayfair	O
 Ken	O
 
 
-Green	O
+Green	I-PER
 ,	O
 Jerry	O
 Kelly	O
@@ -4859,12 +4842,11 @@ Jurgenson	O
 ,	O
 
 
-Bryan	O
+Bryan	I-PER
 Gorman	O
 
 
--DOCSTART-	-X-	O
-
+-DOCSTART-	O
 
 
 GOLF	O
@@ -4873,7 +4855,7 @@ HENKE	O
 TAKES	O
 LEAD	O
 IN	O
-MILWAUKEE	O
+MILWAUKEE	I-ORG
 ,	O
 WOODS	O
 MAKES	O
@@ -4882,7 +4864,7 @@ DEBUT	O
 .	O
 
 
-MILWAUKEE	O
+MILWAUKEE	I-ORG
 ,	O
 Wisconsin	O
 1996-08-29	O
@@ -5192,7 +5174,7 @@ none	O
 since	O
 the	O
 1993	O
-BellSouth	O
+BellSouth	I-ORG
 Classic	O
 .	O
 
@@ -5384,8 +5366,7 @@ off	O
 .	O
 
 
--DOCSTART-	-X-	O
-
+-DOCSTART-	O
 
 
 SOCCER	O
@@ -5403,7 +5384,7 @@ FIFA	O
 .	O
 
 
-MADRID	O
+MADRID	I-LOC
 1996-08-30	O
 
 
@@ -5458,11 +5439,11 @@ excused	O
 his	O
 absence	O
 from	O
-Brazil	O
+Brazil	I-LOC
 's	O
 game	O
 against	O
-Russia	O
+Russia	I-LOC
 ,	O
 on	O
 Wednesday	O
@@ -5498,8 +5479,7 @@ suspension	O
 .	O
 
 
--DOCSTART-	-X-	O
-
+-DOCSTART-	O
 
 
 ATHLETICS	O
@@ -5515,17 +5495,17 @@ CHAMPIONS	O
 .	O
 
 
-Adrian	O
+Adrian	I-PER
 Warner	O
 
 
-BERLIN	O
+BERLIN	I-LOC
 1996-08-30	O
 
 
 American	O
 Dennis	O
-Mitchell	O
+Mitchell	I-PER
 outclassed	O
 Olympic	O
 100	O
@@ -5569,12 +5549,12 @@ sprint	O
 champions	O
 at	O
 the	O
-Berlin	O
+Berlin	I-LOC
 grand	O
 prix	O
 meeting	O
 ,	O
-Mitchell	O
+Mitchell	I-PER
 made	O
 a	O
 brilliant	O
@@ -5616,7 +5596,7 @@ way	O
 to	O
 victory	O
 in	O
-Atlanta	O
+Atlanta	I-LOC
 ,	O
 could	O
 not	O
@@ -5637,10 +5617,10 @@ finish	O
 .	O
 
 
-Jamaica	O
+Jamaica	I-LOC
 's	O
 Michael	O
-Green	O
+Green	I-PER
 was	O
 second	O
 with	O
@@ -5655,14 +5635,14 @@ in	O
 
 Last	O
 Friday	O
-Mitchell	O
+Mitchell	I-PER
 ,	O
 who	O
 finished	O
 fourth	O
 at	O
 the	O
-Atlanta	O
+Atlanta	I-LOC
 Games	O
 ,	O
 upstaged	O
@@ -5696,7 +5676,7 @@ Zurich	O
 .	O
 
 
-Berlin	O
+Berlin	I-LOC
 ,	O
 Brussels	O
 and	O
@@ -5766,7 +5746,7 @@ Olympics	O
 in	O
 the	O
 same	O
-Berlin	O
+Berlin	I-LOC
 stadium	O
 .	O
 
@@ -5784,7 +5764,7 @@ for	O
 me	O
 ,	O
 "	O
-Mitchell	O
+Mitchell	I-PER
 said	O
 .	O
 
@@ -5825,20 +5805,19 @@ in	O
 .	O
 
 
--DOCSTART-	-X-	O
-
+-DOCSTART-	O
 
 
 ATHLETICS	O
 -	O
-BERLIN	O
+BERLIN	I-LOC
 GRAND	O
 PRIX	O
 RESULTS	O
 .	O
 
 
-BERLIN	O
+BERLIN	I-LOC
 1996-08-30	O
 
 
@@ -5846,7 +5825,7 @@ Leading	O
 results	O
 at	O
 the	O
-Berlin	O
+Berlin	I-LOC
 
 
 Grand	O
@@ -5869,7 +5848,7 @@ hurdles	O
 Michelle	O
 Freeman	O
 (	O
-Jamaica	O
+Jamaica	I-LOC
 )	O
 12.71	O
 seconds	O
@@ -5879,16 +5858,16 @@ seconds	O
 Ludmila	O
 Engquist	O
 (	O
-Sweden	O
+Sweden	I-LOC
 )	O
 12.74	O
 
 
 3.	O
 Aliuska	O
-Lopez	O
+Lopez	I-PER
 (	O
-Cuba	O
+Cuba	I-LOC
 )	O
 12.92	O
 
@@ -5897,7 +5876,7 @@ Cuba	O
 Brigita	O
 Bokovec	O
 (	O
-Slovenia	O
+Slovenia	I-LOC
 )	O
 12.92	O
 
@@ -5906,7 +5885,7 @@ Slovenia	O
 Dionne	O
 Rose	O
 (	O
-Jamaica	O
+Jamaica	I-LOC
 )	O
 12.92	O
 
@@ -5915,7 +5894,7 @@ Jamaica	O
 Julie	O
 Baumann	O
 (	O
-Switzerland	O
+Switzerland	I-LOC
 )	O
 13.11	O
 
@@ -5924,7 +5903,7 @@ Switzerland	O
 Gillian	O
 Russell	O
 (	O
-Jamaica	O
+Jamaica	I-LOC
 )	O
 13.17	O
 
@@ -5939,7 +5918,7 @@ metres	O
 Svetlana	O
 Masterkova	O
 (	O
-Russia	O
+Russia	I-LOC
 )	O
 four	O
 minutes	O
@@ -5951,16 +5930,16 @@ seconds	O
 Patricia	O
 Djate-Taillard	O
 (	O
-France	O
+France	I-LOC
 )	O
 4:08.22	O
 
 
 3.	O
 Carla	O
-Sacramento	O
+Sacramento	I-PER
 (	O
-Portugal	O
+Portugal	I-LOC
 )	O
 4:08.96	O
 
@@ -5969,7 +5948,7 @@ Portugal	O
 Yekaterina	O
 Podkopayeva	O
 (	O
-Russia	O
+Russia	I-LOC
 )	O
 4:09.25	O
 
@@ -5978,7 +5957,7 @@ Russia	O
 Leah	O
 Pells	O
 (	O
-Canada	O
+Canada	I-LOC
 )	O
 4:09.95	O
 
@@ -5987,7 +5966,7 @@ Canada	O
 Carmen	O
 Wuestenhagen	O
 (	O
-Germany	O
+Germany	I-LOC
 )	O
 4:10.38	O
 
@@ -5996,7 +5975,7 @@ Germany	O
 Margarita	O
 Maruseva	O
 (	O
-Russia	O
+Russia	I-LOC
 )	O
 4:10.87	O
 
@@ -6040,7 +6019,7 @@ Britain	O
 Florian	O
 Schwarthoff	O
 (	O
-Germany	O
+Germany	I-LOC
 )	O
 13.36	O
 
@@ -6049,7 +6028,7 @@ Germany	O
 Emilio	O
 Valle	O
 (	O
-Cuba	O
+Cuba	I-LOC
 )	O
 13.52	O
 
@@ -6058,7 +6037,7 @@ Cuba	O
 Falk	O
 Balzer	O
 (	O
-Germany	O
+Germany	I-LOC
 )	O
 13.52	O
 
@@ -6076,7 +6055,7 @@ U.S.	O
 Frank	O
 Busemann	O
 (	O
-Germany	O
+Germany	I-LOC
 )	O
 13.58	O
 
@@ -6100,7 +6079,7 @@ metres	O
 Frankie	O
 Fredericks	O
 (	O
-Namibia	O
+Namibia	I-LOC
 )	O
 19.97	O
 seconds	O
@@ -6108,7 +6087,7 @@ seconds	O
 
 2.	O
 Michael	O
-Johnson	O
+Johnson	I-PER
 (	O
 U.S.	O
 )	O
@@ -6119,7 +6098,7 @@ U.S.	O
 Ato	O
 Boldon	O
 (	O
-Trinidad	O
+Trinidad	I-LOC
 )	O
 20.37	O
 
@@ -6128,7 +6107,7 @@ Trinidad	O
 Geir	O
 Moen	O
 (	O
-Norway	O
+Norway	I-LOC
 )	O
 20.41	O
 
@@ -6137,7 +6116,7 @@ Norway	O
 Patrick	O
 Stevens	O
 (	O
-Belgium	O
+Belgium	I-LOC
 )	O
 20.54	O
 
@@ -6155,7 +6134,7 @@ U.S.	O
 Claus	O
 Hirsbro	O
 (	O
-Denmark	O
+Denmark	I-LOC
 )	O
 20.90	O
 
@@ -6164,7 +6143,7 @@ Denmark	O
 Ivan	O
 Garcia	O
 (	O
-Cuba	O
+Cuba	I-LOC
 )	O
 20.96	O
 
@@ -6179,7 +6158,7 @@ put	O
 Astrid	O
 Kumbernuss	O
 (	O
-Germany	O
+Germany	I-LOC
 )	O
 19.89	O
 metres	O
@@ -6189,7 +6168,7 @@ metres	O
 Claudia	O
 Mues	O
 (	O
-Germany	O
+Germany	I-LOC
 )	O
 18.80	O
 
@@ -6198,7 +6177,7 @@ Germany	O
 Irina	O
 Korzhanenko	O
 (	O
-Russia	O
+Russia	I-LOC
 )	O
 18.63	O
 
@@ -6207,7 +6186,7 @@ Russia	O
 Valentina	O
 Fedyushina	O
 (	O
-Russia	O
+Russia	I-LOC
 )	O
 18.55	O
 
@@ -6216,7 +6195,7 @@ Russia	O
 Stephanie	O
 Storp	O
 (	O
-Germany	O
+Germany	I-LOC
 )	O
 18.41	O
 
@@ -6228,9 +6207,9 @@ mile	O
 
 1.	O
 Noureddine	O
-Morceli	O
+Morceli	I-PER
 (	O
-Algeria	O
+Algeria	I-LOC
 )	O
 3	O
 minutes	O
@@ -6242,16 +6221,16 @@ seconds	O
 Venuste	O
 Niyongabo	O
 (	O
-Burundi	O
+Burundi	I-LOC
 )	O
 3:51.01	O
 
 
 3.	O
 William	O
-Tanui	O
+Tanui	I-PER
 (	O
-Kenya	O
+Kenya	I-LOC
 )	O
 3:51.40	O
 
@@ -6260,7 +6239,7 @@ Kenya	O
 Laban	O
 Rotich	O
 (	O
-Kenya	O
+Kenya	I-LOC
 )	O
 3:53.42	O
 
@@ -6269,7 +6248,7 @@ Kenya	O
 Marko	O
 Koers	O
 (	O
-Netherlands	O
+Netherlands	I-LOC
 )	O
 3:53.47	O
 
@@ -6278,7 +6257,7 @@ Netherlands	O
 Isaac	O
 Viciosa	O
 (	O
-Spain	O
+Spain	I-LOC
 )	O
 3:53.85	O
 
@@ -6296,7 +6275,7 @@ Britain	O
 Marcus	O
 O'Sullivan	O
 (	O
-Ireland	O
+Ireland	I-LOC
 )	O
 3:54.87	O
 
@@ -6310,7 +6289,7 @@ discus	O
 Lars	O
 Riedel	O
 (	O
-Germany	O
+Germany	I-LOC
 )	O
 70.60	O
 metres	O
@@ -6318,7 +6297,7 @@ metres	O
 
 2.	O
 Anthony	O
-Washington	O
+Washington	I-LOC
 (	O
 U.S.	O
 )	O
@@ -6329,16 +6308,16 @@ U.S.	O
 Vasily	O
 Kaptyukh	O
 (	O
-Belarus	O
+Belarus	I-LOC
 )	O
 66.24	O
 
 
 4.	O
-Vladimir	O
+Vladimir	I-PER
 Dubrovshchik	O
 (	O
-Belarus	O
+Belarus	I-LOC
 )	O
 65.30	O
 
@@ -6347,7 +6326,7 @@ Belarus	O
 Virgilijus	O
 Alekna	O
 (	O
-Lithuania	O
+Lithuania	I-LOC
 )	O
 65.00	O
 
@@ -6356,7 +6335,7 @@ Lithuania	O
 Juergen	O
 Schult	O
 (	O
-Germany	O
+Germany	I-LOC
 )	O
 64.46	O
 
@@ -6365,7 +6344,7 @@ Germany	O
 Andreas	O
 Seelig	O
 (	O
-Germany	O
+Germany	I-LOC
 )	O
 62.00	O
 
@@ -6374,7 +6353,7 @@ Germany	O
 Michael	O
 Moellenbeck	O
 (	O
-Germany	O
+Germany	I-LOC
 )	O
 58.56	O
 
@@ -6399,7 +6378,7 @@ seconds	O
 Merlene	O
 Ottey	O
 (	O
-Jamaica	O
+Jamaica	I-LOC
 )	O
 10.94	O
 
@@ -6414,10 +6393,10 @@ U.S.	O
 
 
 4.	O
-Mary	O
-Onyali	O
+Mary	I-PER
+Onyali	I-PER
 (	O
-Nigeria	O
+Nigeria	I-LOC
 )	O
 11.14	O
 
@@ -6435,7 +6414,7 @@ U.S.	O
 Chandra	O
 Sturrup	O
 (	O
-Bahamas	O
+Bahamas	I-LOC
 )	O
 11.26	O
 
@@ -6444,7 +6423,7 @@ Bahamas	O
 Irina	O
 Privalova	O
 (	O
-Russia	O
+Russia	I-LOC
 )	O
 11.27	O
 
@@ -6468,7 +6447,7 @@ metres	O
 Gabriela	O
 Szabo	O
 (	O
-Romania	O
+Romania	I-LOC
 )	O
 15	O
 minutes	O
@@ -6478,9 +6457,9 @@ seconds	O
 
 2.	O
 Gete	O
-Wami	O
+Wami	I-PER
 (	O
-Ethiopia	O
+Ethiopia	I-LOC
 )	O
 15:05.21	O
 
@@ -6489,16 +6468,16 @@ Ethiopia	O
 Rose	O
 Cheruiyot	O
 (	O
-Kenya	O
+Kenya	I-LOC
 )	O
 15:05.41	O
 
 
 4.	O
-Annemari	O
+Annemari	I-PER
 Sandell	O
 (	O
-Finland	O
+Finland	I-LOC
 )	O
 15:06.33	O
 
@@ -6507,16 +6486,16 @@ Finland	O
 Tegla	O
 Loroupe	O
 (	O
-Kenya	O
+Kenya	I-LOC
 )	O
 15:08.79	O
 
 
 6.	O
 Gunhild	O
-Halle	O
+Halle	I-LOC
 (	O
-Norway	O
+Norway	I-LOC
 )	O
 15:09.00	O
 
@@ -6525,7 +6504,7 @@ Norway	O
 Pauline	O
 Konga	O
 (	O
-Kenya	O
+Kenya	I-LOC
 )	O
 15:09.74	O
 
@@ -6534,7 +6513,7 @@ Kenya	O
 Sally	O
 Barsosio	O
 (	O
-Kenya	O
+Kenya	I-LOC
 )	O
 15:14.34	O
 
@@ -6547,7 +6526,7 @@ hurdles	O
 
 
 1.	O
-Torrance	O
+Torrance	I-PER
 Zellner	O
 (	O
 U.S.	O
@@ -6560,7 +6539,7 @@ seconds	O
 Samuel	O
 Matete	O
 (	O
-Zambia	O
+Zambia	I-LOC
 )	O
 48.34	O
 
@@ -6576,9 +6555,9 @@ U.S.	O
 
 4.	O
 Fabrizio	O
-Mori	O
+Mori	I-PER
 (	O
-Italy	O
+Italy	I-LOC
 )	O
 49.21	O
 
@@ -6587,7 +6566,7 @@ Italy	O
 Sven	O
 Nylander	O
 (	O
-Sweden	O
+Sweden	I-LOC
 )	O
 49.22	O
 
@@ -6605,7 +6584,7 @@ U.S.	O
 Rohan	O
 Robinson	O
 (	O
-Australia	O
+Australia	I-LOC
 )	O
 49.36	O
 
@@ -6614,7 +6593,7 @@ Australia	O
 Dusan	O
 Kovacs	O
 (	O
-Hungary	O
+Hungary	I-LOC
 )	O
 49.58	O
 
@@ -6629,7 +6608,7 @@ metres	O
 Falilat	O
 Ogunkoya	O
 (	O
-Nigeria	O
+Nigeria	I-LOC
 )	O
 50.31	O
 seconds	O
@@ -6648,7 +6627,7 @@ U.S.	O
 Fatima	O
 Yusuf	O
 (	O
-Nigeria	O
+Nigeria	I-LOC
 )	O
 51.43	O
 
@@ -6657,16 +6636,16 @@ Nigeria	O
 Anja	O
 Ruecker	O
 (	O
-Germany	O
+Germany	I-LOC
 )	O
 51.61	O
 
 
 5.	O
 Olabisi	O
-Afolabi	O
+Afolabi	I-PER
 (	O
-Nigeria	O
+Nigeria	I-LOC
 )	O
 51.98	O
 
@@ -6681,10 +6660,10 @@ Britain	O
 
 
 7.	O
-Linda	O
+Linda	I-PER
 Kisabaka	O
 (	O
-Germany	O
+Germany	I-LOC
 )	O
 52.41	O
 
@@ -6693,7 +6672,7 @@ Germany	O
 Karin	O
 Janke	O
 (	O
-Germany	O
+Germany	I-LOC
 )	O
 53.13	O
 
@@ -6706,7 +6685,7 @@ metres	O
 
 1.	O
 Dennis	O
-Mitchell	O
+Mitchell	I-PER
 (	O
 U.S.	O
 )	O
@@ -6715,9 +6694,9 @@ U.S.	O
 
 2.	O
 Michael	O
-Green	O
+Green	I-PER
 (	O
-Jamaica	O
+Jamaica	I-LOC
 )	O
 10.09	O
 
@@ -6726,7 +6705,7 @@ Jamaica	O
 Donovan	O
 Bailey	O
 (	O
-Canada	O
+Canada	I-LOC
 )	O
 10.13	O
 
@@ -6744,7 +6723,7 @@ U.S.	O
 Davidson	O
 Ezinwa	O
 (	O
-Nigeria	O
+Nigeria	I-LOC
 )	O
 10.24	O
 
@@ -6753,7 +6732,7 @@ Nigeria	O
 Geir	O
 Moen	O
 (	O
-Norway	O
+Norway	I-LOC
 )	O
 10.33	O
 
@@ -6762,7 +6741,7 @@ Norway	O
 Marc	O
 Blume	O
 (	O
-Germany	O
+Germany	I-LOC
 )	O
 10.48	O
 
@@ -6774,19 +6753,19 @@ metres	O
 
 
 1.	O
-Wilson	O
+Wilson	I-PER
 Kipketer	O
 (	O
-Denmark	O
+Denmark	I-LOC
 )	O
 1:43.34	O
 
 
 2.	O
 Norberto	O
-Tellez	O
+Tellez	I-PER
 (	O
-Cuba	O
+Cuba	I-LOC
 )	O
 1:44.58	O
 
@@ -6795,7 +6774,7 @@ Cuba	O
 Sammy	O
 Langat	O
 (	O
-Kenya	O
+Kenya	I-LOC
 )	O
 1:44.96	O
 
@@ -6804,25 +6783,25 @@ Kenya	O
 Nico	O
 Motchebon	O
 (	O
-Germany	O
+Germany	I-LOC
 )	O
 1:45.03	O
 
 
 5.	O
-David	O
+David	I-PER
 Kiptoo	O
 (	O
-Kenya	O
+Kenya	I-LOC
 )	O
 1:45.27	O
 
 
 6.	O
 Adem	O
-Hacini	O
+Hacini	I-PER
 (	O
-Algeria	O
+Algeria	I-LOC
 )	O
 1:45.64	O
 
@@ -6831,7 +6810,7 @@ Algeria	O
 Vebjoen	O
 Rodal	O
 (	O
-Norway	O
+Norway	I-LOC
 )	O
 1:46.45	O
 
@@ -6852,10 +6831,10 @@ vault	O
 
 
 1=	O
-Andrei	O
+Andrei	I-PER
 Tiwontschik	O
 (	O
-Germany	O
+Germany	I-LOC
 )	O
 5.86	O
 
@@ -6864,7 +6843,7 @@ Germany	O
 Igor	O
 Trandenkov	O
 (	O
-Russia	O
+Russia	I-LOC
 )	O
 5.86	O
 
@@ -6873,7 +6852,7 @@ Russia	O
 Maksim	O
 Tarasov	O
 (	O
-Russia	O
+Russia	I-LOC
 )	O
 5.86	O
 
@@ -6882,7 +6861,7 @@ Russia	O
 Tim	O
 Lobinger	O
 (	O
-Germany	O
+Germany	I-LOC
 )	O
 5.80	O
 
@@ -6900,7 +6879,7 @@ Kazakstan	O
 Jean	O
 Galfione	O
 (	O
-France	O
+France	I-LOC
 )	O
 5.65	O
 
@@ -6909,7 +6888,7 @@ France	O
 Pyotr	O
 Bochkary	O
 (	O
-Russia	O
+Russia	I-LOC
 )	O
 5.65	O
 
@@ -6918,7 +6897,7 @@ Russia	O
 Dmitri	O
 Markov	O
 (	O
-Belarus	O
+Belarus	I-LOC
 )	O
 5.65	O
 
@@ -6933,7 +6912,7 @@ jump	O
 Stefka	O
 Kostadinova	O
 (	O
-Bulgaria	O
+Bulgaria	I-LOC
 )	O
 2.03	O
 
@@ -6942,7 +6921,7 @@ Bulgaria	O
 Inga	O
 Babakova	O
 (	O
-Ukraine	O
+Ukraine	I-LOC
 )	O
 2.00	O
 metres	O
@@ -6950,9 +6929,9 @@ metres	O
 
 3.	O
 Alina	O
-Astafei	O
+Astafei	I-PER
 (	O
-Germany	O
+Germany	I-LOC
 )	O
 1.97	O
 
@@ -6961,7 +6940,7 @@ Germany	O
 Tatyana	O
 Motkova	O
 (	O
-Russia	O
+Russia	I-LOC
 )	O
 1.97	O
 
@@ -6970,7 +6949,7 @@ Russia	O
 Hanne	O
 Haugland	O
 (	O
-Norway	O
+Norway	I-LOC
 )	O
 1.91	O
 
@@ -6979,7 +6958,7 @@ Norway	O
 Nele	O
 Zilinskiene	O
 (	O
-Lithuania	O
+Lithuania	I-LOC
 )	O
 1.91	O
 
@@ -6988,7 +6967,7 @@ Lithuania	O
 Yelena	O
 Gulyayeva	O
 (	O
-Russia	O
+Russia	I-LOC
 )	O
 1.91	O
 
@@ -6997,7 +6976,7 @@ Russia	O
 Natalya	O
 Golodnova	O
 (	O
-Russia	O
+Russia	I-LOC
 )	O
 1.85	O
 
@@ -7012,7 +6991,7 @@ metres	O
 Daniel	O
 Komen	O
 (	O
-Kenya	O
+Kenya	I-LOC
 )	O
 13	O
 minutes	O
@@ -7033,7 +7012,7 @@ U.S.	O
 Paul	O
 Koech	O
 (	O
-Kenya	O
+Kenya	I-LOC
 )	O
 13:06.45	O
 
@@ -7041,9 +7020,9 @@ Kenya	O
 4.	O
 El	O
 Hassane	O
-Lahssini	O
+Lahssini	I-PER
 (	O
-Morocco	O
+Morocco	I-LOC
 )	O
 13:06.57	O
 
@@ -7052,25 +7031,25 @@ Morocco	O
 Shem	O
 Kororia	O
 (	O
-Kenya	O
+Kenya	I-LOC
 )	O
 13:06.65	O
 
 
 6.	O
 Brahim	O
-Lahlafi	O
+Lahlafi	I-PER
 (	O
-Morocco	O
+Morocco	I-LOC
 )	O
 13:08.05	O
 
 
 7.	O
 Tom	O
-Nyariki	O
+Nyariki	I-PER
 (	O
-Kenya	O
+Kenya	I-LOC
 )	O
 13:20.12	O
 
@@ -7079,7 +7058,7 @@ Kenya	O
 Fita	O
 Bayissa	O
 (	O
-Ethiopia	O
+Ethiopia	I-LOC
 )	O
 13:21.35	O
 
@@ -7102,16 +7081,16 @@ metres	O
 
 2.	O
 Yoelvis	O
-Quesada	O
+Quesada	I-PER
 (	O
-Cuba	O
+Cuba	I-LOC
 )	O
 17.44	O
 
 
 3.	O
 Kenny	O
-Harrison	O
+Harrison	I-PER
 (	O
 U.S.	O
 )	O
@@ -7131,7 +7110,7 @@ U.S.	O
 Armen	O
 Martirosyan	O
 (	O
-Armenia	O
+Armenia	I-LOC
 )	O
 16.57	O
 
@@ -7140,7 +7119,7 @@ Armenia	O
 Sigurd	O
 Njerve	O
 (	O
-Norway	O
+Norway	I-LOC
 )	O
 16.41	O
 
@@ -7149,7 +7128,7 @@ Norway	O
 Carlos	O
 Calado	O
 (	O
-Portugal	O
+Portugal	I-LOC
 )	O
 16.31	O
 
@@ -7158,7 +7137,7 @@ Portugal	O
 Charles-Michael	O
 Friedek	O
 (	O
-Germany	O
+Germany	I-LOC
 )	O
 16.12	O
 
@@ -7172,7 +7151,7 @@ javelin	O
 Tanja	O
 Damaske	O
 (	O
-Germany	O
+Germany	I-LOC
 )	O
 66.60	O
 metres	O
@@ -7182,25 +7161,25 @@ metres	O
 Trine	O
 Hattesta	O
 (	O
-Norway	O
+Norway	I-LOC
 )	O
 65.12	O
 
 
 3.	O
 Isel	O
-Lopez	O
+Lopez	I-PER
 (	O
-Cuba	O
+Cuba	I-LOC
 )	O
 65.10	O
 
 
 4.	O
-Heli	O
+Heli	I-PER
 Rantanen	O
 (	O
-Finland	O
+Finland	I-LOC
 )	O
 62.78	O
 
@@ -7209,7 +7188,7 @@ Finland	O
 Louise	O
 McPaul	O
 (	O
-Australia	O
+Australia	I-LOC
 )	O
 62.06	O
 
@@ -7218,7 +7197,7 @@ Australia	O
 Xiomara	O
 Rivero	O
 (	O
-Cuba	O
+Cuba	I-LOC
 )	O
 61.94	O
 
@@ -7227,7 +7206,7 @@ Cuba	O
 Natalya	O
 Shikolen	O
 (	O
-Belarus	O
+Belarus	I-LOC
 )	O
 60.74	O
 
@@ -7236,7 +7215,7 @@ Belarus	O
 Rita	O
 Ramaunaskaite	O
 (	O
-Lithuania	O
+Lithuania	I-LOC
 )	O
 60.74	O
 
@@ -7255,11 +7234,11 @@ race	O
 Donovan	O
 Bailey	O
 (	O
-Canada	O
+Canada	I-LOC
 )	O
 ,	O
 Michael	O
-Johnson	O
+Johnson	I-PER
 (	O
 U.S.	O
 )	O
@@ -7269,7 +7248,7 @@ Frankie	O
 
 Fredericks	O
 (	O
-Namibia	O
+Namibia	I-LOC
 )	O
 ,	O
 Linford	O
@@ -7283,15 +7262,15 @@ seconds	O
 
 2.	O
 Michael	O
-Green	O
+Green	I-PER
 (	O
-Jamaica	O
+Jamaica	I-LOC
 )	O
 ,	O
 Osmond	O
 Ezinwa	O
 (	O
-Nigeria	O
+Nigeria	I-LOC
 )	O
 ,	O
 Oeji	O
@@ -7299,13 +7278,13 @@ Aliu	O
 
 
 (	O
-Nigeria	O
+Nigeria	I-LOC
 )	O
 ,	O
 Davidson	O
 Ezinwa	O
 (	O
-Nigeria	O
+Nigeria	I-LOC
 )	O
 38.87	O
 
@@ -7314,13 +7293,13 @@ Nigeria	O
 Peter	O
 Karlsson	O
 (	O
-Sweden	O
+Sweden	I-LOC
 )	O
 ,	O
 Falk	O
 Balzer	O
 (	O
-Germany	O
+Germany	I-LOC
 )	O
 ,	O
 George	O
@@ -7328,19 +7307,18 @@ George	O
 
 Panayiotopoulos	O
 (	O
-Greece	O
+Greece	I-LOC
 )	O
 ,	O
 Florian	O
 Schwarthoff	O
 (	O
-Germany	O
+Germany	I-LOC
 )	O
 39.93	O
 
 
--DOCSTART-	-X-	O
-
+-DOCSTART-	O
 
 
 SOCCER	O
@@ -7356,7 +7334,7 @@ FINED	O
 .	O
 
 
-GENEVA	O
+GENEVA	I-LOC
 1996-08-30	O
 
 
@@ -7384,7 +7362,7 @@ match	O
 against	O
 Karlsruhe	O
 of	O
-Germany	O
+Germany	I-LOC
 .	O
 
 
@@ -7434,7 +7412,7 @@ protest	O
 
 
 Roberto	O
-Bisconti	O
+Bisconti	I-PER
 will	O
 be	O
 sidelined	O
@@ -7478,7 +7456,7 @@ dismissed	O
 .	O
 
 
-Karlsruhe	O
+Karlsruhe	I-ORG
 won	O
 the	O
 August	O
@@ -7509,19 +7487,18 @@ Cup	O
 .	O
 
 
--DOCSTART-	-X-	O
-
+-DOCSTART-	O
 
 
 ATHLETICS	O
 -	O
-HARRISON	O
+HARRISON	I-LOC
 ,	O
 EDWARDS	O
 TO	O
 MEET	O
 IN	O
-SARAJEVO	O
+SARAJEVO	I-LOC
 .	O
 
 
@@ -7533,7 +7510,7 @@ CARLO	O
 Olympic	O
 champion	O
 Kenny	O
-Harrison	O
+Harrison	I-PER
 and	O
 world	O
 record	O
@@ -7554,7 +7531,7 @@ the	O
 Solidarity	O
 Meeting	O
 for	O
-Sarajevo	O
+Sarajevo	I-LOC
 on	O
 September	O
 9	O
@@ -7606,7 +7583,7 @@ stadium	O
 .	O
 
 
-Atlanta	O
+Atlanta	I-LOC
 Games	O
 silver	O
 medal	O
@@ -7623,7 +7600,7 @@ take	O
 part	O
 in	O
 the	O
-Sarajevo	O
+Sarajevo	I-LOC
 meeting	O
 --	O
 a	O
@@ -7693,7 +7670,7 @@ make	O
 the	O
 trip	O
 to	O
-Sarajevo	O
+Sarajevo	I-LOC
 as	O
 a	O
 humanitarian	O
@@ -7702,8 +7679,7 @@ gesture	O
 "	O
 
 
--DOCSTART-	-X-	O
-
+-DOCSTART-	O
 
 
 SOCCER	O
@@ -7715,9 +7691,9 @@ NICE	O
 .	O
 
 
-NICE	O
+NICE	I-ORG
 ,	O
-France	O
+France	I-LOC
 1996-08-30	O
 
 
@@ -7744,7 +7720,7 @@ Friday	O
 .	O
 
 
-Baratelli	O
+Baratelli	I-PER
 ,	O
 who	O
 played	O
@@ -7806,8 +7782,7 @@ table	O
 .	O
 
 
--DOCSTART-	-X-	O
-
+-DOCSTART-	O
 
 
 SOCCER	O
@@ -7830,7 +7805,7 @@ Italian	O
 international	O
 winger	O
 Gianluigi	O
-Lentini	O
+Lentini	I-PER
 ,	O
 transferred	O
 to	O
@@ -7950,7 +7925,7 @@ him	O
 a	O
 hero	O
 in	O
-Turin	O
+Turin	I-LOC
 .	O
 
 
@@ -7960,7 +7935,7 @@ to	O
 Bergamo-based	O
 Atalanta	O
 reunites	O
-Lentini	O
+Lentini	I-PER
 ,	O
 who	O
 fell	O
@@ -7985,8 +7960,7 @@ Mondonico	O
 .	O
 
 
--DOCSTART-	-X-	O
-
+-DOCSTART-	O
 
 
 CRICKET	O
@@ -7994,21 +7968,21 @@ CRICKET	O
 SRI	O
 LANKA	O
 BEAT	O
-AUSTRALIA	O
+AUSTRALIA	I-LOC
 BY	O
 FOUR	O
 WICKETS	O
 .	O
 
 
-COLOMBO	O
+COLOMBO	I-LOC
 1996-08-30	O
 
 
-Sri	O
+Sri	I-PER
 Lanka	O
 beat	O
-Australia	O
+Australia	I-LOC
 by	O
 four	O
 wickets	O
@@ -8035,7 +8009,7 @@ Friday	O
 
 Scores	O
 :	O
-Australia	O
+Australia	I-LOC
 228-9	O
 in	O
 50	O
@@ -8050,13 +8024,12 @@ overs	O
 .	O
 
 
--DOCSTART-	-X-	O
-
+-DOCSTART-	O
 
 
 CRICKET	O
 -	O
-AUSTRALIA	O
+AUSTRALIA	I-LOC
 V	O
 SRI	O
 LANKA	O
@@ -8064,7 +8037,7 @@ SCOREBOARD	O
 .	O
 
 
-COLOMBO	O
+COLOMBO	I-LOC
 1996-08-30	O
 
 
@@ -8080,7 +8053,7 @@ Series	O
 cricket	O
 match	O
 between	O
-Australia	O
+Australia	I-LOC
 and	O
 Sri	O
 Lanka	O
@@ -8091,7 +8064,7 @@ Friday	O
 :	O
 
 
-Australia	O
+Australia	I-LOC
 
 
 M.	O
@@ -8249,7 +8222,7 @@ Chandana	O
 .	O
 
 
-Sri	O
+Sri	I-PER
 Lanka	O
 
 
@@ -8407,7 +8380,7 @@ Next	O
 Series	O
 match	O
 :	O
-India	O
+India	I-LOC
 v	O
 Zimbabwe	O
 ,	O
@@ -8416,13 +8389,12 @@ September	O
 .	O
 
 
--DOCSTART-	-X-	O
-
+-DOCSTART-	O
 
 
 CRICKET	O
 -	O
-AUSTRALIA	O
+AUSTRALIA	I-LOC
 228-9	O
 IN	O
 50	O
@@ -8433,11 +8405,11 @@ LANKA	O
 .	O
 
 
-COLOMBO	O
+COLOMBO	I-LOC
 1996-08-30	O
 
 
-Australia	O
+Australia	I-LOC
 scored	O
 228	O
 for	O
@@ -8468,13 +8440,12 @@ Friday	O
 .	O
 
 
--DOCSTART-	-X-	O
-
+-DOCSTART-	O
 
 
 CRICKET	O
 -	O
-AUSTRALIA	O
+AUSTRALIA	I-LOC
 WIN	O
 TOSS	O
 AND	O
@@ -8484,11 +8455,11 @@ BAT	O
 .	O
 
 
-COLOMBO	O
+COLOMBO	I-LOC
 1996-08-30	O
 
 
-Australia	O
+Australia	I-LOC
 won	O
 the	O
 toss	O
@@ -8528,7 +8499,7 @@ Teams	O
 :	O
 
 
-Australia	O
+Australia	I-LOC
 -	O
 Ian	O
 Healy	O
@@ -8574,7 +8545,7 @@ Waugh	O
 .	O
 
 
-Sri	O
+Sri	I-PER
 Lanka	O
 -	O
 Arjuna	O
@@ -8622,11 +8593,10 @@ Chandana	O
 .	O
 
 
--DOCSTART-	-X-	O
+-DOCSTART-	O
 
 
-
-ROMANIA	O
+ROMANIA	I-LOC
 COMELF	O
 H1	O
 PROFIT	O
@@ -8921,7 +8891,7 @@ realistic	O
 
 
 --	O
-Luli	O
+Luli	I-PER
 Popescu	O
 ,	O
 Bucharest	O
@@ -8930,8 +8900,7 @@ Newsroom	O
 3120264	O
 
 
--DOCSTART-	-X-	O
-
+-DOCSTART-	O
 
 
 POLISH	O
@@ -8944,7 +8913,7 @@ OPERATION	O
 .	O
 
 
-WARSAW	O
+WARSAW	I-LOC
 1996-08-30	O
 
 
@@ -8974,7 +8943,7 @@ said	O
 
 
 --	O
-Warsaw	O
+Warsaw	I-ORG
 Newsroom	O
 +48	O
 22	O
@@ -8982,11 +8951,10 @@ Newsroom	O
 9700	O
 
 
--DOCSTART-	-X-	O
+-DOCSTART-	O
 
 
-
-Canada	O
+Canada	I-LOC
 government	O
 cash	O
 balances	O
@@ -8996,14 +8964,14 @@ week	O
 .	O
 
 
-OTTAWA	O
+OTTAWA	I-LOC
 1996-08-30	O
 
 
 The	O
 government	O
 of	O
-Canada	O
+Canada	I-LOC
 's	O
 cash	O
 balances	O
@@ -9019,7 +8987,7 @@ August	O
 the	O
 Bank	O
 of	O
-Canada	O
+Canada	I-LOC
 said	O
 on	O
 Friday	O
@@ -9071,7 +9039,7 @@ bills	O
 11.900	O
 
 
-Canada	O
+Canada	I-LOC
 savings	O
 bonds	O
 30.12	O
@@ -9160,7 +9128,7 @@ dollars	O
 
 --	O
 Reuters	O
-Ottawa	O
+Ottawa	I-LOC
 Bureau	O
 (	O
 613	O
@@ -9168,8 +9136,7 @@ Bureau	O
 235-6745	O
 
 
--DOCSTART-	-X-	O
-
+-DOCSTART-	O
 
 
 Jones	O
@@ -9251,15 +9218,14 @@ hypothyroidism	O
 
 
 --	O
-Chicago	O
+Chicago	I-LOC
 newsdesk	O
 ,	O
 312	O
 408-8787	O
 
 
--DOCSTART-	-X-	O
-
+-DOCSTART-	O
 
 
 NYMEX	O
@@ -9273,8 +9239,8 @@ pre-close	O
 .	O
 
 
-NEW	O
-YORK	O
+NEW	I-LOC
+YORK	I-LOC
 1996-08-30	O
 
 
@@ -9521,7 +9487,7 @@ Harry	O
 Milling	O
 ,	O
 New	O
-York	O
+York	I-LOC
 Energy	O
 Desk	O
 ,	O
@@ -9529,8 +9495,7 @@ Desk	O
 212-859-1761	O
 
 
--DOCSTART-	-X-	O
-
+-DOCSTART-	O
 
 
 U.S.	O
@@ -9546,7 +9511,7 @@ NAPM	O
 .	O
 
 
-CHICAGO	O
+CHICAGO	I-ORG
 1996-08-30	O
 
 
@@ -9586,7 +9551,7 @@ NAPM	O
 index	O
 for	O
 the	O
-Chicago	O
+Chicago	I-LOC
 area	O
 ,	O
 traders	O
@@ -9598,7 +9563,7 @@ said	O
 
 The	O
 August	O
-Chicago	O
+Chicago	I-LOC
 NAPM	O
 rose	O
 8.8	O
@@ -9764,7 +9729,7 @@ Rumors	O
 circulated	O
 that	O
 the	O
-Federal	O
+Federal	I-ORG
 Reserve	O
 was	O
 buying	O
@@ -9891,7 +9856,7 @@ the	O
 theory	O
 that	O
 the	O
-Federal	O
+Federal	I-ORG
 Reserve	O
 would	O
 tighten	O
@@ -9899,7 +9864,7 @@ rates	O
 before	O
 the	O
 next	O
-Federal	O
+Federal	I-ORG
 Open	O
 Market	O
 Committee	O
@@ -9910,10 +9875,10 @@ September	O
 .	O
 
 
-Federal	O
+Federal	I-ORG
 Reserve	O
 governor	O
-Lawrence	O
+Lawrence	I-PER
 Lindsey	O
 ,	O
 speaking	O
@@ -9966,7 +9931,7 @@ said	O
 at	O
 the	O
 annual	O
-Jackson	O
+Jackson	I-PER
 Hole	O
 symposium	O
 that	O
@@ -10113,11 +10078,10 @@ at	O
 .	O
 
 
--DOCSTART-	-X-	O
+-DOCSTART-	O
 
 
-
-Douglas	O
+Douglas	I-ORG
 &	O
 Lomason	O
 shares	O
@@ -10127,7 +10091,7 @@ merger	O
 .	O
 
 
-FARMINGTON	O
+FARMINGTON	I-LOC
 HILLS	O
 ,	O
 Mich	O
@@ -10165,7 +10129,7 @@ to	O
 be	O
 acquired	O
 by	O
-Magna	O
+Magna	I-LOC
 International	O
 Inc	O
 for	O
@@ -10181,7 +10145,7 @@ million	O
 .	O
 
 
-Magna	O
+Magna	I-LOC
 was	O
 up	O
 1/8	O
@@ -10190,13 +10154,13 @@ to	O
 on	O
 the	O
 New	O
-York	O
+York	I-LOC
 Stock	O
 Exchange	O
 .	O
 
 
-Douglas	O
+Douglas	I-ORG
 &	O
 Lomason	O
 has	O
@@ -10252,7 +10216,7 @@ to	O
 better	O
 compete	O
 with	O
-Johnson	O
+Johnson	I-PER
 Controls	O
 Inc	O
 and	O
@@ -10356,7 +10320,7 @@ to	O
 stay	O
 on	O
 with	O
-Magna	O
+Magna	I-LOC
 after	O
 the	O
 merger	O
@@ -10373,7 +10337,7 @@ defined	O
 .	O
 
 
-Douglas	O
+Douglas	I-ORG
 &	O
 Lomason	O
 's	O
@@ -10497,7 +10461,7 @@ Co	O
 It	O
 should	O
 give	O
-Magna	O
+Magna	I-LOC
 the	O
 critical	O
 mass	O
@@ -10513,7 +10477,7 @@ market	O
 "	O
 
 
-Magna	O
+Magna	I-LOC
 's	O
 traditional	O
 strength	O
@@ -10531,9 +10495,9 @@ components	O
 .	O
 
 
-Magna	O
+Magna	I-LOC
 ,	O
-Johnson	O
+Johnson	I-PER
 Controls	O
 and	O
 Lear	O
@@ -10566,8 +10530,7 @@ headliners	O
 .	O
 
 
--DOCSTART-	-X-	O
-
+-DOCSTART-	O
 
 
 UK	O
@@ -10575,7 +10538,7 @@ meals	O
 /	O
 feeds	O
 follow	O
-Chicago	O
+Chicago	I-LOC
 higher	O
 ,	O
 trade	O
@@ -10583,7 +10546,7 @@ slow	O
 .	O
 
 
-LONDON	O
+LONDON	I-LOC
 1996-08-30	O
 
 
@@ -10608,7 +10571,7 @@ Friday	O
 following	O
 gains	O
 in	O
-Chicago	O
+Chicago	I-LOC
 at	O
 Thursday	O
 's	O
@@ -10693,7 +10656,7 @@ trader	O
 Jim	O
 Ballantyne	O
 ,	O
-London	O
+London	I-LOC
 Newsroom	O
 +44	O
 171	O
@@ -10701,8 +10664,7 @@ Newsroom	O
 8062	O
 
 
--DOCSTART-	-X-	O
-
+-DOCSTART-	O
 
 
 Iraqi	O
@@ -10716,7 +10678,7 @@ hijack	O
 .	O
 
 
-LONDON	O
+LONDON	I-LOC
 1996-08-30	O
 
 
@@ -10737,7 +10699,7 @@ it	O
 to	O
 fly	O
 to	O
-London	O
+London	I-LOC
 were	O
 on	O
 Friday	O
@@ -10876,7 +10838,7 @@ being	O
 sent	O
 back	O
 to	O
-Iraq	O
+Iraq	I-LOC
 .	O
 
 
@@ -10898,7 +10860,7 @@ it	O
 took	O
 off	O
 from	O
-Khartoum	O
+Khartoum	I-LOC
 .	O
 
 
@@ -10920,7 +10882,7 @@ they	O
 were	O
 taken	O
 to	O
-London	O
+London	I-LOC
 .	O
 
 
@@ -10946,8 +10908,7 @@ explosives	O
 .	O
 
 
--DOCSTART-	-X-	O
-
+-DOCSTART-	O
 
 
 Late	O
@@ -10957,7 +10918,7 @@ prices	O
 .	O
 
 
-LONDON	O
+LONDON	I-LOC
 1996-08-30	O
 
 
@@ -11017,7 +10978,7 @@ Bund	O
 future	O
 on	O
 the	O
-London	O
+London	I-LOC
 International	O
 Financial	O
 Futures	O
@@ -11073,7 +11034,7 @@ shock	O
 rise	O
 in	O
 the	O
-Chicago	O
+Chicago	I-LOC
 PMI	O
 pulled	O
 gilts	O
@@ -11124,7 +11085,7 @@ price	O
 .	O
 
 
-FRANCE	O
+FRANCE	I-LOC
 -	O
 Bond	O
 and	O
@@ -11168,7 +11129,7 @@ price	O
 .	O
 
 
-ITALY	O
+ITALY	I-LOC
 -	O
 Bond	O
 futures	O
@@ -11236,7 +11197,7 @@ after	O
 a	O
 surprisingly	O
 strong	O
-Chicago	O
+Chicago	I-LOC
 Purchasing	O
 Managers	O
 '	O
@@ -11292,7 +11253,7 @@ percent	O
 .	O
 
 
-JAPAN	O
+JAPAN	I-LOC
 -	O
 Yield	O
 for	O
@@ -11372,7 +11333,7 @@ settlement	O
 price	O
 on	O
 the	O
-Tokyo	O
+Tokyo	I-LOC
 Stock	O
 Exchange	O
 .	O
@@ -11459,7 +11420,7 @@ bond	O
 
 Next	O
 week	O
-Kansai	O
+Kansai	I-PER
 Electric	O
 Power	O
 and	O
@@ -11476,8 +11437,7 @@ deals	O
 .	O
 
 
--DOCSTART-	-X-	O
-
+-DOCSTART-	O
 
 
 Boxing-Bruno	O
@@ -11489,7 +11449,7 @@ advice	O
 .	O
 
 
-LONDON	O
+LONDON	I-LOC
 1996-08-30	O
 
 
@@ -11658,7 +11618,7 @@ eye	O
 
 
 Professor	O
-David	O
+David	I-PER
 McLeod	O
 ,	O
 who	O
@@ -11809,8 +11769,7 @@ punches	O
 .	O
 
 
--DOCSTART-	-X-	O
-
+-DOCSTART-	O
 
 
 Soccer	O
@@ -11820,11 +11779,11 @@ names	O
 team	O
 to	O
 play	O
-Liechtenstein	O
+Liechtenstein	I-LOC
 .	O
 
 
-DUBLIN	O
+DUBLIN	I-LOC
 1996-08-30	O
 
 
@@ -11840,7 +11799,7 @@ the	O
 team	O
 to	O
 play	O
-Liechtenstein	O
+Liechtenstein	I-LOC
 in	O
 Saturday	O
 's	O
@@ -11851,9 +11810,9 @@ match	O
 .	O
 
 
-Birmingham	O
+Birmingham	I-ORG
 's	O
-Gary	O
+Gary	I-PER
 Breen	O
 was	O
 selected	O
@@ -11879,7 +11838,7 @@ debut	O
 Keith	O
 O'Neill	O
 of	O
-Norwich	O
+Norwich	I-ORG
 City	O
 joins	O
 Niall	O
@@ -11901,7 +11860,7 @@ Given	O
 ,	O
 Breen	O
 ,	O
-Staunton	O
+Staunton	I-PER
 ,	O
 Irwin	O
 ,	O
@@ -11922,7 +11881,7 @@ O'Neill	O
 
 
 --	O
-Dublin	O
+Dublin	I-LOC
 Newsroom	O
 +353	O
 1	O
@@ -11930,8 +11889,7 @@ Newsroom	O
 9779	O
 
 
--DOCSTART-	-X-	O
-
+-DOCSTART-	O
 
 
 Nigerian	O
@@ -11945,7 +11903,7 @@ loot	O
 .	O
 
 
-LAGOS	O
+LAGOS	I-LOC
 1996-08-30	O
 
 
@@ -11955,7 +11913,7 @@ of	O
 thieves	O
 in	O
 eastern	O
-Nigeria	O
+Nigeria	I-LOC
 paid	O
 a	O
 police	O
@@ -11997,7 +11955,7 @@ the	O
 News	O
 Agency	O
 of	O
-Nigeria	O
+Nigeria	I-LOC
 quoted	O
 the	O
 unnamed	O
@@ -12084,8 +12042,7 @@ naira	O
 )	O
 
 
--DOCSTART-	-X-	O
-
+-DOCSTART-	O
 
 
 East	O
@@ -12197,7 +12154,7 @@ month	O
 
 
 --	O
-Johannesburg	O
+Johannesburg	I-LOC
 newsroom	O
 ,	O
 +27-11	O
@@ -12205,8 +12162,7 @@ newsroom	O
 1003	O
 
 
--DOCSTART-	-X-	O
-
+-DOCSTART-	O
 
 
 Chad	O
@@ -12218,18 +12174,18 @@ protests	O
 .	O
 
 
-N'DJAMENA	O
+N'DJAMENA	I-LOC
 1996-08-30	O
 
 
 The	O
 government	O
 of	O
-Chad	O
+Chad	I-LOC
 has	O
 closed	O
 N'Djamena	O
-University	O
+University	I-ORG
 after	O
 two	O
 days	O
@@ -12366,8 +12322,7 @@ said	O
 .	O
 
 
--DOCSTART-	-X-	O
-
+-DOCSTART-	O
 
 
 Yeltsin	O
@@ -12402,7 +12357,7 @@ who	O
 is	O
 vacationing	O
 outside	O
-Moscow	O
+Moscow	I-LOC
 ,	O
 had	O
 backed	O
@@ -12563,7 +12518,7 @@ conflict	O
 .	O
 
 
-Moscow	O
+Moscow	I-LOC
 ,	O
 which	O
 wants	O
@@ -12601,7 +12556,7 @@ any	O
 deal	O
 should	O
 preserve	O
-Russia	O
+Russia	I-LOC
 's	O
 territorial	O
 integrity	O
@@ -12704,8 +12659,7 @@ work	O
 .	O
 
 
--DOCSTART-	-X-	O
-
+-DOCSTART-	O
 
 
 Lebed	O
@@ -12718,9 +12672,9 @@ deal	O
 .	O
 
 
-KHASAVYURT	O
+KHASAVYURT	I-ORG
 ,	O
-Russia	O
+Russia	I-LOC
 1996-08-31	O
 
 
@@ -12902,7 +12856,7 @@ in	O
 late	O
 1994	O
 after	O
-Moscow	O
+Moscow	I-LOC
 sent	O
 troops	O
 to	O
@@ -12915,7 +12869,7 @@ bid	O
 
 
 But	O
-Russia	O
+Russia	I-LOC
 failed	O
 to	O
 win	O
@@ -12981,8 +12935,7 @@ talks	O
 .	O
 
 
--DOCSTART-	-X-	O
-
+-DOCSTART-	O
 
 
 Ruling	O
@@ -12994,7 +12947,7 @@ boycott	O
 .	O
 
 
-SARAJEVO	O
+SARAJEVO	I-LOC
 1996-08-30	O
 
 
@@ -13237,11 +13190,10 @@ cleansing	O
 .	O
 
 
--DOCSTART-	-X-	O
+-DOCSTART-	O
 
 
-
-Belgrade	O
+Belgrade	I-LOC
 airport	O
 runway	O
 repairs	O
@@ -13254,7 +13206,7 @@ BELGRADE	O
 1996-08-30	O
 
 
-Belgrade	O
+Belgrade	I-LOC
 's	O
 main	O
 airport	O
@@ -13399,7 +13351,7 @@ during	O
 this	O
 period	O
 ,	O
-Federal	O
+Federal	I-ORG
 Air	O
 Traffic	O
 Control	O
@@ -13415,15 +13367,14 @@ said	O
 Amra	O
 Kevic	O
 ,	O
-Belgrade	O
+Belgrade	I-LOC
 newsroom	O
 +381	O
 11	O
 2224305	O
 
 
--DOCSTART-	-X-	O
-
+-DOCSTART-	O
 
 
 Top	O
@@ -13438,13 +13389,13 @@ Larisa	O
 Sayenko	O
 
 
-MINSK	O
+MINSK	I-ORG
 1996-08-30	O
 
 
 A	O
 senior	O
-Belarus	O
+Belarus	I-LOC
 politician	O
 accused	O
 President	O
@@ -13471,7 +13422,7 @@ The	O
 speaker	O
 of	O
 the	O
-Belarus	O
+Belarus	I-LOC
 parliament	O
 ,	O
 Semyon	O
@@ -13611,7 +13562,7 @@ like	O
 this	O
 ,	O
 "	O
-Sergei	O
+Sergei	I-PER
 Posukhov	O
 ,	O
 Lukashenko	O
@@ -13666,7 +13617,7 @@ the	O
 strong	O
 links	O
 with	O
-Russia	O
+Russia	I-LOC
 that	O
 were	O
 disrupted	O
@@ -13676,7 +13627,7 @@ collapse	O
 of	O
 the	O
 Soviet	O
-Union	O
+Union	I-ORG
 .	O
 
 
@@ -13767,7 +13718,7 @@ signed	O
 a	O
 pact	O
 with	O
-Moscow	O
+Moscow	I-LOC
 in	O
 April	O
 to	O
@@ -13799,10 +13750,10 @@ the	O
 prospect	O
 of	O
 renewed	O
-Moscow	O
+Moscow	I-LOC
 domination	O
 and	O
-Russia	O
+Russia	I-LOC
 's	O
 backing	O
 for	O
@@ -13856,13 +13807,12 @@ leaders	O
 Zenon	O
 Poznyak	O
 and	O
-Sergei	O
+Sergei	I-PER
 Naumchik	O
 .	O
 
 
--DOCSTART-	-X-	O
-
+-DOCSTART-	O
 
 
 Tajik	O
@@ -13874,13 +13824,13 @@ town	O
 .	O
 
 
-Yuri	O
+Yuri	I-PER
 Kushko	O
 
 
 TAVILDARA	O
 ,	O
-Tajikistan	O
+Tajikistan	I-LOC
 1996-08-30	O
 
 
@@ -13920,7 +13870,7 @@ Friday	O
 The	O
 commander-in-chief	O
 of	O
-Tajikistan	O
+Tajikistan	I-LOC
 's	O
 armed	O
 forces	O
@@ -14082,9 +14032,9 @@ Tajikistan	O
 ,	O
 which	O
 borders	O
-Afghanistan	O
+Afghanistan	I-LOC
 and	O
-China	O
+China	I-LOC
 ,	O
 has	O
 been	O
@@ -14310,7 +14260,7 @@ were	O
 now	O
 refugees	O
 in	O
-Moscow	O
+Moscow	I-LOC
 and	O
 the	O
 other	O
@@ -14366,8 +14316,7 @@ said	O
 .	O
 
 
--DOCSTART-	-X-	O
-
+-DOCSTART-	O
 
 
 Polish	O
@@ -14379,16 +14328,16 @@ Yugoslavia	O
 .	O
 
 
-WARSAW	O
+WARSAW	I-LOC
 1996-08-30	O
 
 
-Poland	O
+Poland	I-LOC
 's	O
 Foreign	O
 Minister	O
-Dariusz	O
-Rosati	O
+Dariusz	I-PER
+Rosati	I-PER
 will	O
 visit	O
 Yugoslavia	O
@@ -14422,7 +14371,7 @@ Friday	O
 
 
 During	O
-Rosati	O
+Rosati	I-PER
 's	O
 trip	O
 the	O
@@ -14460,7 +14409,7 @@ saying	O
 
 
 The	O
-Federal	O
+Federal	I-ORG
 Republic	O
 of	O
 Yugoslavia	O
@@ -14513,11 +14462,11 @@ Belgrade	O
 ,	O
 before	O
 visiting	O
-Montenegro	O
+Montenegro	I-LOC
 .	O
 
 
-Poland	O
+Poland	I-LOC
 revived	O
 diplomatic	O
 ties	O
@@ -14557,7 +14506,7 @@ Serbs	O
 .	O
 
 
-Poland	O
+Poland	I-LOC
 is	O
 seeking	O
 pacts	O
@@ -14574,8 +14523,7 @@ crime	O
 .	O
 
 
--DOCSTART-	-X-	O
-
+-DOCSTART-	O
 
 
 Yeltsin	O
@@ -14612,7 +14560,7 @@ news	O
 agency	O
 quoted	O
 spokesman	O
-Sergei	O
+Sergei	I-PER
 Yastrzhembsky	O
 as	O
 saying	O
@@ -14657,7 +14605,7 @@ Yeltsin	O
 on	O
 vacation	O
 outside	O
-Moscow	O
+Moscow	I-LOC
 ,	O
 had	O
 spoken	O
@@ -14698,9 +14646,9 @@ Yeltsin	O
 is	O
 recovering	O
 in	O
-Moscow	O
+Moscow	I-LOC
 's	O
-Central	O
+Central	I-LOC
 Clinical	O
 Hospital	O
 ,	O
@@ -14778,7 +14726,7 @@ the	O
 Barvikha	O
 sanatorium	O
 outside	O
-Moscow	O
+Moscow	I-LOC
 .	O
 
 
@@ -14805,12 +14753,11 @@ km	O
 miles	O
 )	O
 from	O
-Moscow	O
+Moscow	I-LOC
 .	O
 
 
--DOCSTART-	-X-	O
-
+-DOCSTART-	O
 
 
 Lebed	O
@@ -14822,9 +14769,9 @@ talks	O
 .	O
 
 
-KHASAVYURT	O
+KHASAVYURT	I-ORG
 ,	O
-Russia	O
+Russia	I-LOC
 1996-08-30	O
 
 
@@ -14911,8 +14858,7 @@ talks	O
 .	O
 
 
--DOCSTART-	-X-	O
-
+-DOCSTART-	O
 
 
 Russian	O
@@ -14932,7 +14878,7 @@ MOSCOW	O
 
 
 A	O
-Moscow	O
+Moscow	I-LOC
 street	O
 vendor	O
 stabbed	O
@@ -14998,7 +14944,7 @@ was	O
 illegally	O
 trading	O
 on	O
-Moscow	O
+Moscow	I-LOC
 streets	O
 and	O
 fined	O
@@ -15054,8 +15000,7 @@ attacks	O
 .	O
 
 
--DOCSTART-	-X-	O
-
+-DOCSTART-	O
 
 
 Cofinec	O
@@ -15153,7 +15098,7 @@ a	O
 conference	O
 call	O
 from	O
-Vienna	O
+Vienna	I-LOC
 on	O
 Friday	O
 before	O
@@ -15384,7 +15329,7 @@ group	O
 which	O
 operates	O
 in	O
-Hungary	O
+Hungary	I-LOC
 ,	O
 Poland	O
 and	O
@@ -15465,7 +15410,7 @@ units	O
 
 Cofinec	O
 said	O
-Petofi	O
+Petofi	I-PER
 general	O
 manager	O
 Laszlo	O
@@ -15549,11 +15494,10 @@ newsroom	O
 4040	O
 
 
--DOCSTART-	-X-	O
+-DOCSTART-	O
 
 
-
-Romania	O
+Romania	I-LOC
 cen	O
 bank	O
 one-week	O
@@ -15573,7 +15517,7 @@ The	O
 National	O
 Bank	O
 of	O
-Romania	O
+Romania	I-LOC
 (	O
 BNR	O
 )	O
@@ -15699,8 +15643,7 @@ Newsroom	O
 3120264	O
 
 
--DOCSTART-	-X-	O
-
+-DOCSTART-	O
 
 
 Potent	O
@@ -15714,7 +15657,7 @@ presidency	O
 
 BOGOTA	O
 ,	O
-Colombia	O
+Colombia	I-LOC
 1996-08-30	O
 
 
@@ -15742,7 +15685,7 @@ about	O
 two	O
 blocks	O
 from	O
-Colombia	O
+Colombia	I-LOC
 's	O
 presidential	O
 palace	O
@@ -15916,8 +15859,7 @@ landmines	O
 .	O
 
 
--DOCSTART-	-X-	O
-
+-DOCSTART-	O
 
 
 Assault	O
@@ -15929,7 +15871,7 @@ ex-rebel	O
 .	O
 
 
-PARAMARIBO	O
+PARAMARIBO	I-LOC
 ,	O
 Surinam	O
 1996-08-30	O
@@ -16004,7 +15946,7 @@ km	O
 )	O
 east	O
 of	O
-Paramaribo	O
+Paramaribo	I-LOC
 .	O
 
 
@@ -16081,7 +16023,7 @@ the	O
 military	O
 regime	O
 of	O
-Desi	O
+Desi	I-PER
 Bouterse	O
 in	O
 the	O
@@ -16101,8 +16043,7 @@ interests	O
 .	O
 
 
--DOCSTART-	-X-	O
-
+-DOCSTART-	O
 
 
 Cambodian	O
@@ -16118,7 +16059,7 @@ PENH	O
 1996-08-30	O
 
 
-Cambodia	O
+Cambodia	I-LOC
 's	O
 King	O
 Norodom	O
@@ -16317,8 +16258,7 @@ amnesty	O
 .	O
 
 
--DOCSTART-	-X-	O
-
+-DOCSTART-	O
 
 
 Far	O
@@ -16332,7 +16272,7 @@ continuing	O
 .	O
 
 
-Mishi	O
+Mishi	I-PER
 Saran	O
 
 
@@ -16415,7 +16355,7 @@ quarter	O
 .	O
 
 
-Singapore	O
+Singapore	I-ORG
 premiums	O
 for	O
 Australian	O
@@ -16433,7 +16373,7 @@ ounce	O
 over	O
 spot	O
 loco	O
-London	O
+London	I-LOC
 prices	O
 ,	O
 with	O
@@ -16452,7 +16392,7 @@ ounce	O
 .	O
 
 
-Singapore	O
+Singapore	I-ORG
 dealers	O
 said	O
 they	O
@@ -16484,7 +16424,7 @@ recent	O
 months	O
 after	O
 the	O
-Seoul	O
+Seoul	I-LOC
 government	O
 's	O
 crackdown	O
@@ -16588,7 +16528,7 @@ Friday	O
 ,	O
 versus	O
 New	O
-York	O
+York	I-LOC
 's	O
 $	O
 387.60	O
@@ -16731,7 +16671,7 @@ September	O
 contract	O
 on	O
 New	O
-York	O
+York	I-LOC
 's	O
 Comex	O
 market	O
@@ -16773,7 +16713,7 @@ $	O
 0.004	O
 in	O
 New	O
-York	O
+York	I-LOC
 on	O
 Thursday	O
 at	O
@@ -16784,11 +16724,10 @@ ounce	O
 .	O
 
 
--DOCSTART-	-X-	O
+-DOCSTART-	O
 
 
-
-Tripoli	O
+Tripoli	I-LOC
 decks	O
 out	O
 for	O
@@ -16801,7 +16740,7 @@ Mona	O
 Eltahawy	O
 
 
-TRIPOLI	O
+TRIPOLI	I-LOC
 1996-08-30	O
 
 
@@ -16811,7 +16750,7 @@ dressing	O
 up	O
 their	O
 capital	O
-Tripoli	O
+Tripoli	I-LOC
 for	O
 celebrations	O
 on	O
@@ -16832,7 +16771,7 @@ power	O
 .	O
 
 
-Green	O
+Green	I-PER
 flags	O
 and	O
 banners	O
@@ -16851,7 +16790,7 @@ Nations	O
 sanctions	O
 imposed	O
 for	O
-Libya	O
+Libya	I-LOC
 's	O
 refusal	O
 to	O
@@ -16901,7 +16840,7 @@ on	O
 the	O
 road	O
 to	O
-Tripoli	O
+Tripoli	I-LOC
 airport	O
 which	O
 serves	O
@@ -16924,7 +16863,7 @@ at	O
 the	O
 city	O
 's	O
-Green	O
+Green	I-PER
 Square	O
 where	O
 makeshift	O
@@ -16943,9 +16882,9 @@ leaders	O
 from	O
 Niger	O
 ,	O
-Guinea	O
+Guinea	I-LOC
 and	O
-Ghana	O
+Ghana	I-LOC
 --	O
 are	O
 expected	O
@@ -17089,7 +17028,7 @@ officers	O
 clash	O
 regularly	O
 in	O
-Benghazi	O
+Benghazi	I-PER
 .	O
 
 
@@ -17127,7 +17066,7 @@ slogans	O
 .	O
 
 
-Gaddafi	O
+Gaddafi	I-PER
 has	O
 dismissed	O
 any	O
@@ -17151,8 +17090,7 @@ workers	O
 .	O
 
 
--DOCSTART-	-X-	O
-
+-DOCSTART-	O
 
 
 Twilight	O
@@ -17172,8 +17110,8 @@ Pierre	O
 Belec	O
 
 
-NEW	O
-YORK	O
+NEW	I-LOC
+YORK	I-LOC
 1996-08-30	O
 
 
@@ -17204,7 +17142,7 @@ zone	O
 
 
 President	O
-Clinton	O
+Clinton	I-PER
 ,	O
 Bob	O
 Dole	O
@@ -17271,7 +17209,7 @@ question	O
 of	O
 whether	O
 the	O
-Federal	O
+Federal	I-ORG
 Reserve	O
 will	O
 raise	O
@@ -17320,7 +17258,7 @@ markets	O
 is	O
 that	O
 if	O
-Clinton	O
+Clinton	I-PER
 and	O
 Dole	O
 start	O
@@ -17339,7 +17277,7 @@ one-upmanship	O
 "	O
 said	O
 Hugh	O
-Johnson	O
+Johnson	I-PER
 ,	O
 chief	O
 investment	O
@@ -17459,7 +17397,7 @@ week	O
 the	O
 market	O
 weighed	O
-Dole	O
+Dole	I-PER
 's	O
 proposal	O
 to	O
@@ -17488,7 +17426,7 @@ billion	O
 .	O
 
 
-Clinton	O
+Clinton	I-PER
 proposes	O
 an	O
 $	O
@@ -17520,9 +17458,9 @@ rolls	O
 .	O
 
 
-Clinton	O
+Clinton	I-PER
 claims	O
-Dole	O
+Dole	I-PER
 's	O
 plan	O
 would	O
@@ -17587,7 +17525,7 @@ Street	O
 's	O
 expectations	O
 that	O
-Washington	O
+Washington	I-LOC
 will	O
 balance	O
 the	O
@@ -17682,7 +17620,7 @@ lost	O
 .	O
 
 
-George	O
+George	I-PER
 Bush	O
 became	O
 president	O
@@ -17693,7 +17631,7 @@ his	O
 no-new-tax	O
 campaign	O
 and	O
-Clinton	O
+Clinton	I-PER
 won	O
 in	O
 1992	O
@@ -17756,7 +17694,7 @@ decade	O
 .	O
 
 
-Johnson	O
+Johnson	I-PER
 said	O
 that	O
 long-term	O
@@ -17901,7 +17839,7 @@ narrowed	O
 the	O
 gap	O
 with	O
-Clinton	O
+Clinton	I-PER
 in	O
 the	O
 polls	O
@@ -18156,8 +18094,7 @@ week	O
 .	O
 
 
--DOCSTART-	-X-	O
-
+-DOCSTART-	O
 
 
 Brisk	O
@@ -18173,7 +18110,7 @@ Glenn	O
 Somerville	O
 
 
-WASHINGTON	O
+WASHINGTON	I-LOC
 1996-08-30	O
 
 
@@ -18281,7 +18218,7 @@ A	O
 separate	O
 report	O
 from	O
-Chicago	O
+Chicago	I-LOC
 area	O
 purchasing	O
 managers	O
@@ -18386,7 +18323,7 @@ was	O
 more	O
 temporary	O
 than	O
-Federal	O
+Federal	I-ORG
 Reserve	O
 policy-makers	O
 had	O
@@ -18655,10 +18592,10 @@ Joel	O
 Naroff	O
 of	O
 First	O
-Union	O
+Union	I-ORG
 bank	O
 in	O
-Philadelphia	O
+Philadelphia	I-ORG
 said	O
 consumer	O
 spending	O
@@ -18698,7 +18635,7 @@ growth	O
 The	O
 FOMC	O
 (	O
-Federal	O
+Federal	I-ORG
 Open	O
 Market	O
 Committee	O
@@ -18795,7 +18732,7 @@ network	O
 CNBC	O
 Friday	O
 ,	O
-Federal	O
+Federal	I-ORG
 Reserve	O
 Governor	O
 Lawrence	O
@@ -18892,9 +18829,9 @@ confident	O
 
 
 The	O
-University	O
+University	I-ORG
 of	O
-Michigan	O
+Michigan	I-LOC
 's	O
 August	O
 index	O
@@ -19069,8 +19006,7 @@ June	O
 .	O
 
 
--DOCSTART-	-X-	O
-
+-DOCSTART-	O
 
 
 Mexican	O
@@ -19086,7 +19022,7 @@ Maggie	O
 McNeil	O
 
 
-WASHINGTON	O
+WASHINGTON	I-LOC
 1996-08-30	O
 
 
@@ -19396,7 +19332,7 @@ orchards	O
 in	O
 Michoacan	O
 ,	O
-Mexico	O
+Mexico	I-LOC
 ,	O
 the	O
 country	O
@@ -19468,7 +19404,7 @@ the	O
 pest	O
 problem	O
 in	O
-Mexico	O
+Mexico	I-LOC
 and	O
 have	O
 urged	O
@@ -19652,8 +19588,7 @@ science	O
 "	O
 
 
--DOCSTART-	-X-	O
-
+-DOCSTART-	O
 
 
 U.S.	O
@@ -19666,11 +19601,11 @@ cancer	O
 .	O
 
 
-CHICAGO	O
+CHICAGO	I-ORG
 1996-08-30	O
 
 
-Chicago	O
+Chicago	I-LOC
 Cardinal	O
 Joseph	O
 Bernardin	O
@@ -19802,7 +19737,7 @@ In	O
 14	O
 years	O
 as	O
-Chicago	O
+Chicago	I-LOC
 's	O
 archbishop	O
 ,	O
@@ -20075,7 +20010,7 @@ stonecutter	O
 took	O
 over	O
 the	O
-Chicago	O
+Chicago	I-LOC
 archdiocese	O
 ,	O
 the	O
@@ -20185,7 +20120,7 @@ who	O
 became	O
 archbishop	O
 of	O
-Cincinnati	O
+Cincinnati	I-ORG
 in	O
 1972	O
 ,	O
@@ -20287,8 +20222,7 @@ garment	O
 "	O
 
 
--DOCSTART-	-X-	O
-
+-DOCSTART-	O
 
 
 Boatmen	O
@@ -20301,11 +20235,11 @@ mergers	O
 .	O
 
 
-Brad	O
+Brad	I-PER
 Dorfman	O
 
 
-CHICAGO	O
+CHICAGO	I-ORG
 1996-08-30	O
 
 
@@ -20331,7 +20265,7 @@ of	O
 other	O
 mergers	O
 involving	O
-Missouri	O
+Missouri	I-LOC
 banks	O
 ,	O
 which	O
@@ -20432,7 +20366,7 @@ as	O
 the	O
 most	O
 attractive	O
-Missouri	O
+Missouri	I-LOC
 franchise	O
 in	O
 size	O
@@ -20442,7 +20376,7 @@ Boatmen	O
 .	O
 
 
-Kansas	O
+Kansas	I-LOC
 City	O
 ,	O
 Mo.-based	O
@@ -20503,7 +20437,7 @@ Sons	O
 .	O
 
 
-Roosevelt	O
+Roosevelt	I-PER
 Financial	O
 Group	O
 Inc	O
@@ -20563,7 +20497,7 @@ interest	O
 in	O
 buying	O
 in	O
-Missouri	O
+Missouri	I-LOC
 are	O
 Minneapolis-based	O
 First	O
@@ -20583,7 +20517,7 @@ Corp.	O
 ,	O
 and	O
 First	O
-Chicago	O
+Chicago	I-LOC
 NBD	O
 Corp.	O
 in	O
@@ -20602,7 +20536,7 @@ Banc	O
 One	O
 and	O
 First	O
-Chicago	O
+Chicago	I-LOC
 said	O
 the	O
 banks	O
@@ -20652,7 +20586,7 @@ was	O
 the	O
 prize	O
 in	O
-Missouri	O
+Missouri	I-LOC
 ,	O
 where	O
 barriers	O
@@ -20679,7 +20613,7 @@ was	O
 the	O
 plum	O
 of	O
-Missouri	O
+Missouri	I-LOC
 and	O
 was	O
 the	O
@@ -20698,7 +20632,7 @@ said	O
 Talk	O
 that	O
 the	O
-Missouri	O
+Missouri	I-LOC
 banks	O
 were	O
 seeking	O
@@ -20873,14 +20807,13 @@ Co	O
 .	O
 
 
--DOCSTART-	-X-	O
-
+-DOCSTART-	O
 
 
 U.S.	O
 tight-lipped	O
 on	O
-Libya	O
+Libya	I-LOC
 's	O
 award	O
 to	O
@@ -20888,7 +20821,7 @@ Farrakhan	O
 .	O
 
 
-WASHINGTON	O
+WASHINGTON	I-LOC
 1996-08-30	O
 
 
@@ -20925,7 +20858,7 @@ human	O
 rights	O
 prize	O
 by	O
-Libya	O
+Libya	I-LOC
 .	O
 
 
@@ -20975,7 +20908,7 @@ accepting	O
 any	O
 gifts	O
 from	O
-Libya	O
+Libya	I-LOC
 is	O
 well-known	O
 .	O
@@ -20997,7 +20930,7 @@ restriction	O
 for	O
 travel	O
 to	O
-Libya	O
+Libya	I-LOC
 "	O
 but	O
 he	O
@@ -21056,7 +20989,7 @@ last	O
 October	O
 's	O
 Million	O
-Man	O
+Man	I-PER
 March	O
 that	O
 brought	O
@@ -21065,7 +20998,7 @@ of	O
 black	O
 men	O
 to	O
-Washington	O
+Washington	I-LOC
 for	O
 a	O
 peaceful	O
@@ -21077,7 +21010,7 @@ The	O
 Treasury	O
 Department	O
 said	O
-Libya	O
+Libya	I-LOC
 was	O
 on	O
 the	O
@@ -21092,7 +21025,7 @@ terrorism	O
 and	O
 noted	O
 that	O
-Tripoli	O
+Tripoli	I-LOC
 has	O
 refused	O
 to	O
@@ -21127,12 +21060,11 @@ of	O
 U.N.	O
 sanctions	O
 on	O
-Libya	O
+Libya	I-LOC
 .	O
 
 
--DOCSTART-	-X-	O
-
+-DOCSTART-	O
 
 
 U.S.	O
@@ -21148,8 +21080,8 @@ week	O
 .	O
 
 
-NEW	O
-YORK	O
+NEW	I-LOC
+YORK	I-LOC
 1996-08-30	O
 
 
@@ -21270,17 +21202,16 @@ percent	O
 
 --	O
 New	O
-York	O
+York	I-ORG
 Energy	O
 Desk	O
 212-859-1620	O
 
 
--DOCSTART-	-X-	O
+-DOCSTART-	O
 
 
-
-Dole	O
+Dole	I-PER
 team	O
 seeking	O
 to	O
@@ -21291,7 +21222,7 @@ details	O
 .	O
 
 
-IRVINE	O
+IRVINE	I-LOC
 ,	O
 Calif	O
 1996-08-30	O
@@ -21324,7 +21255,7 @@ and	O
 meet	O
 with	O
 President	O
-Clinton	O
+Clinton	I-PER
 's	O
 aides	O
 to	O
@@ -21338,7 +21269,7 @@ debates	O
 
 
 The	O
-Dole	O
+Dole	I-PER
 campaign	O
 released	O
 a	O
@@ -21346,7 +21277,7 @@ letter	O
 Friday	O
 inviting	O
 their	O
-Clinton	O
+Clinton	I-PER
 counterparts	O
 to	O
 meet	O
@@ -21404,7 +21335,7 @@ Scott	O
 Reed	O
 wrote	O
 to	O
-Clinton	O
+Clinton	I-PER
 campaign	O
 manager	O
 Peter	O
@@ -21446,18 +21377,18 @@ Oct.	O
 
 Former	O
 South	O
-Carolina	O
+Carolina	I-LOC
 Gov	O
 .	O
 
 
 Carroll	O
-Campbell	O
+Campbell	I-PER
 ,	O
 who	O
 was	O
 on	O
-Dole	O
+Dole	I-PER
 's	O
 vice	O
 presidential	O
@@ -21536,8 +21467,7 @@ Voters	O
 .	O
 
 
--DOCSTART-	-X-	O
-
+-DOCSTART-	O
 
 
 Titanic	O
@@ -21548,8 +21478,8 @@ scrapped	O
 .	O
 
 
-NEW	O
-YORK	O
+NEW	I-LOC
+YORK	I-LOC
 1996-08-30	O
 
 
@@ -21614,7 +21544,7 @@ coast	O
 of	O
 Newfoundland	O
 ,	O
-Canada	O
+Canada	I-LOC
 ,	O
 fell	O
 back	O
@@ -21790,11 +21720,10 @@ said	O
 .	O
 
 
--DOCSTART-	-X-	O
+-DOCSTART-	O
 
 
-
-Bonn	O
+Bonn	I-LOC
 appeals	O
 for	O
 Middle	O
@@ -21835,7 +21764,7 @@ East	O
 .	O
 
 
-Israel	O
+Israel	I-LOC
 announced	O
 this	O
 week	O
@@ -21847,7 +21776,7 @@ West	O
 Bank	O
 settlements	O
 surrounding	O
-Jerusalem	O
+Jerusalem	I-LOC
 and	O
 the	O
 demolition	O
@@ -21858,7 +21787,7 @@ community	O
 centre	O
 in	O
 East	O
-Jerusalem	O
+Jerusalem	I-LOC
 .	O
 
 
@@ -21934,7 +21863,7 @@ German	O
 Foreign	O
 Ministry	O
 spokesman	O
-Martin	O
+Martin	I-PER
 Erdmann	O
 said	O
 .	O
@@ -21984,7 +21913,7 @@ Arab-Israeli	O
 peace	O
 talks	O
 in	O
-Jerusalem	O
+Jerusalem	I-LOC
 .	O
 
 
@@ -21994,11 +21923,11 @@ reporters	O
 Bonn	O
 supported	O
 European	O
-Union	O
+Union	I-ORG
 efforts	O
 to	O
 persuade	O
-Israel	O
+Israel	I-LOC
 to	O
 stop	O
 further	O
@@ -22019,11 +21948,11 @@ announced	O
 Israeli	O
 Foreign	O
 Minister	O
-David	O
+David	I-PER
 Levy	O
 would	O
 visit	O
-Bonn	O
+Bonn	I-LOC
 for	O
 talks	O
 with	O
@@ -22096,7 +22025,7 @@ Levy	O
 's	O
 arrival	O
 in	O
-Bonn	O
+Bonn	I-LOC
 ,	O
 German	O
 Defence	O
@@ -22105,7 +22034,7 @@ Volker	O
 Ruehe	O
 will	O
 visit	O
-Israel	O
+Israel	I-LOC
 from	O
 September	O
 2	O
@@ -22127,7 +22056,7 @@ his	O
 Israeli	O
 counterpart	O
 Yitzhak	O
-Mordechai	O
+Mordechai	I-PER
 and	O
 Israeli	O
 President	O
@@ -22159,11 +22088,10 @@ talks	O
 .	O
 
 
--DOCSTART-	-X-	O
+-DOCSTART-	O
 
 
-
-France	O
+France	I-LOC
 expels	O
 African	O
 ,	O
@@ -22174,11 +22102,11 @@ protest	O
 .	O
 
 
-PARIS	O
+PARIS	I-LOC
 1996-08-30	O
 
 
-France	O
+France	I-LOC
 on	O
 Friday	O
 expelled	O
@@ -22250,7 +22178,7 @@ a	O
 spokesman	O
 for	O
 Air	O
-France	O
+France	I-LOC
 's	O
 pro-Socialist	O
 CFDT	O
@@ -22488,8 +22416,7 @@ reporters	O
 .	O
 
 
--DOCSTART-	-X-	O
-
+-DOCSTART-	O
 
 
 German	O
@@ -22504,7 +22431,7 @@ case	O
 .	O
 
 
-BERLIN	O
+BERLIN	I-LOC
 1996-08-30	O
 
 
@@ -22541,7 +22468,7 @@ ring	O
 Police	O
 suspect	O
 Nicole	O
-Nichterwitz	O
+Nichterwitz	I-PER
 's	O
 aunt	O
 and	O
@@ -22574,7 +22501,7 @@ school	O
 in	O
 Velten	O
 near	O
-Berlin	O
+Berlin	I-LOC
 on	O
 Monday	O
 .	O
@@ -22626,8 +22553,7 @@ Reuters	O
 .	O
 
 
--DOCSTART-	-X-	O
-
+-DOCSTART-	O
 
 
 Missing	O
@@ -22641,7 +22567,7 @@ campsite	O
 .	O
 
 
-GRONINGEN	O
+GRONINGEN	I-ORG
 ,	O
 Netherlands	O
 1996-08-30	O
@@ -22659,7 +22585,7 @@ missing	O
 German	O
 girl	O
 Nicole	O
-Nichterwitz	O
+Nichterwitz	I-PER
 alive	O
 on	O
 a	O
@@ -22777,7 +22703,7 @@ school	O
 in	O
 Velten	O
 near	O
-Berlin	O
+Berlin	I-LOC
 on	O
 Monday	O
 .	O
@@ -22859,7 +22785,7 @@ probably	O
 be	O
 extradited	O
 to	O
-Germany	O
+Germany	I-LOC
 which	O
 has	O
 requested	O
@@ -22894,8 +22820,7 @@ added	O
 .	O
 
 
--DOCSTART-	-X-	O
-
+-DOCSTART-	O
 
 
 Indian	O
@@ -23044,8 +22969,7 @@ Commodities	O
 9000	O
 
 
--DOCSTART-	-X-	O
-
+-DOCSTART-	O
 
 
 MARTELA	O
@@ -23060,7 +22984,7 @@ MLN	O
 .	O
 
 
-HELSINKI	O
+HELSINKI	I-LOC
 1996-08-30	O
 
 
@@ -23112,8 +23036,7 @@ vs	O
 256.9	O
 
 
--DOCSTART-	-X-	O
-
+-DOCSTART-	O
 
 
 Canadian	O
@@ -23199,7 +23122,7 @@ Inc	O
 .	O
 
 
-Canada	O
+Canada	I-LOC
 's	O
 8.0	O
 percent	O
@@ -23256,11 +23179,11 @@ Wednesday	O
 
 
 Statistics	O
-Canada	O
+Canada	I-LOC
 on	O
 Friday	O
 reported	O
-Canada	O
+Canada	I-LOC
 's	O
 current	O
 account	O
@@ -23305,7 +23228,7 @@ The	O
 agency	O
 also	O
 reported	O
-Canada	O
+Canada	I-LOC
 's	O
 real	O
 gross	O
@@ -23359,7 +23282,7 @@ a	O
 report	O
 showing	O
 the	O
-Chicago	O
+Chicago	I-LOC
 Purchasing	O
 Managers	O
 August	O
@@ -23542,8 +23465,7 @@ e-mail	O
 jeffrey.hodgson@reuters.com	O
 
 
--DOCSTART-	-X-	O
-
+-DOCSTART-	O
 
 
 Aw	O
@@ -23556,8 +23478,8 @@ widens	O
 .	O
 
 
-NEW	O
-YORK	O
+NEW	I-LOC
+YORK	I-LOC
 1996-08-30	O
 
 
@@ -23637,14 +23559,13 @@ Numbers	O
 
 --	O
 New	O
-York	O
+York	I-ORG
 Newsdesk	O
 212-859-1610	O
 .	O
 
 
--DOCSTART-	-X-	O
-
+-DOCSTART-	O
 
 
 IPO	O
@@ -23656,7 +23577,7 @@ Inc	O
 .	O
 
 
-WASHINGTON	O
+WASHINGTON	I-LOC
 1996-08-30	O
 
 
@@ -23803,11 +23724,10 @@ N	O
 A	O
 
 
--DOCSTART-	-X-	O
+-DOCSTART-	O
 
 
-
-Syria	O
+Syria	I-LOC
 slams	O
 Israel	O
 on	O
@@ -23815,15 +23735,15 @@ settlements	O
 .	O
 
 
-DAMASCUS	O
+DAMASCUS	I-ORG
 1996-08-30	O
 
 
-Syria	O
+Syria	I-LOC
 on	O
 Friday	O
 condemned	O
-Israel	O
+Israel	I-LOC
 's	O
 settlement	O
 policy	O
@@ -23873,7 +23793,7 @@ cause	O
 ,	O
 "	O
 state-run	O
-Damascus	O
+Damascus	I-LOC
 Radio	O
 said	O
 in	O
@@ -23943,7 +23863,7 @@ the	O
 West	O
 Bank	O
 and	O
-Gaza	O
+Gaza	I-LOC
 observed	O
 a	O
 strike	O
@@ -23979,7 +23899,7 @@ government	O
 
 
 "	O
-Israel	O
+Israel	I-LOC
 could	O
 not	O
 confront	O
@@ -24018,7 +23938,7 @@ the	O
 international	O
 criticism	O
 of	O
-Israel	O
+Israel	I-LOC
 's	O
 settlement	O
 policies	O
@@ -24052,7 +23972,7 @@ pressuring	O
 action	O
 to	O
 prevent	O
-Israel	O
+Israel	I-LOC
 from	O
 undermining	O
 the	O
@@ -24075,7 +23995,7 @@ said	O
 .	O
 
 
-Syria	O
+Syria	I-LOC
 and	O
 Arabs	O
 have	O
@@ -24105,24 +24025,24 @@ and	O
 his	O
 insistance	O
 on	O
-Jerusalem	O
+Jerusalem	I-LOC
 as	O
 a	O
 unifed	O
 capital	O
 for	O
-Israel	O
+Israel	I-LOC
 .	O
 
 
-Syria	O
+Syria	I-LOC
 has	O
 held	O
 sporadic	O
 peace	O
 talks	O
 with	O
-Israel	O
+Israel	I-LOC
 since	O
 1991	O
 without	O
@@ -24132,11 +24052,10 @@ breakthrough	O
 .	O
 
 
--DOCSTART-	-X-	O
+-DOCSTART-	O
 
 
-
-Egypt	O
+Egypt	I-LOC
 police	O
 detain	O
 26	O
@@ -24146,7 +24065,7 @@ militants	O
 .	O
 
 
-CAIRO	O
+CAIRO	I-LOC
 1996-08-30	O
 
 
@@ -24199,7 +24118,7 @@ a	O
 satellite	O
 city	O
 outside	O
-Cairo	O
+Cairo	I-LOC
 .	O
 
 
@@ -24269,7 +24188,7 @@ in	O
 to	O
 topple	O
 President	O
-Hosni	O
+Hosni	I-PER
 Mubarak	O
 's	O
 government	O
@@ -24284,11 +24203,10 @@ its	O
 place	O
 
 
--DOCSTART-	-X-	O
+-DOCSTART-	O
 
 
-
-Israel	O
+Israel	I-LOC
 blocks	O
 Palestinian	O
 pilgrims	O
@@ -24297,7 +24215,7 @@ progress	O
 .	O
 
 
-Sami	O
+Sami	I-PER
 Aboudi	O
 
 
@@ -24334,7 +24252,7 @@ call	O
 to	O
 worship	O
 at	O
-Jerusalem	O
+Jerusalem	I-LOC
 's	O
 al-Aqsa	O
 mosque	O
@@ -24372,7 +24290,7 @@ President	O
 Arafat	O
 ,	O
 attacking	O
-Israel	O
+Israel	I-LOC
 's	O
 decision	O
 to	O
@@ -24383,7 +24301,7 @@ and	O
 its	O
 policy	O
 on	O
-Jerusalem	O
+Jerusalem	I-LOC
 ,	O
 went	O
 before	O
@@ -24403,7 +24321,7 @@ the	O
 West	O
 Bank	O
 and	O
-Gaza	O
+Gaza	I-LOC
 to	O
 go	O
 to	O
@@ -24428,7 +24346,7 @@ have	O
 been	O
 banned	O
 by	O
-Israel	O
+Israel	I-LOC
 from	O
 travelling	O
 from	O
@@ -24436,7 +24354,7 @@ the	O
 West	O
 Bank	O
 to	O
-Jerusalem	O
+Jerusalem	I-LOC
 since	O
 suicide	O
 bombings	O
@@ -24462,7 +24380,7 @@ Israeli	O
 checkpoints	O
 have	O
 circled	O
-Jerusalem	O
+Jerusalem	I-LOC
 since	O
 1993	O
 ,	O
@@ -24472,7 +24390,7 @@ and	O
 constant	O
 reminder	O
 of	O
-Israel	O
+Israel	I-LOC
 's	O
 hold	O
 on	O
@@ -24491,7 +24409,7 @@ PLO	O
 wants	O
 Arab	O
 East	O
-Jerusalem	O
+Jerusalem	I-LOC
 as	O
 the	O
 capital	O
@@ -24564,7 +24482,7 @@ said	O
 A	O
 tourist	O
 from	O
-Jordan	O
+Jordan	I-LOC
 was	O
 also	O
 told	O
@@ -24580,7 +24498,7 @@ he	O
 could	O
 not	O
 enter	O
-Jerusalem	O
+Jerusalem	I-LOC
 .	O
 
 
@@ -24604,7 +24522,7 @@ when	O
 they	O
 come	O
 to	O
-Jordan	O
+Jordan	I-LOC
 ,	O
 "	O
 said	O
@@ -24630,7 +24548,7 @@ am	O
 entitled	O
 to	O
 see	O
-Jerusalem	O
+Jerusalem	I-LOC
 ,	O
 "	O
 he	O
@@ -24747,7 +24665,7 @@ changed	O
 "	O
 said	O
 20-year-old	O
-Ali	O
+Ali	I-PER
 Ahmed	O
 from	O
 Qalandia	O
@@ -24756,13 +24674,12 @@ camp	O
 .	O
 
 
--DOCSTART-	-X-	O
-
+-DOCSTART-	O
 
 
 PRESALE	O
 -	O
-Bay	O
+Bay	I-LOC
 Co	O
 Bldg	O
 Auth	O
@@ -24788,7 +24705,7 @@ CUSIP	O
 
 ISSUER	O
 :	O
-Bay	O
+Bay	I-LOC
 Co	O
 Building	O
 Authority	O
@@ -24886,7 +24803,7 @@ ORDERS	O
 PAYING	O
 AGENT	O
 :	O
-Michigan	O
+Michigan	I-LOC
 National	O
 Bank	O
 ,	O
@@ -24908,7 +24825,7 @@ F.A.	O
 :	O
 First	O
 of	O
-Michigan	O
+Michigan	I-LOC
 Corp.	O
 ,	O
 Detroit	O
@@ -25003,8 +24920,7 @@ K-SHEETS	O
 :	O
 
 
--DOCSTART-	-X-	O
-
+-DOCSTART-	O
 
 
 Consumer	O
@@ -25022,7 +24938,7 @@ Glenn	O
 Somerville	O
 
 
-WASHINGTON	O
+WASHINGTON	I-LOC
 1996-08-30	O
 
 
@@ -25565,8 +25481,7 @@ billion	O
 .	O
 
 
--DOCSTART-	-X-	O
-
+-DOCSTART-	O
 
 
 World	O
@@ -25579,8 +25494,8 @@ Aug	O
 .	O
 
 
-NEW	O
-YORK	O
+NEW	I-LOC
+YORK	I-LOC
 1996-08-29	O
 
 
@@ -25597,7 +25512,7 @@ METALS	O
 NY	O
 Dow	O
 close	O
-London	O
+London	I-LOC
 opening	O
 LME	O
 close	O
@@ -25615,7 +25530,7 @@ per	O
 tonne	O
 
 
-Nikkei	O
+Nikkei	I-PER
 latest	O
 CRUDE	O
 OIL	O
@@ -25766,7 +25681,7 @@ shares	O
 on	O
 the	O
 New	O
-York	O
+York	I-LOC
 Stock	O
 Exchange	O
 .	O
@@ -26101,7 +26016,7 @@ the	O
 impact	O
 on	O
 President	O
-Clinton	O
+Clinton	I-PER
 's	O
 re-election	O
 bid	O
@@ -26122,7 +26037,7 @@ is	O
 credited	O
 with	O
 resurrecting	O
-Clinton	O
+Clinton	I-PER
 's	O
 political	O
 fortunes	O
@@ -26184,7 +26099,7 @@ form	O
 of	O
 Democratic	O
 President	O
-Clinton	O
+Clinton	I-PER
 .	O
 
 
@@ -26194,7 +26109,7 @@ departure	O
 raised	O
 fears	O
 that	O
-Clinton	O
+Clinton	I-PER
 would	O
 veer	O
 more	O
@@ -26253,7 +26168,7 @@ of	O
 illicit	O
 trading	O
 by	O
-Iraq	O
+Iraq	I-LOC
 .	O
 
 
@@ -26263,7 +26178,7 @@ oil	O
 on	O
 the	O
 New	O
-York	O
+York	I-ORG
 Mercantile	O
 Exchange	O
 closed	O
@@ -26316,7 +26231,7 @@ pound	O
 on	O
 the	O
 New	O
-York	O
+York	I-LOC
 Cotton	O
 Exchange	O
 despite	O
@@ -26347,7 +26262,7 @@ offshore	O
 
 Overseas	O
 ,	O
-London	O
+London	I-LOC
 's	O
 FTSE	O
 100	O
@@ -26409,11 +26324,10 @@ at	O
 .	O
 
 
--DOCSTART-	-X-	O
+-DOCSTART-	O
 
 
-
-Pirelli	O
+Pirelli	I-PER
 cables	O
 look	O
 to	O
@@ -26423,7 +26337,7 @@ growth	O
 .	O
 
 
-David	O
+David	I-PER
 Jones	O
 
 
@@ -26444,7 +26358,7 @@ its	O
 long-awaited	O
 move	O
 into	O
-China	O
+China	I-LOC
 with	O
 a	O
 cables	O
@@ -26462,7 +26376,7 @@ market	O
 .	O
 
 
-Pirelli	O
+Pirelli	I-PER
 is	O
 linking	O
 with	O
@@ -26478,7 +26392,7 @@ to	O
 be	O
 called	O
 the	O
-Wuxi	O
+Wuxi	I-PER
 Tong	O
 Ling	O
 Company	O
@@ -26499,12 +26413,12 @@ its	O
 existing	O
 factory	O
 in	O
-Wuxi	O
+Wuxi	I-PER
 ,	O
 Jiangsu	O
 province	O
 ,	O
-Shanghai	O
+Shanghai	I-LOC
 .	O
 
 
@@ -26523,7 +26437,7 @@ copper	O
 cable	O
 plant	O
 at	O
-Wuxi	O
+Wuxi	I-PER
 to	O
 update	O
 technology	O
@@ -26576,11 +26490,11 @@ group	O
 already	O
 present	O
 in	O
-Indonesia	O
+Indonesia	I-LOC
 ,	O
-India	O
+India	I-LOC
 and	O
-Malaysia	O
+Malaysia	I-LOC
 .	O
 
 
@@ -26622,7 +26536,7 @@ analyst	O
 Paula	O
 Buratti	O
 at	O
-Indosuez	O
+Indosuez	I-PER
 .	O
 
 
@@ -26662,7 +26576,7 @@ markets	O
 .	O
 
 
-Pirelli	O
+Pirelli	I-PER
 shares	O
 reacted	O
 favourable	O
@@ -26746,7 +26660,7 @@ cables	O
 .	O
 
 
-China	O
+China	I-LOC
 's	O
 second	O
 largest	O
@@ -26795,7 +26709,7 @@ this	O
 production	O
 base	O
 in	O
-China	O
+China	I-LOC
 has	O
 for	O
 our	O
@@ -26813,7 +26727,7 @@ of	O
 our	O
 presence	O
 in	O
-Asia	O
+Asia	I-LOC
 ,	O
 "	O
 said	O
@@ -26830,7 +26744,7 @@ Provera	O
 .	O
 
 
-Pirelli	O
+Pirelli	I-PER
 Cables	O
 has	O
 global	O
@@ -26908,12 +26822,11 @@ industrial	O
 joint	O
 ventures	O
 in	O
-China	O
+China	I-LOC
 .	O
 
 
--DOCSTART-	-X-	O
-
+-DOCSTART-	O
 
 
 Dutch	O
@@ -27138,8 +27051,7 @@ Fax	O
 5040	O
 
 
--DOCSTART-	-X-	O
-
+-DOCSTART-	O
 
 
 OSCE	O
@@ -27196,7 +27108,7 @@ region	O
 
 
 Flavio	O
-Cotti	O
+Cotti	I-PER
 ,	O
 the	O
 chairman	O
@@ -27351,14 +27263,14 @@ region	O
 .	O
 
 
-Cotti	O
+Cotti	I-PER
 said	O
 Chechnya	O
 must	O
 remain	O
 part	O
 of	O
-Russia	O
+Russia	I-LOC
 ,	O
 but	O
 the	O
@@ -27375,7 +27287,7 @@ region	O
 maximum	O
 autonomy	O
 within	O
-Russia	O
+Russia	I-LOC
 's	O
 borders	O
 .	O
@@ -27399,7 +27311,7 @@ to	O
 a	O
 state	O
 called	O
-Russia	O
+Russia	I-LOC
 ,	O
 "	O
 he	O
@@ -27408,7 +27320,7 @@ said	O
 pointing	O
 out	O
 that	O
-Russia	O
+Russia	I-LOC
 was	O
 an	O
 OSCE	O
@@ -27516,8 +27428,7 @@ Cotti	O
 .	O
 
 
--DOCSTART-	-X-	O
-
+-DOCSTART-	O
 
 
 Dutch	O
@@ -27572,7 +27483,7 @@ left	O
 dead	O
 in	O
 an	O
-Amsterdam	O
+Amsterdam	I-LOC
 suburb	O
 .	O
 
@@ -27715,8 +27626,7 @@ Fax	O
 5017	O
 
 
--DOCSTART-	-X-	O
-
+-DOCSTART-	O
 
 
 Armenians	O
@@ -27726,7 +27636,7 @@ hold	O
 peace	O
 talks	O
 in	O
-Germany	O
+Germany	I-LOC
 .	O
 
 
@@ -27736,16 +27646,16 @@ BONN	O
 
 Representatives	O
 from	O
-Armenia	O
+Armenia	I-LOC
 and	O
-Azerbaijan	O
+Azerbaijan	I-LOC
 held	O
 talks	O
 earlier	O
 this	O
 week	O
 in	O
-Germany	O
+Germany	I-LOC
 on	O
 bringing	O
 a	O
@@ -27899,11 +27809,11 @@ their	O
 exact	O
 location	O
 in	O
-Germany	O
+Germany	I-LOC
 .	O
 
 
-Azerbaijan	O
+Azerbaijan	I-LOC
 has	O
 said	O
 it	O
@@ -27924,7 +27834,7 @@ but	O
 will	O
 not	O
 accept	O
-Armenia	O
+Armenia	I-LOC
 's	O
 demands	O
 for	O
@@ -27936,7 +27846,7 @@ enclave	O
 .	O
 
 
-Russia	O
+Russia	I-LOC
 's	O
 Interfax	O
 news	O
@@ -27951,7 +27861,7 @@ departed	O
 for	O
 negotiations	O
 in	O
-Germany	O
+Germany	I-LOC
 ,	O
 adding	O
 that	O
@@ -27967,7 +27877,7 @@ place	O
 last	O
 December	O
 in	O
-Amsterdam	O
+Amsterdam	I-LOC
 .	O
 
 
@@ -28005,14 +27915,13 @@ of	O
 countries	O
 led	O
 by	O
-Russia	O
+Russia	I-LOC
 and	O
-Finland	O
+Finland	I-LOC
 .	O
 
 
--DOCSTART-	-X-	O
-
+-DOCSTART-	O
 
 
 Sombre	O
@@ -28032,7 +27941,7 @@ Soderlind	O
 
 LONGYEAR	O
 ,	O
-Norway	O
+Norway	I-LOC
 1996-08-30	O
 
 
@@ -28554,7 +28463,7 @@ had	O
 been	O
 sent	O
 from	O
-Moscow	O
+Moscow	I-LOC
 to	O
 pick	O
 them	O
@@ -28620,7 +28529,7 @@ hardships	O
 of	O
 the	O
 new	O
-Russia	O
+Russia	I-LOC
 .	O
 
 
@@ -28638,7 +28547,7 @@ the	O
 northern	O
 tip	O
 of	O
-Norway	O
+Norway	I-LOC
 and	O
 endures	O
 one	O
@@ -28700,7 +28609,7 @@ tracks	O
 .	O
 
 
-Norway	O
+Norway	I-LOC
 rules	O
 the	O
 island	O
@@ -28736,7 +28645,7 @@ there	O
 
 
 Only	O
-Russia	O
+Russia	I-LOC
 has	O
 chosen	O
 to	O
@@ -28745,8 +28654,7 @@ so	O
 .	O
 
 
--DOCSTART-	-X-	O
-
+-DOCSTART-	O
 
 
 Ericsson	O
@@ -28755,7 +28663,7 @@ wins	O
 1.2	O
 bln	O
 SKR	O
-China	O
+China	I-LOC
 order	O
 .	O
 
@@ -28792,7 +28700,7 @@ the	O
 Guangdong	O
 province	O
 of	O
-China	O
+China	I-LOC
 .	O
 
 
@@ -28869,14 +28777,13 @@ said	O
 
 
 --	O
-Stockholm	O
+Stockholm	I-LOC
 newsroom	O
 +46-8-700	O
 1017	O
 
 
--DOCSTART-	-X-	O
-
+-DOCSTART-	O
 
 
 HK	O
@@ -28891,7 +28798,7 @@ Tsang	O
 .	O
 
 
-AUCKLAND	O
+AUCKLAND	I-LOC
 1996-08-30	O
 
 
@@ -28940,7 +28847,7 @@ port	O
 on	O
 the	O
 South	O
-China	O
+China	I-LOC
 coast	O
 ;	O
 we	O
@@ -29012,7 +28919,7 @@ handover	O
 from	O
 Britain	O
 to	O
-China	O
+China	I-LOC
 .	O
 
 
@@ -29113,15 +29020,14 @@ future	O
 
 
 --	O
-Wellington	O
+Wellington	I-LOC
 newsroom	O
 64	O
 4	O
 473-4746	O
 
 
--DOCSTART-	-X-	O
-
+-DOCSTART-	O
 
 
 PRESS	O
@@ -29154,7 +29060,7 @@ prepared	O
 by	O
 Reuters	O
 in	O
-Jakarta	O
+Jakarta	I-LOC
 .	O
 
 
@@ -29231,7 +29137,7 @@ exports	O
 -	O
 
 
-JAKARTA	O
+JAKARTA	I-LOC
 POST	O
 
 
@@ -29277,7 +29183,7 @@ peace	O
 to	O
 the	O
 southern	O
-Philippines	O
+Philippines	I-ORG
 is	O
 set	O
 to	O
@@ -29334,7 +29240,7 @@ INDONESIA	O
 Around	O
 2,000	O
 of	O
-Indonesia	O
+Indonesia	I-LOC
 's	O
 controversial	O
 Timor	O
@@ -29350,7 +29256,7 @@ South	O
 Korea	O
 arrived	O
 at	O
-Jakarta	O
+Jakarta	I-LOC
 's	O
 Tanjung	O
 Priok	O
@@ -29392,7 +29298,7 @@ assembling	O
 the	O
 vehicles	O
 in	O
-Indonesia	O
+Indonesia	I-LOC
 .	O
 
 
@@ -29406,8 +29312,8 @@ REPUBLIKA	O
 
 
 The	O
-Central	O
-Jakarta	O
+Central	I-ORG
+Jakarta	I-LOC
 District	O
 Court	O
 has	O
@@ -29426,8 +29332,8 @@ Party	O
 PDI	O
 )	O
 leader	O
-Megawati	O
-Sukarnoputri	O
+Megawati	I-PER
+Sukarnoputri	I-PER
 against	O
 the	O
 government	O
@@ -29446,7 +29352,7 @@ settlement	O
 .	O
 
 
-Megawati	O
+Megawati	I-PER
 has	O
 sued	O
 the	O
@@ -29464,8 +29370,7 @@ June	O
 .	O
 
 
--DOCSTART-	-X-	O
-
+-DOCSTART-	O
 
 
 Jeans	O
@@ -29551,12 +29456,11 @@ name	O
 .	O
 
 
--DOCSTART-	-X-	O
-
+-DOCSTART-	O
 
 
 Apic	O
-Yamada	O
+Yamada	I-LOC
 -	O
 6mth	O
 parent	O
@@ -29624,7 +29528,7 @@ million	O
 NOTE	O
 -	O
 Apic	O
-Yamada	O
+Yamada	I-LOC
 Corp	O
 is	O
 a	O
@@ -29636,8 +29540,7 @@ leadframes	O
 .	O
 
 
--DOCSTART-	-X-	O
-
+-DOCSTART-	O
 
 
 Bootleg	O
@@ -29645,7 +29548,7 @@ brew	O
 kills	O
 35	O
 in	O
-China	O
+China	I-LOC
 ,	O
 police	O
 nab	O
@@ -29660,7 +29563,7 @@ BEIJING	O
 Police	O
 in	O
 southwest	O
-China	O
+China	I-LOC
 have	O
 arrested	O
 30	O
@@ -29818,13 +29721,12 @@ details	O
 .	O
 
 
--DOCSTART-	-X-	O
+-DOCSTART-	O
 
 
-
-Singapore	O
+Singapore	I-ORG
 hangs	O
-Thai	O
+Thai	I-PER
 drug	O
 trafficker	O
 .	O
@@ -29834,7 +29736,7 @@ SINGAPORE	O
 1996-08-30	O
 
 
-Singapore	O
+Singapore	I-ORG
 hanged	O
 a	O
 Thai	O
@@ -29849,7 +29751,7 @@ drug	O
 trafficking	O
 ,	O
 the	O
-Central	O
+Central	I-LOC
 Narcotics	O
 Bureau	O
 (	O
@@ -29891,7 +29793,7 @@ said	O
 .	O
 
 
-Singapore	O
+Singapore	I-ORG
 has	O
 a	O
 mandatory	O
@@ -29967,8 +29869,7 @@ charges	O
 .	O
 
 
--DOCSTART-	-X-	O
-
+-DOCSTART-	O
 
 
 Arafat	O
@@ -29982,7 +29883,7 @@ meeting	O
 .	O
 
 
-NABLUS	O
+NABLUS	I-LOC
 ,	O
 West	O
 Bank	O
@@ -30003,7 +29904,7 @@ enclave	O
 of	O
 Nablus	O
 from	O
-Ramallah	O
+Ramallah	I-LOC
 on	O
 Friday	O
 ,	O
@@ -30036,7 +29937,7 @@ Saturday	O
 
 
 In	O
-Jerusalem	O
+Jerusalem	I-LOC
 ,	O
 Israeli	O
 security	O
@@ -30073,7 +29974,7 @@ pray	O
 in	O
 protest	O
 against	O
-Israel	O
+Israel	I-LOC
 's	O
 settlement	O
 policy	O
@@ -30093,7 +29994,7 @@ Palestinians	O
 want	O
 Arab	O
 East	O
-Jerusalem	O
+Jerusalem	I-LOC
 as	O
 the	O
 capital	O
@@ -30105,14 +30006,14 @@ state	O
 .	O
 
 
-Israel	O
+Israel	I-LOC
 ,	O
 which	O
 captured	O
 and	O
 annexed	O
 East	O
-Jerusalem	O
+Jerusalem	I-LOC
 in	O
 1967	O
 ,	O
@@ -30138,7 +30039,7 @@ interim	O
 peace	O
 deal	O
 with	O
-Israel	O
+Israel	I-LOC
 in	O
 1993	O
 that	O
@@ -30151,7 +30052,7 @@ he	O
 will	O
 only	O
 visit	O
-Jerusalem	O
+Jerusalem	I-LOC
 once	O
 Israeli	O
 occupation	O
@@ -30160,8 +30061,7 @@ ended	O
 .	O
 
 
--DOCSTART-	-X-	O
-
+-DOCSTART-	O
 
 
 U.N.	O
@@ -30186,7 +30086,7 @@ concern	O
 on	O
 Thursday	O
 that	O
-Israel	O
+Israel	I-LOC
 's	O
 bulldozing	O
 of	O
@@ -30226,7 +30126,7 @@ President	O
 Tono	O
 Eitel	O
 of	O
-Germany	O
+Germany	I-LOC
 said	O
 that	O
 members	O
@@ -30237,7 +30137,7 @@ convey	O
 their	O
 views	O
 to	O
-Israel	O
+Israel	I-LOC
 's	O
 charge	O
 d'affaires	O
@@ -30324,13 +30224,13 @@ the	O
 destruction	O
 of	O
 the	O
-Jerusalem	O
+Jerusalem	I-LOC
 centre	O
 was	O
 an	O
 effort	O
 by	O
-Israel	O
+Israel	I-LOC
 to	O
 "	O
 alter	O
@@ -30346,13 +30246,13 @@ the	O
 Holy	O
 City	O
 of	O
-Jerusalem	O
+Jerusalem	I-LOC
 "	O
 and	O
 violated	O
 agreements	O
 between	O
-Israel	O
+Israel	I-LOC
 and	O
 the	O
 Palestinian	O
@@ -30447,7 +30347,7 @@ over	O
 the	O
 walls	O
 of	O
-Jerusalem	O
+Jerusalem	I-LOC
 's	O
 old	O
 city	O
@@ -30468,7 +30368,7 @@ permit	O
 .	O
 
 
-Canada	O
+Canada	I-LOC
 had	O
 recently	O
 donated	O
@@ -30487,8 +30387,7 @@ Society	O
 .	O
 
 
--DOCSTART-	-X-	O
-
+-DOCSTART-	O
 
 
 SOCCER	O
@@ -30507,7 +30406,7 @@ MATCH	O
 LA	O
 CORUNA	O
 ,	O
-Spain	O
+Spain	I-LOC
 1996-08-31	O
 
 
@@ -30655,7 +30554,7 @@ ten	O
 men	O
 when	O
 Armando	O
-Alvarez	O
+Alvarez	I-PER
 was	O
 sent	O
 off	O
@@ -30795,7 +30694,7 @@ did	O
 not	O
 join	O
 the	O
-Brazil	O
+Brazil	I-LOC
 squad	O
 because	O
 he	O
@@ -30806,14 +30705,13 @@ passport	O
 .	O
 
 
--DOCSTART-	-X-	O
+-DOCSTART-	O
 
 
-
-RUGBY	O
+RUGBY	I-ORG
 LEAGUE	O
 -	O
-WIGAN	O
+WIGAN	I-LOC
 BEAT	O
 BRADFORD	O
 42-36	O
@@ -30822,7 +30720,7 @@ SEMIFINAL	O
 .	O
 
 
-WIGAN	O
+WIGAN	I-LOC
 ,	O
 England	O
 1996-08-31	O
@@ -30848,15 +30746,14 @@ Bulls	O
 36	O
 
 
--DOCSTART-	-X-	O
-
+-DOCSTART-	O
 
 
 SOCCER	O
 -	O
 ISRAEL	O
 BEAT	O
-BULGARIA	O
+BULGARIA	I-LOC
 IN	O
 EUROPEAN	O
 UNDER-21	O
@@ -30866,7 +30763,7 @@ QUALIFIER	O
 
 HERZLIYA	O
 ,	O
-Israel	O
+Israel	I-LOC
 1996-08-31	O
 
 
@@ -30883,10 +30780,10 @@ Saturday	O
 :	O
 
 
-Israel	O
+Israel	I-LOC
 2	O
 ,	O
-Bulgaria	O
+Bulgaria	I-LOC
 0	O
 (	O
 halftime	O
@@ -30914,8 +30811,7 @@ Attendance	O
 .	O
 
 
--DOCSTART-	-X-	O
-
+-DOCSTART-	O
 
 
 SOCCER	O
@@ -30932,14 +30828,14 @@ WIN	O
 
 ESCHEN	O
 ,	O
-Liechtenstein	O
+Liechtenstein	I-LOC
 1996-08-31	O
 
 
 The	O
 Republic	O
 of	O
-Ireland	O
+Ireland	I-LOC
 's	O
 new-look	O
 side	O
@@ -30951,7 +30847,7 @@ their	O
 last	O
 visit	O
 to	O
-Liechtenstein	O
+Liechtenstein	I-LOC
 by	O
 beating	O
 the	O
@@ -31011,7 +30907,7 @@ added	O
 his	O
 second	O
 and	O
-Ireland	O
+Ireland	I-LOC
 's	O
 fifth	O
 just	O
@@ -31076,15 +30972,14 @@ finals	O
 .	O
 
 
--DOCSTART-	-X-	O
-
+-DOCSTART-	O
 
 
 SOCCER	O
 -	O
-IRELAND	O
+IRELAND	I-LOC
 BEAT	O
-LIECHTENSTEIN	O
+LIECHTENSTEIN	I-LOC
 5-0	O
 IN	O
 WORLD	O
@@ -31100,9 +30995,9 @@ ESCHEN	O
 The	O
 Republic	O
 of	O
-Ireland	O
+Ireland	I-LOC
 beat	O
-Liechtenstein	O
+Liechtenstein	I-LOC
 5-0	O
 (	O
 halftime	O
@@ -31157,8 +31052,7 @@ Attendance	O
 3,900	O
 
 
--DOCSTART-	-X-	O
-
+-DOCSTART-	O
 
 
 GOLF	O
@@ -31170,7 +31064,7 @@ SCORES	O
 .	O
 
 
-NORTHAMPTON	O
+NORTHAMPTON	I-LOC
 ,	O
 England	O
 1996-08-31	O
@@ -31202,7 +31096,7 @@ stated	O
 Robert	O
 Allenby	O
 (	O
-Australia	O
+Australia	I-LOC
 )	O
 69	O
 71	O
@@ -31211,9 +31105,9 @@ Australia	O
 ,	O
 Miguel	O
 Angel	O
-Martin	O
+Martin	I-PER
 (	O
-Spain	O
+Spain	I-LOC
 )	O
 75	O
 70	O
@@ -31233,7 +31127,7 @@ hole	O
 Costantino	O
 Rocca	O
 (	O
-Italy	O
+Italy	I-LOC
 )	O
 71	O
 73	O
@@ -31244,9 +31138,9 @@ Italy	O
 286	O
 Miguel	O
 Angel	O
-Jimenez	O
+Jimenez	I-PER
 (	O
-Spain	O
+Spain	I-LOC
 )	O
 74	O
 72	O
@@ -31267,7 +31161,7 @@ Woosnam	O
 Jose	O
 Coceres	O
 (	O
-Argentina	O
+Argentina	I-LOC
 )	O
 69	O
 78	O
@@ -31279,7 +31173,7 @@ Argentina	O
 Joakim	O
 Haeggman	O
 (	O
-Sweden	O
+Sweden	I-LOC
 )	O
 71	O
 77	O
@@ -31315,7 +31209,7 @@ Coles	O
 Philip	O
 Walton	O
 (	O
-Ireland	O
+Ireland	I-LOC
 )	O
 71	O
 74	O
@@ -31323,7 +31217,7 @@ Ireland	O
 71	O
 ,	O
 Peter	O
-Mitchell	O
+Mitchell	I-PER
 74	O
 71	O
 74	O
@@ -31332,7 +31226,7 @@ Mitchell	O
 Klas	O
 Eriksson	O
 (	O
-Sweden	O
+Sweden	I-LOC
 )	O
 71	O
 75	O
@@ -31342,7 +31236,7 @@ Sweden	O
 Pedro	O
 Linhart	O
 (	O
-Spain	O
+Spain	I-LOC
 )	O
 72	O
 73	O
@@ -31368,7 +31262,7 @@ Hunter	O
 Peter	O
 O'Malley	O
 (	O
-Australia	O
+Australia	I-LOC
 )	O
 71	O
 73	O
@@ -31383,9 +31277,9 @@ Roe	O
 73	O
 ,	O
 Mike	O
-Clayton	O
+Clayton	I-PER
 (	O
-Australia	O
+Australia	I-LOC
 )	O
 69	O
 76	O
@@ -31401,7 +31295,7 @@ Pyman	O
 75	O
 71	O
 ,	O
-David	O
+David	I-PER
 Gilford	O
 69	O
 74	O
@@ -31411,7 +31305,7 @@ Gilford	O
 Peter	O
 Hedblom	O
 (	O
-Sweden	O
+Sweden	I-LOC
 )	O
 70	O
 75	O
@@ -31427,13 +31321,12 @@ McAllister	O
 .	O
 
 
--DOCSTART-	-X-	O
-
+-DOCSTART-	O
 
 
 SOCCER	O
 -	O
-SLOVAKIA	O
+SLOVAKIA	I-LOC
 BEAT	O
 FAROES	O
 IN	O
@@ -31450,7 +31343,7 @@ Islands	O
 1996-08-31	O
 
 
-Slovakia	O
+Slovakia	I-LOC
 beat	O
 the	O
 Faroe	O
@@ -31491,7 +31384,7 @@ minute	O
 )	O
 
 
-Slovakia	O
+Slovakia	I-LOC
 -	O
 Lubomir	O
 Moravcik	O
@@ -31512,8 +31405,7 @@ Attendance	O
 .	O
 
 
--DOCSTART-	-X-	O
-
+-DOCSTART-	O
 
 
 CRICKET	O
@@ -31530,7 +31422,7 @@ ONE-DAYER	O
 .	O
 
 
-BIRMINGHAM	O
+BIRMINGHAM	I-LOC
 ,	O
 England	O
 1996-08-31	O
@@ -31538,7 +31430,7 @@ England	O
 
 England	O
 beat	O
-Pakistan	O
+Pakistan	I-LOC
 by	O
 107	O
 runs	O
@@ -31571,10 +31463,10 @@ Knight	O
 113	O
 )	O
 ,	O
-Pakistan	O
+Pakistan	I-LOC
 185	O
 (	O
-Ijaz	O
+Ijaz	I-PER
 Ahmed	O
 79	O
 ;	O
@@ -31584,15 +31476,14 @@ Hollioake	O
 )	O
 
 
--DOCSTART-	-X-	O
-
+-DOCSTART-	O
 
 
 CYCLING	O
 -	O
 TOUR	O
 OF	O
-NETHERLANDS	O
+NETHERLANDS	I-LOC
 FINAL	O
 RESULTS	O
 /	O
@@ -31638,7 +31529,7 @@ Saturday	O
 Olaf	O
 Ludwig	O
 (	O
-Germany	O
+Germany	I-LOC
 )	O
 Telekom	O
 4	O
@@ -31650,10 +31541,10 @@ seconds	O
 
 
 2.	O
-Giovanni	O
-Lombardi	O
+Giovanni	I-PER
+Lombardi	I-PER
 (	O
-Italy	O
+Italy	I-LOC
 )	O
 Polti	O
 5	O
@@ -31665,7 +31556,7 @@ behind	O
 Tristan	O
 Hoffman	O
 (	O
-Netherlands	O
+Netherlands	I-LOC
 )	O
 TVM	O
 same	O
@@ -31676,7 +31567,7 @@ time	O
 Erik	O
 Breukink	O
 (	O
-Netherlands	O
+Netherlands	I-LOC
 )	O
 Rabobank	O
 8	O
@@ -31687,7 +31578,7 @@ seconds	O
 Jesper	O
 Skibby	O
 (	O
-Denmark	O
+Denmark	I-LOC
 )	O
 TVM	O
 9	O
@@ -31697,7 +31588,7 @@ TVM	O
 Vyacheslav	O
 Ekimov	O
 (	O
-Russia	O
+Russia	I-LOC
 )	O
 Rabobank	O
 same	O
@@ -31708,9 +31599,9 @@ time	O
 Luca	O
 Pavanello	O
 (	O
-Italy	O
+Italy	I-LOC
 )	O
-Aki	O
+Aki	I-PER
 11	O
 
 
@@ -31718,7 +31609,7 @@ Aki	O
 Eleuterio	O
 Anguita	O
 (	O
-Spain	O
+Spain	I-LOC
 )	O
 MX	O
 Onda	O
@@ -31728,7 +31619,7 @@ Onda	O
 Michael	O
 Andersson	O
 (	O
-Sweden	O
+Sweden	I-LOC
 )	O
 Telekom	O
 
@@ -31737,7 +31628,7 @@ Telekom	O
 Johan	O
 Capiot	O
 (	O
-Belgium	O
+Belgium	I-LOC
 )	O
 Collstrop	O
 all	O
@@ -31760,7 +31651,7 @@ stages	O
 Rolf	O
 Sorensen	O
 (	O
-Denmark	O
+Denmark	I-LOC
 )	O
 Rabobank	O
 20:36:54	O
@@ -31785,9 +31676,9 @@ Ekimov	O
 
 4.	O
 Marco	O
-Lietti	O
+Lietti	I-PER
 (	O
-Italy	O
+Italy	I-LOC
 )	O
 MG-Technogym	O
 1:16	O
@@ -31797,7 +31688,7 @@ MG-Technogym	O
 Erik	O
 Dekker	O
 (	O
-Netherlands	O
+Netherlands	I-LOC
 )	O
 Rabobank	O
 1:23	O
@@ -31835,21 +31726,20 @@ Skibby	O
 1:45	O
 
 
--DOCSTART-	-X-	O
-
+-DOCSTART-	O
 
 
 CRICKET	O
 -	O
 ENGLAND	O
 V	O
-PAKISTAN	O
+PAKISTAN	I-LOC
 ONE-DAY	O
 SCOREBOARD	O
 .	O
 
 
-BIRMINGHAM	O
+BIRMINGHAM	I-LOC
 ,	O
 England	O
 1996-08-31	O
@@ -31865,7 +31755,7 @@ match	O
 between	O
 England	O
 and	O
-Pakistan	O
+Pakistan	I-LOC
 on	O
 Saturday	O
 :	O
@@ -31894,7 +31784,7 @@ Ahmed	O
 
 
 M.	O
-Atherton	O
+Atherton	I-PER
 lbw	O
 b	O
 Mushtaq	O
@@ -31918,7 +31808,7 @@ out	O
 
 
 R.	O
-Irani	O
+Irani	I-PER
 not	O
 out	O
 45	O
@@ -32056,7 +31946,7 @@ Mullally	O
 0	O
 
 
-Ijaz	O
+Ijaz	I-PER
 Ahmed	O
 b	O
 Croft	O
@@ -32089,7 +31979,7 @@ Hollioake	O
 21	O
 
 
-Mushtaq	O
+Mushtaq	I-PER
 Ahmed	O
 not	O
 out	O
@@ -32097,7 +31987,7 @@ out	O
 
 
 Saqlain	O
-Mushtaq	O
+Mushtaq	I-PER
 b	O
 Hollioake	O
 0	O
@@ -32177,8 +32067,7 @@ Hollioake	O
 .	O
 
 
--DOCSTART-	-X-	O
-
+-DOCSTART-	O
 
 
 CYCLING	O
@@ -32190,7 +32079,7 @@ RESULTS	O
 .	O
 
 
-MANCHESTER	O
+MANCHESTER	I-LOC
 ,	O
 England	O
 1996-08-31	O
@@ -32232,9 +32121,9 @@ finals	O
 
 1.	O
 Antonella	O
-Bellutti	O
+Bellutti	I-PER
 (	O
-Italy	O
+Italy	I-LOC
 )	O
 3:31.526	O
 (	O
@@ -32244,10 +32133,10 @@ record	O
 
 
 2.	O
-Marion	O
+Marion	I-ORG
 Clignet	O
 (	O
-France	O
+France	I-LOC
 )	O
 3:31.674	O
 
@@ -32256,7 +32145,7 @@ France	O
 Lucy	O
 Tyler-Sharman	O
 (	O
-Australia	O
+Australia	I-LOC
 )	O
 3:31.830	O
 
@@ -32274,7 +32163,7 @@ Britain	O
 Natalia	O
 Karimova	O
 (	O
-Russia	O
+Russia	I-LOC
 )	O
 3:45.061	O
 
@@ -32283,7 +32172,7 @@ Russia	O
 Svetlana	O
 Samokhalova	O
 (	O
-Russia	O
+Russia	I-LOC
 )	O
 3:46.216	O
 
@@ -32301,7 +32190,7 @@ U.S.	O
 Rasa	O
 Mazeikyte	O
 (	O
-Lithuania	O
+Lithuania	I-LOC
 )	O
 3:46.834	O
 
@@ -32310,7 +32199,7 @@ Lithuania	O
 Tatian	O
 Stiajkina	O
 (	O
-Ukraine	O
+Ukraine	I-LOC
 )	O
 3:52.204	O
 
@@ -32324,7 +32213,7 @@ semifinals	O
 :	O
 
 
-Italy	O
+Italy	I-LOC
 (	O
 Adler	O
 Capelli	O
@@ -32333,7 +32222,7 @@ Cristiano	O
 Citto	O
 ,	O
 Andrea	O
-Collinelli	O
+Collinelli	I-PER
 ,	O
 Mauro	O
 Trentino	O
@@ -32344,7 +32233,7 @@ world	O
 record	O
 )	O
 beat	O
-Russia	O
+Russia	I-LOC
 (	O
 Anton	O
 Chantyr	O
@@ -32359,7 +32248,7 @@ Kouznetsov	O
 .	O
 
 
-France	O
+France	I-LOC
 (	O
 Cyril	O
 Bos	O
@@ -32375,7 +32264,7 @@ Moreau	O
 )	O
 4:05.104	O
 beat	O
-Germany	O
+Germany	I-LOC
 (	O
 Guido	O
 Fulst	O
@@ -32392,7 +32281,7 @@ Szonn	O
 4:05.463	O
 
 
-Germany	O
+Germany	I-LOC
 take	O
 the	O
 bronze	O
@@ -32419,7 +32308,7 @@ final	O
 Felicia	O
 Ballanger	O
 (	O
-France	O
+France	I-LOC
 )	O
 34.829	O
 
@@ -32428,7 +32317,7 @@ France	O
 Annett	O
 Neumann	O
 (	O
-Germany	O
+Germany	I-LOC
 )	O
 35.202	O
 
@@ -32437,16 +32326,16 @@ Germany	O
 Michelle	O
 Ferris	O
 (	O
-Australia	O
+Australia	I-LOC
 )	O
 35.694	O
 
 
 4.	O
-Magali	O
+Magali	I-PER
 Faure	O
 (	O
-France	O
+France	I-LOC
 )	O
 35.888	O
 
@@ -32455,7 +32344,7 @@ France	O
 Olga	O
 Slioussareva	O
 (	O
-Russia	O
+Russia	I-LOC
 )	O
 36.170	O
 
@@ -32464,7 +32353,7 @@ Russia	O
 Oksana	O
 Grichina	O
 (	O
-Russia	O
+Russia	I-LOC
 )	O
 36.242	O
 
@@ -32473,7 +32362,7 @@ Russia	O
 Tanya	O
 Dubnicoff	O
 (	O
-Canada	O
+Canada	I-LOC
 )	O
 36.307	O
 
@@ -32482,13 +32371,13 @@ Canada	O
 Kathrin	O
 Freitag	O
 (	O
-Germany	O
+Germany	I-LOC
 )	O
 36.491	O
 
 
 9.	O
-Donna	O
+Donna	I-PER
 Wynd	O
 (	O
 New	O
@@ -32501,7 +32390,7 @@ Zealand	O
 Mira	O
 Kasslin	O
 (	O
-Finland	O
+Finland	I-LOC
 )	O
 37.273	O
 
@@ -32517,9 +32406,9 @@ Britain	O
 
 12.	O
 Giovanna	O
-Troldi	O
+Troldi	I-PER
 (	O
-Italy	O
+Italy	I-LOC
 )	O
 38.285	O
 
@@ -32528,7 +32417,7 @@ Italy	O
 Rita	O
 Razmaite	O
 (	O
-Lithuania	O
+Lithuania	I-LOC
 )	O
 38.546	O
 
@@ -32543,7 +32432,7 @@ final	O
 :	O
 
 
-Italy	O
+Italy	I-LOC
 (	O
 Adler	O
 Capelli	O
@@ -32552,7 +32441,7 @@ Cristiano	O
 Citto	O
 ,	O
 Andrea	O
-Collinelli	O
+Collinelli	I-PER
 ,	O
 Mauro	O
 Trentino	O
@@ -32594,13 +32483,13 @@ matches	O
 Florian	O
 Rousseau	O
 (	O
-France	O
+France	I-LOC
 )	O
 beat	O
 Ainars	O
 Kiksis	O
 (	O
-Latvia	O
+Latvia	I-LOC
 )	O
 2-0	O
 
@@ -32608,7 +32497,7 @@ Latvia	O
 Darryn	O
 Hill	O
 (	O
-Australia	O
+Australia	I-LOC
 )	O
 beat	O
 Christian	O
@@ -32622,13 +32511,13 @@ U.S.	O
 Roberto	O
 Chiappa	O
 (	O
-Italy	O
+Italy	I-LOC
 )	O
 beat	O
 Frederic	O
 Magne	O
 (	O
-France	O
+France	I-LOC
 )	O
 2-0	O
 
@@ -32662,10 +32551,10 @@ quarter-finals	O
 :	O
 
 
-Marion	O
+Marion	I-ORG
 Clignet	O
 (	O
-France	O
+France	I-LOC
 )	O
 3:30.974	O
 (	O
@@ -32686,7 +32575,7 @@ USA	O
 Natalia	O
 Karimova	O
 (	O
-Russia	O
+Russia	I-LOC
 )	O
 3:40.036	O
 beat	O
@@ -32703,7 +32592,7 @@ Britain	O
 Lucy	O
 Tyler-Sharman	O
 (	O
-Australia	O
+Australia	I-LOC
 )	O
 3:35.087	O
 beat	O
@@ -32712,15 +32601,15 @@ Svetlana	O
 
 Samokhvalova	O
 (	O
-Russia	O
+Russia	I-LOC
 )	O
 3:45.011	O
 
 
 Antonella	O
-Bellutti	O
+Bellutti	I-PER
 (	O
-Italy	O
+Italy	I-LOC
 )	O
 3:32.174	O
 caught	O
@@ -32731,17 +32620,16 @@ Rasa	O
 
 Mazeikyte	O
 (	O
-Lithuania	O
+Lithuania	I-LOC
 )	O
 
 
--DOCSTART-	-X-	O
-
+-DOCSTART-	O
 
 
 CRICKET	O
 -	O
-PAKISTAN	O
+PAKISTAN	I-LOC
 WIN	O
 TOSS	O
 ,	O
@@ -32753,13 +32641,13 @@ BAT	O
 .	O
 
 
-BIRMINGHAM	O
+BIRMINGHAM	I-LOC
 ,	O
 England	O
 1996-08-31	O
 
 
-Pakistan	O
+Pakistan	I-LOC
 won	O
 the	O
 toss	O
@@ -32783,7 +32671,7 @@ Saturday	O
 .	O
 
 
-Surrey	O
+Surrey	I-ORG
 all-rounder	O
 Adam	O
 Hollioake	O
@@ -32796,13 +32684,13 @@ debut	O
 replacing	O
 Lancashire	O
 batsman	O
-Graham	O
+Graham	I-PER
 Lloyd	O
 ,	O
 with	O
 seamer	O
 Peter	O
-Martin	O
+Martin	I-PER
 again	O
 being	O
 omitted	O
@@ -32812,7 +32700,7 @@ the	O
 .	O
 
 
-Pakistan	O
+Pakistan	I-LOC
 kept	O
 the	O
 side	O
@@ -32846,7 +32734,7 @@ Teams	O
 England	O
 :	O
 Mike	O
-Atherton	O
+Atherton	I-PER
 (	O
 captain	O
 )	O
@@ -32857,7 +32745,7 @@ Knight	O
 Alec	O
 Stewart	O
 ,	O
-Graham	O
+Graham	I-PER
 Thorpe	O
 ,	O
 Matthew	O
@@ -32867,7 +32755,7 @@ Adam	O
 Hollioake	O
 ,	O
 Ronnie	O
-Irani	O
+Irani	I-PER
 ,	O
 Robert	O
 Croft	O
@@ -32883,7 +32771,7 @@ Mullally	O
 .	O
 
 
-Pakistan	O
+Pakistan	I-LOC
 :	O
 Aamir	O
 Sohail	O
@@ -32891,7 +32779,7 @@ Sohail	O
 Saeed	O
 Anwar	O
 ,	O
-Ijaz	O
+Ijaz	I-PER
 Ahmed	O
 ,	O
 Salim	O
@@ -32921,8 +32809,7 @@ Ata-ur-Rehman	O
 .	O
 
 
--DOCSTART-	-X-	O
-
+-DOCSTART-	O
 
 
 BASEBALL	O
@@ -32937,19 +32824,19 @@ INDIANS	O
 .	O
 
 
-ARLINGTON	O
+ARLINGTON	I-LOC
 ,	O
 Texas	O
 1996-08-31	O
 
 
 Juan	O
-Gonzalez	O
+Gonzalez	I-PER
 homered	O
 twice	O
 and	O
 Ivan	O
-Rodriguez	O
+Rodriguez	I-PER
 added	O
 a	O
 two-run	O
@@ -32973,7 +32860,7 @@ Friday	O
 .	O
 
 
-Rodriguez	O
+Rodriguez	I-PER
 's	O
 18th	O
 homer	O
@@ -33000,7 +32887,7 @@ One	O
 out	O
 later	O
 ,	O
-Gonzalez	O
+Gonzalez	I-PER
 smacked	O
 his	O
 40th	O
@@ -33016,7 +32903,7 @@ games	O
 .	O
 
 
-Gonzalez	O
+Gonzalez	I-PER
 ,	O
 who	O
 hit	O
@@ -33049,7 +32936,7 @@ year	O
 .	O
 
 
-Gonzalez	O
+Gonzalez	I-PER
 hit	O
 his	O
 second	O
@@ -33068,7 +32955,7 @@ season	O
 .	O
 
 
-Gonzalez	O
+Gonzalez	I-PER
 has	O
 three	O
 40-homer	O
@@ -33220,7 +33107,7 @@ Cleveland	O
 .	O
 
 
-Cleveland	O
+Cleveland	I-ORG
 's	O
 lead	O
 over	O
@@ -33231,7 +33118,7 @@ in	O
 the	O
 American	O
 League	O
-Central	O
+Central	I-LOC
 dropped	O
 to	O
 nine	O
@@ -33239,7 +33126,7 @@ games	O
 .	O
 
 
-Texas	O
+Texas	I-ORG
 's	O
 lead	O
 over	O
@@ -33257,7 +33144,7 @@ At	O
 California	O
 ,	O
 Tino	O
-Martinez	O
+Martinez	I-PER
 's	O
 two-run	O
 homer	O
@@ -33278,7 +33165,7 @@ winner	O
 as	O
 the	O
 New	O
-York	O
+York	I-LOC
 Yankees	O
 beat	O
 the	O
@@ -33288,7 +33175,7 @@ Angels	O
 
 
 New	O
-York	O
+York	I-ORG
 snapped	O
 a	O
 season-high	O
@@ -33300,14 +33187,14 @@ also	O
 got	O
 homers	O
 from	O
-Mariano	O
-Duncan	O
+Mariano	I-PER
+Duncan	I-PER
 ,	O
 Darryl	O
 Strawberry	O
 and	O
 Jim	O
-Leyritz	O
+Leyritz	I-PER
 .	O
 
 
@@ -33344,8 +33231,8 @@ losses	O
 .	O
 
 
-Mariano	O
-Rivera	O
+Mariano	I-PER
+Rivera	I-LOC
 pitched	O
 a	O
 scoreless	O
@@ -33375,7 +33262,7 @@ level	O
 
 
 In	O
-Seattle	O
+Seattle	I-ORG
 ,	O
 Pete	O
 Incaviglia	O
@@ -33421,10 +33308,10 @@ career	O
 .	O
 
 
-Baltimore	O
+Baltimore	I-ORG
 's	O
 Eddie	O
-Murray	O
+Murray	I-PER
 cracked	O
 his	O
 20th	O
@@ -33448,7 +33335,7 @@ his	O
 homer	O
 and	O
 Edgar	O
-Martinez	O
+Martinez	I-PER
 his	O
 23rd	O
 for	O
@@ -33480,7 +33367,7 @@ back	O
 
 
 In	O
-Toronto	O
+Toronto	I-ORG
 ,	O
 Kevin	O
 Tapani	O
@@ -33559,7 +33446,7 @@ three	O
 RBI	O
 as	O
 all	O
-Chicago	O
+Chicago	I-LOC
 starters	O
 got	O
 at	O
@@ -33570,7 +33457,7 @@ hit	O
 
 
 In	O
-Oakland	O
+Oakland	I-ORG
 ,	O
 Dave	O
 Telgheder	O
@@ -33599,7 +33486,7 @@ the	O
 Athetlics	O
 blanked	O
 the	O
-Boston	O
+Boston	I-LOC
 Red	O
 Sox	O
 7-0	O
@@ -33656,7 +33543,7 @@ seventh	O
 The	O
 loss	O
 was	O
-Boston	O
+Boston	I-LOC
 's	O
 seventh	O
 in	O
@@ -33671,7 +33558,7 @@ In	O
 Detroit	O
 ,	O
 Todd	O
-Van	O
+Van	I-PER
 Poppel	O
 pitched	O
 a	O
@@ -33703,7 +33590,7 @@ Royals	O
 .	O
 
 
-Van	O
+Van	I-PER
 Poppel	O
 (	O
 3-6	O
@@ -33743,7 +33630,7 @@ to	O
 .	O
 
 
-Kansas	O
+Kansas	I-LOC
 City	O
 has	O
 scored	O
@@ -33757,7 +33644,7 @@ games	O
 
 
 In	O
-Milwaukee	O
+Milwaukee	I-ORG
 ,	O
 Marc	O
 Newfield	O
@@ -33790,7 +33677,7 @@ Twins	O
 .	O
 
 
-Milwaukee	O
+Milwaukee	I-ORG
 has	O
 won	O
 10	O
@@ -33824,7 +33711,7 @@ Brewers	O
 
 
 Matt	O
-Lawton	O
+Lawton	I-PER
 hit	O
 a	O
 three-run	O
@@ -33849,7 +33736,7 @@ lead	O
 
 
 But	O
-Milwaukee	O
+Milwaukee	I-ORG
 tied	O
 it	O
 up	O
@@ -33869,13 +33756,12 @@ double	O
 .	O
 
 
--DOCSTART-	-X-	O
-
+-DOCSTART-	O
 
 
 CRICKET	O
 -	O
-ESSEX	O
+ESSEX	I-ORG
 AND	O
 KENT	O
 MADE	O
@@ -33887,11 +33773,11 @@ RACE	O
 .	O
 
 
-LONDON	O
+LONDON	I-LOC
 1996-08-31	O
 
 
-Essex	O
+Essex	I-ORG
 and	O
 Kent	O
 both	O
@@ -33928,7 +33814,7 @@ run-in	O
 .	O
 
 
-Essex	O
+Essex	I-ORG
 need	O
 another	O
 148	O
@@ -33962,7 +33848,7 @@ lose	O
 .	O
 
 
-Kent	O
+Kent	I-ORG
 will	O
 also	O
 need	O
@@ -34120,8 +34006,7 @@ said	O
 .	O
 
 
--DOCSTART-	-X-	O
-
+-DOCSTART-	O
 
 
 GOLF	O
@@ -34135,7 +34020,7 @@ TOUR	O
 .	O
 
 
-LONDON	O
+LONDON	I-LOC
 1996-08-31	O
 
 
@@ -34186,7 +34071,7 @@ Montgomerie	O
 Robert	O
 Allenby	O
 (	O
-Australia	O
+Australia	I-LOC
 )	O
 407,748	O
 
@@ -34201,7 +34086,7 @@ Westwood	O
 Costantino	O
 Rocca	O
 (	O
-Italy	O
+Italy	I-LOC
 )	O
 297,157	O
 
@@ -34210,7 +34095,7 @@ Italy	O
 Mark	O
 McNulty	O
 (	O
-Zimbabwe	O
+Zimbabwe	I-LOC
 )	O
 254,247	O
 
@@ -34222,10 +34107,10 @@ Coltart	O
 
 
 8.	O
-Wayne	O
+Wayne	I-PER
 Riley	O
 (	O
-Australia	O
+Australia	I-LOC
 )	O
 239,733	O
 
@@ -34244,9 +34129,9 @@ Lawrie	O
 
 11.	O
 Stephen	O
-Ames	O
+Ames	I-PER
 (	O
-Trinidad	O
+Trinidad	I-LOC
 )	O
 211,175	O
 
@@ -34265,7 +34150,7 @@ Zealand	O
 Paul	O
 McGinley	O
 (	O
-Ireland	O
+Ireland	I-LOC
 )	O
 208,978	O
 
@@ -34274,7 +34159,7 @@ Ireland	O
 Padraig	O
 Harrington	O
 (	O
-Ireland	O
+Ireland	I-LOC
 )	O
 202,593	O
 
@@ -34292,25 +34177,25 @@ Africa	O
 16.	O
 Miguel	O
 Angel	O
-Jimenez	O
+Jimenez	I-PER
 (	O
-Spain	O
+Spain	I-LOC
 )	O
 184,180	O
 
 
 17.	O
 Peter	O
-Mitchell	O
+Mitchell	I-PER
 183,704	O
 
 
 18.	O
 Miguel	O
 Angel	O
-Martin	O
+Martin	I-PER
 (	O
-Spain	O
+Spain	I-LOC
 )	O
 182,533	O
 
@@ -34327,11 +34212,10 @@ Broadhurst	O
 176,780	O
 
 
--DOCSTART-	-X-	O
+-DOCSTART-	O
 
 
-
-RUGBY	O
+RUGBY	I-ORG
 UNION	O
 -	O
 ENGLISH	O
@@ -34343,7 +34227,7 @@ RESULTS	O
 .	O
 
 
-LONDON	O
+LONDON	I-LOC
 1996-08-31	O
 
 
@@ -34376,23 +34260,23 @@ Gloucester	O
 19	O
 
 
-London	O
+London	I-LOC
 Irish	O
 27	O
-Bristol	O
+Bristol	I-ORG
 28	O
 
 
 Northampton	O
 46	O
 West	O
-Hartlepool	O
+Hartlepool	I-ORG
 20	O
 
 
 Orrell	O
 13	O
-Bath	O
+Bath	I-PER
 56	O
 
 
@@ -34415,7 +34299,7 @@ one	O
 
 Bridgend	O
 13	O
-Llanelli	O
+Llanelli	I-PER
 9	O
 
 
@@ -34473,13 +34357,12 @@ Watsonians	O
 
 Melrose	O
 107	O
-Stirling	O
+Stirling	I-ORG
 County	O
 10	O
 
 
--DOCSTART-	-X-	O
-
+-DOCSTART-	O
 
 
 SOCCER	O
@@ -34487,7 +34370,7 @@ SOCCER	O
 WALES	O
 BEAT	O
 SAN	O
-MARINO	O
+MARINO	I-LOC
 IN	O
 WORLD	O
 CUP	O
@@ -34495,14 +34378,14 @@ QUALIFIER	O
 .	O
 
 
-CARDIFF	O
+CARDIFF	I-ORG
 1996-08-31	O
 
 
 Wales	O
 beat	O
-San	O
-Marino	O
+San	I-LOC
+Marino	I-LOC
 6-0	O
 (	O
 halftime	O
@@ -34560,13 +34443,12 @@ Attendance	O
 15,150	O
 
 
--DOCSTART-	-X-	O
-
+-DOCSTART-	O
 
 
 SOCCER	O
 -	O
-UKRAINE	O
+UKRAINE	I-LOC
 BEAT	O
 NORTHERN	O
 IRELAND	O
@@ -34581,10 +34463,10 @@ BELFAST	O
 1996-08-31	O
 
 
-Ukraine	O
+Ukraine	I-LOC
 beat	O
 Northern	O
-Ireland	O
+Ireland	I-LOC
 1-0	O
 (	O
 halftime	O
@@ -34606,7 +34488,7 @@ Saturday	O
 
 Scorer	O
 :	O
-Sergei	O
+Sergei	I-PER
 Rebrov	O
 (	O
 79th	O
@@ -34619,11 +34501,10 @@ Attendance	O
 9,358	O
 
 
--DOCSTART-	-X-	O
+-DOCSTART-	O
 
 
-
-RUGBY	O
+RUGBY	I-ORG
 UNION	O
 -	O
 LYNAGH	O
@@ -34636,7 +34517,7 @@ LEICESTER	O
 .	O
 
 
-LONDON	O
+LONDON	I-LOC
 1996-08-31	O
 
 
@@ -34714,7 +34595,7 @@ investment	O
 in	O
 the	O
 north	O
-London	O
+London	I-LOC
 club	O
 .	O
 
@@ -34820,7 +34701,7 @@ and	O
 the	O
 Rugby	O
 Football	O
-Union	O
+Union	I-ORG
 ,	O
 there	O
 were	O
@@ -34844,12 +34725,11 @@ successes	O
 for	O
 Wasps	O
 and	O
-Bristol	O
+Bristol	I-ORG
 .	O
 
 
--DOCSTART-	-X-	O
-
+-DOCSTART-	O
 
 
 SOCCER	O
@@ -34860,7 +34740,7 @@ STANDINGS	O
 .	O
 
 
-LONDON	O
+LONDON	I-LOC
 1996-08-31	O
 
 
@@ -34901,8 +34781,8 @@ Division	O
 one	O
 
 
-Greenock	O
-Morton	O
+Greenock	I-ORG
+Morton	I-PER
 3	O
 2	O
 0	O
@@ -34912,7 +34792,7 @@ Morton	O
 6	O
 
 
-Dundee	O
+Dundee	I-ORG
 3	O
 1	O
 2	O
@@ -34964,7 +34844,7 @@ Falkirk	O
 4	O
 
 
-Clydebank	O
+Clydebank	I-ORG
 2	O
 1	O
 0	O
@@ -34984,7 +34864,7 @@ Partick	O
 2	O
 
 
-Stirling	O
+Stirling	I-ORG
 3	O
 0	O
 1	O
@@ -35009,7 +34889,7 @@ Division	O
 two	O
 
 
-Livingston	O
+Livingston	I-ORG
 3	O
 3	O
 0	O
@@ -35031,7 +34911,7 @@ South	O
 6	O
 
 
-Ayr	O
+Ayr	I-ORG
 3	O
 1	O
 2	O
@@ -35051,7 +34931,7 @@ Stenhousemuir	O
 4	O
 
 
-Hamilton	O
+Hamilton	I-ORG
 3	O
 1	O
 1	O
@@ -35187,7 +35067,7 @@ Montrose	O
 3	O
 
 
-Inverness	O
+Inverness	I-ORG
 Thistle	O
 3	O
 1	O
@@ -35199,7 +35079,7 @@ Thistle	O
 
 
 East	O
-Stirling	O
+Stirling	I-ORG
 3	O
 0	O
 2	O
@@ -35220,8 +35100,7 @@ County	O
 0	O
 
 
--DOCSTART-	-X-	O
-
+-DOCSTART-	O
 
 
 SOCCER	O
@@ -35232,7 +35111,7 @@ STANDINGS	O
 .	O
 
 
-LONDON	O
+LONDON	I-LOC
 1996-08-31	O
 
 
@@ -35284,7 +35163,7 @@ Stoke	O
 10	O
 
 
-Barnsley	O
+Barnsley	I-ORG
 3	O
 3	O
 0	O
@@ -35294,7 +35173,7 @@ Barnsley	O
 9	O
 
 
-Norwich	O
+Norwich	I-ORG
 4	O
 3	O
 0	O
@@ -35314,7 +35193,7 @@ Tranmere	O
 7	O
 
 
-Bolton	O
+Bolton	I-ORG
 3	O
 2	O
 1	O
@@ -35356,7 +35235,7 @@ Swindon	O
 7	O
 
 
-Bradford	O
+Bradford	I-ORG
 4	O
 2	O
 0	O
@@ -35366,7 +35245,7 @@ Bradford	O
 6	O
 
 
-Portsmouth	O
+Portsmouth	I-ORG
 4	O
 2	O
 0	O
@@ -35376,7 +35255,7 @@ Portsmouth	O
 6	O
 
 
-Ipswich	O
+Ipswich	I-ORG
 4	O
 1	O
 2	O
@@ -35386,7 +35265,7 @@ Ipswich	O
 5	O
 
 
-Crystal	O
+Crystal	I-ORG
 Palace	O
 4	O
 1	O
@@ -35408,7 +35287,7 @@ Vale	O
 5	O
 
 
-Birmingham	O
+Birmingham	I-ORG
 2	O
 1	O
 1	O
@@ -35438,7 +35317,7 @@ Huddersfield	O
 4	O
 
 
-Oxford	O
+Oxford	I-ORG
 4	O
 1	O
 0	O
@@ -35448,7 +35327,7 @@ Oxford	O
 3	O
 
 
-Manchester	O
+Manchester	I-ORG
 City	O
 3	O
 1	O
@@ -35470,7 +35349,7 @@ Bromwich	O
 2	O
 
 
-Oldham	O
+Oldham	I-ORG
 4	O
 0	O
 1	O
@@ -35480,7 +35359,7 @@ Oldham	O
 1	O
 
 
-Sheffield	O
+Sheffield	I-ORG
 United	O
 2	O
 0	O
@@ -35555,7 +35434,7 @@ Bury	O
 10	O
 
 
-Chesterfield	O
+Chesterfield	I-ORG
 4	O
 3	O
 0	O
@@ -35585,7 +35464,7 @@ Shrewsbury	O
 7	O
 
 
-Blackpool	O
+Blackpool	I-ORG
 4	O
 2	O
 1	O
@@ -35595,7 +35474,7 @@ Blackpool	O
 7	O
 
 
-York	O
+York	I-ORG
 4	O
 2	O
 0	O
@@ -35615,7 +35494,7 @@ Burnley	O
 6	O
 
 
-Bournemouth	O
+Bournemouth	I-ORG
 4	O
 2	O
 0	O
@@ -35625,7 +35504,7 @@ Bournemouth	O
 6	O
 
 
-Watford	O
+Watford	I-ORG
 4	O
 2	O
 0	O
@@ -35635,7 +35514,7 @@ Watford	O
 6	O
 
 
-Bristol	O
+Bristol	I-ORG
 Rovers	O
 3	O
 1	O
@@ -35646,7 +35525,7 @@ Rovers	O
 5	O
 
 
-Peterborough	O
+Peterborough	I-ORG
 3	O
 1	O
 1	O
@@ -35656,7 +35535,7 @@ Peterborough	O
 4	O
 
 
-Preston	O
+Preston	I-ORG
 4	O
 1	O
 1	O
@@ -35676,7 +35555,7 @@ Crewe	O
 4	O
 
 
-Gillingham	O
+Gillingham	I-ORG
 4	O
 1	O
 1	O
@@ -35697,7 +35576,7 @@ County	O
 4	O
 
 
-Bristol	O
+Bristol	I-ORG
 City	O
 4	O
 1	O
@@ -35728,7 +35607,7 @@ Wycombe	O
 3	O
 
 
-Wrexham	O
+Wrexham	I-ORG
 2	O
 0	O
 2	O
@@ -35748,7 +35627,7 @@ Stockport	O
 2	O
 
 
-Rotherham	O
+Rotherham	I-ORG
 4	O
 0	O
 1	O
@@ -35758,7 +35637,7 @@ Rotherham	O
 1	O
 
 
-Walsall	O
+Walsall	I-ORG
 3	O
 0	O
 1	O
@@ -35792,7 +35671,7 @@ Fulham	O
 9	O
 
 
-Hull	O
+Hull	I-ORG
 4	O
 2	O
 2	O
@@ -35802,7 +35681,7 @@ Hull	O
 8	O
 
 
-Hartlepool	O
+Hartlepool	I-ORG
 4	O
 2	O
 1	O
@@ -35822,7 +35701,7 @@ Torquay	O
 7	O
 
 
-Cardiff	O
+Cardiff	I-ORG
 4	O
 2	O
 1	O
@@ -35832,7 +35711,7 @@ Cardiff	O
 7	O
 
 
-Scunthorpe	O
+Scunthorpe	I-ORG
 4	O
 2	O
 1	O
@@ -35842,7 +35721,7 @@ Scunthorpe	O
 7	O
 
 
-Carlisle	O
+Carlisle	I-ORG
 4	O
 2	O
 1	O
@@ -35852,7 +35731,7 @@ Carlisle	O
 7	O
 
 
-Scarborough	O
+Scarborough	I-ORG
 4	O
 1	O
 3	O
@@ -35872,7 +35751,7 @@ Northampton	O
 5	O
 
 
-Lincoln	O
+Lincoln	I-ORG
 4	O
 1	O
 2	O
@@ -35892,7 +35771,7 @@ Barnet	O
 5	O
 
 
-Exeter	O
+Exeter	I-ORG
 4	O
 1	O
 2	O
@@ -35902,7 +35781,7 @@ Exeter	O
 5	O
 
 
-Cambridge	O
+Cambridge	I-ORG
 United	O
 4	O
 1	O
@@ -35913,7 +35792,7 @@ United	O
 5	O
 
 
-Darlington	O
+Darlington	I-ORG
 4	O
 1	O
 1	O
@@ -35923,7 +35802,7 @@ Darlington	O
 4	O
 
 
-Chester	O
+Chester	I-ORG
 4	O
 1	O
 1	O
@@ -35933,7 +35812,7 @@ Chester	O
 4	O
 
 
-Doncaster	O
+Doncaster	I-ORG
 4	O
 1	O
 1	O
@@ -35984,7 +35863,7 @@ Swansea	O
 3	O
 
 
-Colchester	O
+Colchester	I-ORG
 4	O
 0	O
 3	O
@@ -35994,7 +35873,7 @@ Colchester	O
 3	O
 
 
-Rochdale	O
+Rochdale	I-ORG
 4	O
 0	O
 2	O
@@ -36004,7 +35883,7 @@ Rochdale	O
 2	O
 
 
-Mansfield	O
+Mansfield	I-ORG
 4	O
 0	O
 2	O
@@ -36014,8 +35893,7 @@ Mansfield	O
 2	O
 
 
--DOCSTART-	-X-	O
-
+-DOCSTART-	O
 
 
 SOCCER	O
@@ -36026,7 +35904,7 @@ RESULTS	O
 .	O
 
 
-GLASGOW	O
+GLASGOW	I-LOC
 1996-08-31	O
 
 
@@ -36046,10 +35924,10 @@ Division	O
 one	O
 
 
-Greenock	O
-Morton	O
+Greenock	I-ORG
+Morton	I-PER
 1	O
-Falkirk	O
+Falkirk	I-ORG
 0	O
 
 
@@ -36060,7 +35938,7 @@ Mirren	O
 1	O
 
 
-Stirling	O
+Stirling	I-ORG
 1	O
 Dundee	O
 1	O
@@ -36071,7 +35949,7 @@ Postponed	O
 East	O
 Fife	O
 v	O
-Clydebank	O
+Clydebank	I-ORG
 ,	O
 St	O
 Johnstone	O
@@ -36086,7 +35964,7 @@ Division	O
 two	O
 
 
-Ayr	O
+Ayr	I-ORG
 6	O
 Berwick	O
 0	O
@@ -36106,9 +35984,9 @@ Brechin	O
 1	O
 
 
-Livingston	O
+Livingston	I-ORG
 1	O
-Hamilton	O
+Hamilton	I-PER
 0	O
 
 
@@ -36135,10 +36013,10 @@ Stirling	O
 0	O
 
 
-Inverness	O
+Inverness	I-ORG
 Thistle	O
 1	O
-Alloa	O
+Alloa	I-ORG
 0	O
 
 
@@ -36157,8 +36035,7 @@ Forfar	O
 4	O
 
 
--DOCSTART-	-X-	O
-
+-DOCSTART-	O
 
 
 SOCCER	O
@@ -36169,7 +36046,7 @@ RESULTS	O
 .	O
 
 
-LONDON	O
+LONDON	I-LOC
 1996-08-31	O
 
 
@@ -36189,7 +36066,7 @@ Division	O
 one	O
 
 
-Bradford	O
+Bradford	I-ORG
 1	O
 Tranmere	O
 0	O
@@ -36197,26 +36074,26 @@ Tranmere	O
 
 Grimsby	O
 0	O
-Portsmouth	O
+Portsmouth	I-LOC
 1	O
 
 
 Huddersfield	O
 1	O
-Crystal	O
+Crystal	I-ORG
 Palace	O
 1	O
 
 
-Norwich	O
+Norwich	I-ORG
 1	O
-Wolverhampton	O
+Wolverhampton	I-ORG
 0	O
 
 
-Oldham	O
+Oldham	I-ORG
 3	O
-Ipswich	O
+Ipswich	I-ORG
 3	O
 
 
@@ -36235,13 +36112,13 @@ Stoke	O
 
 Southend	O
 1	O
-Swindon	O
+Swindon	I-ORG
 3	O
 
 
 Postponed	O
 :	O
-Birmingham	O
+Birmingham	I-ORG
 v	O
 Barnsley	O
 ,	O
@@ -36265,19 +36142,19 @@ Division	O
 two	O
 
 
-Blackpool	O
+Blackpool	I-ORG
 0	O
 Wycombe	O
 0	O
 
 
-Bournemouth	O
+Bournemouth	I-ORG
 1	O
 Peterborough	O
 2	O
 
 
-Bristol	O
+Bristol	I-ORG
 Rovers	O
 1	O
 Stockport	O
@@ -36286,7 +36163,7 @@ Stockport	O
 
 Bury	O
 4	O
-Bristol	O
+Bristol	I-ORG
 City	O
 0	O
 
@@ -36297,7 +36174,7 @@ Watford	O
 2	O
 
 
-Gillingham	O
+Gillingham	I-ORG
 0	O
 Chesterfield	O
 1	O
@@ -36305,20 +36182,20 @@ Chesterfield	O
 
 Luton	O
 1	O
-Rotherham	O
+Rotherham	I-ORG
 0	O
 
 
 Millwall	O
 2	O
-Burnley	O
+Burnley	I-ORG
 1	O
 
 
 Notts	O
 County	O
 0	O
-York	O
+York	I-LOC
 1	O
 
 
@@ -36340,36 +36217,36 @@ three	O
 
 Brighton	O
 1	O
-Scunthorpe	O
+Scunthorpe	I-ORG
 1	O
 
 
-Cambridge	O
+Cambridge	I-ORG
 United	O
 0	O
 Cardiff	O
 2	O
 
 
-Colchester	O
+Colchester	I-ORG
 1	O
 Hereford	O
 1	O
 
 
-Doncaster	O
+Doncaster	I-ORG
 3	O
-Darlington	O
+Darlington	I-ORG
 2	O
 
 
 Fulham	O
 1	O
-Carlisle	O
+Carlisle	I-ORG
 0	O
 
 
-Hull	O
+Hull	I-ORG
 0	O
 Barnet	O
 0	O
@@ -36378,19 +36255,19 @@ Barnet	O
 Leyton	O
 Orient	O
 2	O
-Hartlepool	O
+Hartlepool	I-ORG
 0	O
 
 
-Mansfield	O
+Mansfield	I-ORG
 0	O
-Rochdale	O
+Rochdale	I-ORG
 0	O
 
 
-Scarborough	O
+Scarborough	I-ORG
 1	O
-Northampton	O
+Northampton	I-LOC
 1	O
 
 
@@ -36406,8 +36283,7 @@ Chester	O
 2	O
 
 
--DOCSTART-	-X-	O
-
+-DOCSTART-	O
 
 
 CRICKET	O
@@ -36419,7 +36295,7 @@ SCORES	O
 .	O
 
 
-LONDON	O
+LONDON	I-LOC
 1996-08-31	O
 
 
@@ -36439,7 +36315,7 @@ Saturday	O
 
 
 At	O
-Portsmouth	O
+Portsmouth	I-ORG
 :	O
 Middlesex	O
 beat	O
@@ -36485,7 +36361,7 @@ Chester-le-Street	O
 :	O
 Glamorgan	O
 beat	O
-Durham	O
+Durham	I-ORG
 by	O
 141	O
 runs	O
@@ -36497,7 +36373,7 @@ Glamorgan	O
 and	O
 207	O
 ,	O
-Durham	O
+Durham	I-ORG
 114	O
 and	O
 211	O
@@ -36508,7 +36384,7 @@ Glamorgan	O
 22	O
 points	O
 ,	O
-Durham	O
+Durham	I-ORG
 4	O
 .	O
 
@@ -36565,7 +36441,7 @@ At	O
 The	O
 Oval	O
 (	O
-London	O
+London	I-LOC
 )	O
 :	O
 Surrey	O
@@ -36620,7 +36496,7 @@ Bicknell	O
 .	O
 
 
-Surrey	O
+Surrey	I-ORG
 24	O
 points	O
 ,	O
@@ -36632,7 +36508,7 @@ Warwickshire	O
 At	O
 Headingley	O
 (	O
-Leeds	O
+Leeds	I-ORG
 )	O
 :	O
 Yorkshire	O
@@ -36653,7 +36529,7 @@ Such	O
 8-118	O
 )	O
 ,	O
-Essex	O
+Essex	I-ORG
 372	O
 and	O
 100-5	O
@@ -36661,7 +36537,7 @@ and	O
 
 
 At	O
-Hove	O
+Hove	I-LOC
 :	O
 Sussex	O
 363	O
@@ -36709,7 +36585,7 @@ Evans	O
 
 
 At	O
-Bristol	O
+Bristol	I-ORG
 :	O
 Gloucestershire	O
 183	O
@@ -36728,8 +36604,7 @@ and	O
 .	O
 
 
--DOCSTART-	-X-	O
-
+-DOCSTART-	O
 
 
 MOTOR	O
@@ -36744,7 +36619,7 @@ RACE	O
 .	O
 
 
-VANCOUVER	O
+VANCOUVER	I-LOC
 1996-08-31	O
 
 
@@ -36791,13 +36666,13 @@ seconds	O
 
 1.	O
 Alex	O
-Zanardi	O
+Zanardi	I-PER
 (	O
-Italy	O
+Italy	I-LOC
 )	O
 ,	O
 Reynard	O
-Honda	O
+Honda	I-ORG
 ,	O
 53.980	O
 (	O
@@ -36813,7 +36688,7 @@ kph	O
 
 2.	O
 Michael	O
-Andretti	O
+Andretti	I-PER
 (	O
 U.S.	O
 )	O
@@ -36833,20 +36708,20 @@ U.S.	O
 )	O
 ,	O
 Reynard	O
-Mercedes-Benz	O
+Mercedes-Benz	I-PER
 ,	O
 54.507	O
 
 
 4.	O
-Bryan	O
+Bryan	I-PER
 Herta	O
 (	O
 U.S.	O
 )	O
 ,	O
 Reynard	O
-Mercedes-Benz	O
+Mercedes-Benz	I-PER
 ,	O
 54.578	O
 
@@ -36859,20 +36734,20 @@ U.S.	O
 )	O
 ,	O
 Reynard	O
-Honda	O
+Honda	I-ORG
 ,	O
 54.617	O
 
 
 6.	O
 Paul	O
-Tracy	O
+Tracy	I-PER
 (	O
-Canada	O
+Canada	I-LOC
 )	O
 ,	O
 Penske	O
-Mercedes-Benz	O
+Mercedes-Benz	I-PER
 ,	O
 54.620	O
 
@@ -36886,7 +36761,7 @@ U.S.	O
 )	O
 ,	O
 Penske	O
-Mercedes-Benz	O
+Mercedes-Benz	I-PER
 ,	O
 54.683	O
 
@@ -36895,11 +36770,11 @@ Mercedes-Benz	O
 Andre	O
 Ribeiro	O
 (	O
-Brazil	O
+Brazil	I-LOC
 )	O
 ,	O
 Lola	O
-Honda	O
+Honda	I-ORG
 ,	O
 54.750	O
 
@@ -36908,7 +36783,7 @@ Honda	O
 Mauricio	O
 Gugelmin	O
 (	O
-Brazil	O
+Brazil	I-LOC
 )	O
 ,	O
 Reynard	O
@@ -36923,24 +36798,23 @@ Gil	O
 de	O
 Ferran	O
 (	O
-Brazil	O
+Brazil	I-LOC
 )	O
 ,	O
 Reynard	O
-Honda	O
+Honda	I-LOC
 ,	O
 54.774	O
 
 
--DOCSTART-	-X-	O
-
+-DOCSTART-	O
 
 
 SOCCER	O
 -	O
-CANADA	O
+CANADA	I-LOC
 BEAT	O
-PANAMA	O
+PANAMA	I-LOC
 3-1	O
 IN	O
 WORLD	O
@@ -36953,9 +36827,9 @@ EDMONTON	O
 1996-08-31	O
 
 
-Canada	O
+Canada	I-LOC
 beat	O
-Panama	O
+Panama	I-LOC
 3-1	O
 (	O
 halftime	O
@@ -36982,7 +36856,7 @@ Scorers	O
 :	O
 
 
-Canada	O
+Canada	I-LOC
 -	O
 Aunger	O
 (	O
@@ -37005,7 +36879,7 @@ Corrazin	O
 )	O
 
 
-Panama	O
+Panama	I-LOC
 -	O
 Jorge	O
 Luis	O
@@ -37021,11 +36895,10 @@ Attendance	O
 9,402	O
 
 
--DOCSTART-	-X-	O
+-DOCSTART-	O
 
 
-
-RUGBY	O
+RUGBY	I-ORG
 UNION	O
 -	O
 SPRINGBOKS	O
@@ -37242,7 +37115,7 @@ Little	O
 and	O
 scrum-half	O
 Justin	O
-Marshall	O
+Marshall	I-PER
 in	O
 the	O
 final	O
@@ -37392,7 +37265,7 @@ referee	O
 Derek	O
 Bevan	O
 allowed	O
-Van	O
+Van	I-PER
 der	O
 Westhuizen	O
 to	O
@@ -37473,7 +37346,7 @@ A	O
 quick	O
 penalty	O
 from	O
-Van	O
+Van	I-PER
 der	O
 Westhuizen	O
 five	O
@@ -37546,7 +37419,7 @@ posts	O
 and	O
 scrum-half	O
 Justin	O
-Marshall	O
+Marshall	I-PER
 forced	O
 himself	O
 over	O
@@ -37616,7 +37489,7 @@ Westhuizen	O
 ;	O
 8	O
 -	O
-Gary	O
+Gary	I-PER
 Teichmann	O
 (	O
 captain	O
@@ -37627,7 +37500,7 @@ captain	O
 Andre	O
 Venter	O
 (	O
-Wayne	O
+Wayne	I-PER
 Fyvie	O
 ,	O
 75	O
@@ -37643,7 +37516,7 @@ Kruge	O
 Mark	O
 Andrews	O
 (	O
-Fritz	O
+Fritz	I-PER
 van	O
 Heerden	O
 ,	O
@@ -37695,7 +37568,7 @@ Ieremia	O
 14	O
 -	O
 Jeff	O
-Wilson	O
+Wilson	I-PER
 ,	O
 13	O
 -	O
@@ -37720,7 +37593,7 @@ Mehrtens	O
 9	O
 -	O
 Justin	O
-Marshall	O
+Marshall	I-PER
 ;	O
 8	O
 -	O
@@ -37738,7 +37611,7 @@ Michael	O
 Jones	O
 (	O
 Glenn	O
-Taylor	O
+Taylor	I-PER
 ,	O
 53	O
 )	O
@@ -37773,11 +37646,10 @@ Dowd	O
 .	O
 
 
--DOCSTART-	-X-	O
+-DOCSTART-	O
 
 
-
-RUGBY	O
+RUGBY	I-ORG
 UNION	O
 -	O
 SOUTH	O
@@ -37875,7 +37747,7 @@ Walter	O
 Little	O
 ,	O
 Justin	O
-Marshall	O
+Marshall	I-PER
 .	O
 
 
@@ -37904,13 +37776,12 @@ series	O
 .	O
 
 
--DOCSTART-	-X-	O
-
+-DOCSTART-	O
 
 
 SOCCER	O
 -	O
-MAURITANIA	O
+MAURITANIA	I-LOC
 DISSOLVES	O
 NATIONAL	O
 TEAM	O
@@ -37924,7 +37795,7 @@ NOUAKCHOTT	O
 1996-08-31	O
 
 
-Mauritania	O
+Mauritania	I-LOC
 's	O
 soccer	O
 federation	O
@@ -37962,7 +37833,7 @@ Cup	O
 
 "	O
 Since	O
-Mauritania	O
+Mauritania	I-LOC
 has	O
 been	O
 eliminated	O
@@ -38008,7 +37879,7 @@ a	O
 goalless	O
 draw	O
 by	O
-Benin	O
+Benin	I-LOC
 on	O
 Friday	O
 after	O
@@ -38024,13 +37895,12 @@ tie	O
 .	O
 
 
--DOCSTART-	-X-	O
-
+-DOCSTART-	O
 
 
 SOCCER	O
 -	O
-MAURITANIA	O
+MAURITANIA	I-LOC
 DRAW	O
 WITH	O
 BENIN	O
@@ -38045,11 +37915,11 @@ NOUAKCHOTT	O
 1996-08-31	O
 
 
-Mauritania	O
+Mauritania	I-LOC
 drew	O
 0-0	O
 with	O
-Benin	O
+Benin	I-LOC
 in	O
 their	O
 African	O
@@ -38075,8 +37945,7 @@ aggregate	O
 .	O
 
 
--DOCSTART-	-X-	O
-
+-DOCSTART-	O
 
 
 SOCCER	O
@@ -38138,7 +38007,7 @@ L	O
 2	O
 
 
-Cukaricki	O
+Cukaricki	I-ORG
 1	O
 Vojvodina	O
 0	O
@@ -38244,7 +38113,7 @@ Hajduk	O
 6	O
 
 
-Cukaricki	O
+Cukaricki	I-ORG
 4	O
 2	O
 0	O
@@ -38336,7 +38205,7 @@ Beograd	O
 Rudar	O
 0	O
 OFK	O
-Kikinda	O
+Kikinda	I-ORG
 1	O
 
 
@@ -38355,7 +38224,7 @@ Loznica	O
 0	O
 
 
-Radnicki	O
+Radnicki	I-ORG
 (	O
 N	O
 )	O
@@ -38459,7 +38328,7 @@ Spartak	O
 4	O
 
 
-Radnicki	O
+Radnicki	I-ORG
 (	O
 N	O
 )	O
@@ -38508,8 +38377,7 @@ BJ	O
 1	O
 
 
--DOCSTART-	-X-	O
-
+-DOCSTART-	O
 
 
 SOCCER	O
@@ -38526,7 +38394,7 @@ PRANK	O
 
 CHISINAU	O
 ,	O
-Moldova	O
+Moldova	I-LOC
 1996-08-31	O
 
 
@@ -38561,7 +38429,7 @@ an	O
 astonished	O
 crowd	O
 in	O
-Moldova	O
+Moldova	I-LOC
 .	O
 
 
@@ -38650,7 +38518,7 @@ incident	O
 
 England	O
 face	O
-Moldova	O
+Moldova	I-LOC
 in	O
 a	O
 World	O
@@ -38665,8 +38533,7 @@ Sunday	O
 .	O
 
 
--DOCSTART-	-X-	O
-
+-DOCSTART-	O
 
 
 BASKETBALL	O
@@ -38705,12 +38572,12 @@ place	O
 
 Benetton	O
 (	O
-Italy	O
+Italy	I-LOC
 )	O
 92	O
 Dinamo	O
 (	O
-Russia	O
+Russia	I-LOC
 )	O
 81	O
 (	O
@@ -38724,9 +38591,9 @@ place	O
 :	O
 
 
-Alba	O
+Alba	I-ORG
 (	O
-Germany	O
+Germany	I-LOC
 )	O
 75	O
 Red	O
@@ -38740,8 +38607,7 @@ Yugoslavia	O
 )	O
 
 
--DOCSTART-	-X-	O
-
+-DOCSTART-	O
 
 
 BASKETBALLSOCCER	O
@@ -38780,12 +38646,12 @@ place	O
 
 Benetton	O
 (	O
-Italy	O
+Italy	I-LOC
 )	O
 92	O
 Dinamo	O
 (	O
-Russia	O
+Russia	I-LOC
 )	O
 81	O
 (	O
@@ -38799,9 +38665,9 @@ place	O
 :	O
 
 
-Alba	O
+Alba	I-ORG
 (	O
-Germany	O
+Germany	I-LOC
 )	O
 75	O
 Red	O
@@ -38815,15 +38681,14 @@ Yugoslavia	O
 )	O
 
 
--DOCSTART-	-X-	O
-
+-DOCSTART-	O
 
 
 SOCCER	O
 -	O
-ROMANIA	O
+ROMANIA	I-LOC
 BEAT	O
-LITHUANIA	O
+LITHUANIA	I-LOC
 IN	O
 WORLD	O
 CUP	O
@@ -38835,9 +38700,9 @@ BUCHAREST	O
 1996-08-31	O
 
 
-Romania	O
+Romania	I-LOC
 beat	O
-Lithuania	O
+Lithuania	I-LOC
 3-0	O
 (	O
 halftime	O
@@ -38861,7 +38726,7 @@ Scorers	O
 :	O
 
 
-Romania	O
+Romania	I-LOC
 -	O
 Viorel	O
 Moldovan	O
@@ -38888,13 +38753,12 @@ Attendence	O
 9,000	O
 
 
--DOCSTART-	-X-	O
-
+-DOCSTART-	O
 
 
 SOCCER	O
 -	O
-ARMENIA	O
+ARMENIA	I-LOC
 AND	O
 PORTUGAL	O
 DRAW	O
@@ -38906,13 +38770,13 @@ QUALIFIER	O
 .	O
 
 
-YEREVAN	O
+YEREVAN	I-LOC
 1996-08-31	O
 
 
-Armenia	O
+Armenia	I-LOC
 and	O
-Portugal	O
+Portugal	I-LOC
 drew	O
 0-0	O
 in	O
@@ -38934,15 +38798,14 @@ Attendance	O
 5,000	O
 
 
--DOCSTART-	-X-	O
-
+-DOCSTART-	O
 
 
 SOCCER	O
 -	O
-AZERBAIJAN	O
+AZERBAIJAN	I-LOC
 BEAT	O
-SWITZERLAND	O
+SWITZERLAND	I-LOC
 IN	O
 WORLD	O
 CUP	O
@@ -38950,13 +38813,13 @@ QUALIFIER	O
 .	O
 
 
-BAKU	O
+BAKU	I-ORG
 1996-08-31	O
 
 
-Azerbaijan	O
+Azerbaijan	I-LOC
 beat	O
-Switzerland	O
+Switzerland	I-LOC
 1-0	O
 (	O
 halftime	O
@@ -38981,7 +38844,7 @@ Scorer	O
 :	O
 
 
-Vidadi	O
+Vidadi	I-PER
 Rzayev	O
 (	O
 28th	O
@@ -38993,8 +38856,7 @@ Attendance	O
 20,000	O
 
 
--DOCSTART-	-X-	O
-
+-DOCSTART-	O
 
 
 BASKETBALL	O
@@ -39012,11 +38874,11 @@ BELGRADE	O
 
 Benetton	O
 of	O
-Italy	O
+Italy	I-LOC
 beat	O
 Dinamo	O
 of	O
-Russia	O
+Russia	I-LOC
 92-81	O
 (	O
 halftime	O
@@ -39040,15 +38902,14 @@ Saturday	O
 .	O
 
 
--DOCSTART-	-X-	O
-
+-DOCSTART-	O
 
 
 SOCCER	O
 -	O
-SWEDEN	O
+SWEDEN	I-LOC
 BEAT	O
-LATVIA	O
+LATVIA	I-LOC
 IN	O
 EUROPEAN	O
 UNDER-21	O
@@ -39056,13 +38917,13 @@ QUALIFIER	O
 .	O
 
 
-RIGA	O
+RIGA	I-ORG
 1996-08-31	O
 
 
-Sweden	O
+Sweden	I-LOC
 beat	O
-Latvia	O
+Latvia	I-LOC
 2-0	O
 (	O
 halftime	O
@@ -39099,15 +38960,14 @@ Attendance	O
 300	O
 
 
--DOCSTART-	-X-	O
-
+-DOCSTART-	O
 
 
 SOCCER	O
 -	O
 BELARUS	O
 BEAT	O
-ESTONIA	O
+ESTONIA	I-LOC
 IN	O
 WORLD	O
 CUP	O
@@ -39115,13 +38975,13 @@ QUALIFIER	O
 .	O
 
 
-MINSK	O
+MINSK	I-ORG
 1996-08-31	O
 
 
 Belarus	O
 beat	O
-Estonia	O
+Estonia	I-LOC
 1-0	O
 (	O
 halftime	O
@@ -39143,7 +39003,7 @@ Saturday	O
 
 Scorer	O
 :	O
-Vladimir	O
+Vladimir	I-PER
 Makovsky	O
 (	O
 35th	O
@@ -39155,15 +39015,14 @@ Attendance	O
 6,000	O
 
 
--DOCSTART-	-X-	O
-
+-DOCSTART-	O
 
 
 SOCCER	O
 -	O
 ENGLAND	O
 BEAT	O
-MOLDOVA	O
+MOLDOVA	I-LOC
 IN	O
 UNDER-21	O
 QUALIFIER	O
@@ -39176,7 +39035,7 @@ CHISINAU	O
 
 England	O
 beat	O
-Moldova	O
+Moldova	I-LOC
 2-0	O
 (	O
 halftime	O
@@ -39217,8 +39076,7 @@ Attendance	O
 850	O
 
 
--DOCSTART-	-X-	O
-
+-DOCSTART-	O
 
 
 SQUASH	O
@@ -39725,8 +39583,7 @@ together	O
 "	O
 
 
--DOCSTART-	-X-	O
-
+-DOCSTART-	O
 
 
 SQUASH	O
@@ -39765,13 +39622,13 @@ seeding	O
 Jansher	O
 Khan	O
 (	O
-Pakistan	O
+Pakistan	I-LOC
 )	O
 beat	O
 Anthony	O
 Hill	O
 (	O
-Australia	O
+Australia	I-LOC
 )	O
 15-7	O
 17-15	O
@@ -39782,7 +39639,7 @@ Australia	O
 Rodney	O
 Eyles	O
 (	O
-Australia	O
+Australia	I-LOC
 )	O
 beat	O
 4	O
@@ -39798,8 +39655,7 @@ Scotland	O
 15-4	O
 
 
--DOCSTART-	-X-	O
-
+-DOCSTART-	O
 
 
 GOLF	O
@@ -39810,12 +39666,12 @@ ONE-SHOT	O
 LEAD	O
 AT	O
 GREATER	O
-MILWAUKEE	O
+MILWAUKEE	I-ORG
 OPEN	O
 .	O
 
 
-MILWAUKEE	O
+MILWAUKEE	I-ORG
 ,	O
 Wisconsin	O
 1996-08-31	O
@@ -39824,7 +39680,7 @@ Wisconsin	O
 Jesper	O
 Parnevik	O
 of	O
-Sweden	O
+Sweden	I-LOC
 fired	O
 a	O
 course	O
@@ -40345,7 +40201,7 @@ under	O
 
 
 Duffy	O
-Waldorf	O
+Waldorf	I-PER
 ,	O
 who	O
 also	O
@@ -40394,13 +40250,12 @@ tournament	O
 .	O
 
 
--DOCSTART-	-X-	O
-
+-DOCSTART-	O
 
 
 TENNIS	O
 -	O
-SPAIN	O
+SPAIN	I-LOC
 ,	O
 U.S.	O
 TEAMS	O
@@ -40418,8 +40273,8 @@ Richard	O
 Finn	O
 
 
-NEW	O
-YORK	O
+NEW	I-LOC
+YORK	I-LOC
 1996-08-31	O
 
 
@@ -40432,7 +40287,7 @@ finalists	O
 --	O
 defending	O
 champion	O
-Spain	O
+Spain	I-LOC
 and	O
 the	O
 United	O
@@ -40465,10 +40320,10 @@ Open	O
 .	O
 
 
-Spain	O
+Spain	I-LOC
 travels	O
 to	O
-Belgium	O
+Belgium	I-LOC
 ,	O
 while	O
 the	O
@@ -40503,7 +40358,7 @@ and	O
 visiting	O
 France	O
 against	O
-Japan	O
+Japan	I-LOC
 .	O
 
 
@@ -40550,7 +40405,7 @@ year	O
 when	O
 they	O
 host	O
-Spain	O
+Spain	I-LOC
 on	O
 September	O
 28-29	O
@@ -40616,7 +40471,7 @@ The	O
 United	O
 States	O
 edged	O
-Austria	O
+Austria	I-LOC
 in	O
 Salzburg	O
 3-2	O
@@ -40630,7 +40485,7 @@ April	O
 and	O
 then	O
 blanked	O
-Japan	O
+Japan	I-LOC
 5-0	O
 in	O
 Nagoya	O
@@ -40645,7 +40500,7 @@ semifinals	O
 The	O
 victory	O
 against	O
-Japan	O
+Japan	I-LOC
 marked	O
 the	O
 Fed	O
@@ -40722,9 +40577,9 @@ to	O
 Fed	O
 Cup	O
 veteran	O
-Mary	O
+Mary	I-PER
 Joe	O
-Fernandez	O
+Fernandez	I-PER
 have	O
 forced	O
 King	O
@@ -40745,7 +40600,7 @@ match	O
 .	O
 
 
-Fernandez	O
+Fernandez	I-PER
 was	O
 forced	O
 to	O
@@ -40795,9 +40650,9 @@ Lindsay	O
 )	O
 Davenport	O
 and	O
-Mary	O
+Mary	I-PER
 Joe	O
-Fernandez	O
+Fernandez	I-PER
 .	O
 "	O
 
@@ -40819,17 +40674,17 @@ her	O
 chances	O
 against	O
 the	O
-Spain	O
+Spain	I-LOC
 's	O
 formidable	O
 duo	O
 of	O
 Arantxa	O
-Sanchez	O
+Sanchez	I-PER
 Vicario	O
 and	O
 Conchita	O
-Martinez	O
+Martinez	I-PER
 .	O
 
 
@@ -40859,8 +40714,7 @@ King	O
 .	O
 
 
--DOCSTART-	-X-	O
-
+-DOCSTART-	O
 
 
 TENNIS	O
@@ -40875,8 +40729,8 @@ OPEN	O
 .	O
 
 
-NEW	O
-YORK	O
+NEW	I-LOC
+YORK	I-LOC
 1996-08-31	O
 
 
@@ -40911,10 +40765,10 @@ third	O
 round	O
 1	O
 -	O
-Steffi	O
+Steffi	I-PER
 Graf	O
 (	O
-Germany	O
+Germany	I-LOC
 )	O
 beat	O
 Natasha	O
@@ -40929,20 +40783,20 @@ Belarus	O
 Martina	O
 Hingis	O
 (	O
-Switzerland	O
+Switzerland	I-LOC
 )	O
 beat	O
 Naoko	O
 Kijimuta	O
 (	O
-Japan	O
+Japan	I-LOC
 )	O
 6-2	O
 6-2	O
 Judith	O
 Wiesner	O
 (	O
-Austria	O
+Austria	I-LOC
 )	O
 beat	O
 Petra	O
@@ -40968,11 +40822,11 @@ round	O
 Thomas	O
 Enqvist	O
 (	O
-Sweden	O
+Sweden	I-LOC
 )	O
 beat	O
 Pablo	O
-Campana	O
+Campana	I-PER
 (	O
 Ecuador	O
 )	O
@@ -40981,8 +40835,7 @@ Ecuador	O
 6-2	O
 
 
--DOCSTART-	-X-	O
-
+-DOCSTART-	O
 
 
 TENNIS	O
@@ -40999,8 +40852,8 @@ TOURNAMENT	O
 .	O
 
 
-NEW	O
-YORK	O
+NEW	I-LOC
+YORK	I-LOC
 1996-08-31	O
 
 
@@ -41051,12 +40904,12 @@ at	O
 Germany	O
 
 
-France	O
+France	I-LOC
 at	O
 Japan	O
 
 
-Spain	O
+Spain	I-LOC
 at	O
 Belgium	O
 
@@ -41085,12 +40938,12 @@ March	O
 )	O
 
 
-Austria	O
+Austria	I-LOC
 at	O
-Croatia	O
+Croatia	I-LOC
 
 
-Switzerland	O
+Switzerland	I-LOC
 at	O
 Slovak	O
 Republic	O
@@ -41102,14 +40955,13 @@ South	O
 Korea	O
 
 
-Australia	O
+Australia	I-LOC
 at	O
 South	O
 Africa	O
 
 
--DOCSTART-	-X-	O
-
+-DOCSTART-	O
 
 
 SOCCER	O
@@ -41155,7 +41007,7 @@ Scorers	O
 U.S.	O
 -	O
 Joe-Max	O
-Moore	O
+Moore	I-PER
 (	O
 3rd	O
 minute	O
@@ -41188,8 +41040,7 @@ Attendance	O
 18,661	O
 
 
--DOCSTART-	-X-	O
-
+-DOCSTART-	O
 
 
 BASEBALL	O
@@ -41204,8 +41055,8 @@ GAMES	O
 .	O
 
 
-NEW	O
-YORK	O
+NEW	I-LOC
+YORK	I-LOC
 1996-08-31	O
 
 
@@ -41252,8 +41103,8 @@ PCT	O
 GB	O
 
 
-NEW	O
-YORK	O
+NEW	I-LOC
+YORK	I-LOC
 75	O
 59	O
 .560	O
@@ -41267,7 +41118,7 @@ BALTIMORE	O
 4	O
 
 
-BOSTON	O
+BOSTON	I-LOC
 69	O
 66	O
 .511	O
@@ -41291,18 +41142,18 @@ DETROIT	O
 1/2	O
 
 
-CENTRAL	O
+CENTRAL	I-ORG
 DIVISION	O
 
 
-CLEVELAND	O
+CLEVELAND	I-ORG
 80	O
 54	O
 .597	O
 -	O
 
 
-CHICAGO	O
+CHICAGO	I-ORG
 72	O
 64	O
 .529	O
@@ -41317,14 +41168,14 @@ MINNESOTA	O
 1/2	O
 
 
-MILWAUKEE	O
+MILWAUKEE	I-ORG
 65	O
 71	O
 .478	O
 16	O
 
 
-KANSAS	O
+KANSAS	I-ORG
 CITY	O
 61	O
 75	O
@@ -41336,21 +41187,21 @@ WESTERN	O
 DIVISION	O
 
 
-TEXAS	O
+TEXAS	I-ORG
 76	O
 58	O
 .567	O
 -	O
 
 
-SEATTLE	O
+SEATTLE	I-ORG
 70	O
 64	O
 .522	O
 6	O
 
 
-OAKLAND	O
+OAKLAND	I-ORG
 65	O
 72	O
 .474	O
@@ -41373,7 +41224,7 @@ AUGUST	O
 SCHEDULE	O
 
 
-KANSAS	O
+KANSAS	I-ORG
 CITY	O
 AT	O
 DETROIT	O
@@ -41381,31 +41232,31 @@ DETROIT	O
 
 BALTIMORE	O
 AT	O
-SEATTLE	O
+SEATTLE	I-ORG
 
 
-CHICAGO	O
+CHICAGO	I-ORG
 AT	O
-TORONTO	O
+TORONTO	I-LOC
 
 
 MINNESOTA	O
 AT	O
-MILWAUKEE	O
+MILWAUKEE	I-ORG
 
 
-CLEVELAND	O
+CLEVELAND	I-ORG
 AT	O
-TEXAS	O
+TEXAS	I-ORG
 
 
-BOSTON	O
+BOSTON	I-LOC
 AT	O
-OAKLAND	O
+OAKLAND	I-ORG
 
 
-NEW	O
-YORK	O
+NEW	I-LOC
+YORK	I-LOC
 AT	O
 CALIFORNIA	O
 
@@ -41424,7 +41275,7 @@ PCT	O
 GB	O
 
 
-ATLANTA	O
+ATLANTA	I-ORG
 84	O
 50	O
 .627	O
@@ -41439,7 +41290,7 @@ MONTREAL	O
 1/2	O
 
 
-FLORIDA	O
+FLORIDA	I-ORG
 65	O
 70	O
 .481	O
@@ -41447,8 +41298,8 @@ FLORIDA	O
 1/2	O
 
 
-NEW	O
-YORK	O
+NEW	I-LOC
+YORK	I-LOC
 59	O
 76	O
 .437	O
@@ -41456,7 +41307,7 @@ YORK	O
 1/2	O
 
 
-PHILADELPHIA	O
+PHILADELPHIA	I-ORG
 54	O
 81	O
 .400	O
@@ -41464,11 +41315,11 @@ PHILADELPHIA	O
 1/2	O
 
 
-CENTRAL	O
+CENTRAL	I-ORG
 DIVISION	O
 
 
-HOUSTON	O
+HOUSTON	I-LOC
 73	O
 63	O
 .537	O
@@ -41484,7 +41335,7 @@ LOUIS	O
 1/2	O
 
 
-CHICAGO	O
+CHICAGO	I-ORG
 66	O
 67	O
 .496	O
@@ -41492,7 +41343,7 @@ CHICAGO	O
 1/2	O
 
 
-CINCINNATI	O
+CINCINNATI	I-ORG
 66	O
 68	O
 .493	O
@@ -41510,7 +41361,7 @@ WESTERN	O
 DIVISION	O
 
 
-SAN	O
+SAN	I-LOC
 DIEGO	O
 76	O
 60	O
@@ -41526,14 +41377,14 @@ ANGELES	O
 2	O
 
 
-COLORADO	O
+COLORADO	I-ORG
 70	O
 66	O
 .515	O
 6	O
 
 
-SAN	O
+SAN	I-LOC
 FRANCISCO	O
 58	O
 74	O
@@ -41548,24 +41399,24 @@ AUGUST	O
 SCHEDULE	O
 
 
-ATLANTA	O
+ATLANTA	I-ORG
 AT	O
-CHICAGO	O
+CHICAGO	I-LOC
 
 
-HOUSTON	O
+HOUSTON	I-LOC
 AT	O
-PITTSBURGH	O
+PITTSBURGH	I-ORG
 
 
-SAN	O
+SAN	I-LOC
 FRANCISCO	O
 AT	O
 NEW	O
-YORK	O
+YORK	I-LOC
 
 
-FLORIDA	O
+FLORIDA	I-ORG
 AT	O
 CINCINNATI	O
 
@@ -41573,23 +41424,22 @@ CINCINNATI	O
 LOS	O
 ANGELES	O
 AT	O
-PHILADELPHIA	O
+PHILADELPHIA	I-ORG
 
 
-SAN	O
+SAN	I-LOC
 DIEGO	O
 AT	O
 MONTREAL	O
 
 
-COLORADO	O
+COLORADO	I-ORG
 AT	O
 ST	O
 LOUIS	O
 
 
--DOCSTART-	-X-	O
-
+-DOCSTART-	O
 
 
 BASEBALL	O
@@ -41601,8 +41451,8 @@ FRIDAY	O
 .	O
 
 
-NEW	O
-YORK	O
+NEW	I-LOC
+YORK	I-LOC
 1996-08-31	O
 
 
@@ -41637,13 +41487,13 @@ City	O
 0	O
 
 
-Chicago	O
+Chicago	I-LOC
 11	O
-TORONTO	O
+TORONTO	I-LOC
 2	O
 
 
-MILWAUKEE	O
+MILWAUKEE	I-ORG
 5	O
 Minnesota	O
 4	O
@@ -41653,28 +41503,28 @@ in	O
 )	O
 
 
-TEXAS	O
+TEXAS	I-ORG
 5	O
 Cleveland	O
 3	O
 
 
 New	O
-York	O
+York	I-ORG
 6	O
 CALIFORNIA	O
 2	O
 
 
-OAKLAND	O
+OAKLAND	I-ORG
 7	O
-Boston	O
+Boston	I-LOC
 0	O
 
 
-Baltimore	O
+Baltimore	I-ORG
 5	O
-SEATTLE	O
+SEATTLE	I-ORG
 2	O
 
 
@@ -41682,9 +41532,9 @@ National	O
 League	O
 
 
-CHICAGO	O
+CHICAGO	I-ORG
 3	O
-Atlanta	O
+Atlanta	I-LOC
 2	O
 (	O
 1st	O
@@ -41692,9 +41542,9 @@ game	O
 )	O
 
 
-Atlanta	O
+Atlanta	I-LOC
 6	O
-CHICAGO	O
+CHICAGO	I-LOC
 5	O
 (	O
 2nd	O
@@ -41702,13 +41552,13 @@ game	O
 )	O
 
 
-Florida	O
+Florida	I-LOC
 3	O
-CINCINNATI	O
+CINCINNATI	I-ORG
 1	O
 
 
-San	O
+San	I-LOC
 Diego	O
 6	O
 MONTREAL	O
@@ -41718,7 +41568,7 @@ MONTREAL	O
 Los	O
 Angeles	O
 7	O
-PHILADELPHIA	O
+PHILADELPHIA	I-ORG
 6	O
 (	O
 in	O
@@ -41726,29 +41576,28 @@ in	O
 )	O
 
 
-Houston	O
+Houston	I-ORG
 10	O
-PITTSBURGH	O
+PITTSBURGH	I-ORG
 0	O
 
 
-San	O
+San	I-LOC
 Francisco	O
 6	O
 NEW	O
-YORK	O
+YORK	I-LOC
 4	O
 
 
 ST	O
 LOUIS	O
 7	O
-Colorado	O
+Colorado	I-LOC
 4	O
 
 
--DOCSTART-	-X-	O
-
+-DOCSTART-	O
 
 
 BASEBALL	O
@@ -41764,7 +41613,7 @@ REDS	O
 .	O
 
 
-CINCINNATI	O
+CINCINNATI	I-ORG
 1996-08-31	O
 
 
@@ -41789,11 +41638,11 @@ fifth-inning	O
 tie	O
 as	O
 the	O
-Florida	O
+Florida	I-LOC
 Marlins	O
 beat	O
 the	O
-Cincinnati	O
+Cincinnati	I-ORG
 Reds	O
 3-1	O
 for	O
@@ -41878,7 +41727,7 @@ season	O
 "	O
 Bolesy	O
 (	O
-Florida	O
+Florida	I-LOC
 manager	O
 John	O
 Boles	O
@@ -42056,7 +41905,7 @@ starting	O
 
 
 In	O
-Philadelphia	O
+Philadelphia	I-ORG
 ,	O
 Delino	O
 DeShields	O
@@ -42177,7 +42026,7 @@ Angeles	O
 
 
 In	O
-Chicago	O
+Chicago	I-LOC
 ,	O
 the	O
 Braves	O
@@ -42206,12 +42055,12 @@ infield	O
 single	O
 and	O
 Kevin	O
-Foster	O
+Foster	I-PER
 (	O
 6-2	O
 )	O
 outdueled	O
-Atlanta	O
+Atlanta	I-LOC
 's	O
 Tom	O
 Glavine	O
@@ -42228,7 +42077,7 @@ win	O
 .	O
 
 
-Foster	O
+Foster	I-PER
 ,	O
 a	O
 .333	O
@@ -42296,7 +42145,7 @@ victory	O
 Cubs	O
 shortstop	O
 Jose	O
-Hernandez	O
+Hernandez	I-PER
 committed	O
 three	O
 of	O
@@ -42308,14 +42157,14 @@ errors	O
 
 
 Mike	O
-Mordecai	O
+Mordecai	I-PER
 singled	O
 ,	O
 doubled	O
 and	O
 homered	O
 for	O
-Atlanta	O
+Atlanta	I-LOC
 ,	O
 which	O
 has	O
@@ -42363,7 +42212,7 @@ four-run	O
 third	O
 as	O
 the	O
-San	O
+San	I-LOC
 Diego	O
 Padres	O
 blanked	O
@@ -42403,7 +42252,7 @@ leadoff	O
 double	O
 to	O
 David	O
-Segui	O
+Segui	I-PER
 in	O
 the	O
 second	O
@@ -42464,7 +42313,7 @@ games	O
 
 In	O
 New	O
-York	O
+York	I-ORG
 ,	O
 Marvin	O
 Benard	O
@@ -42488,7 +42337,7 @@ complete	O
 game	O
 as	O
 the	O
-San	O
+San	I-LOC
 Francisco	O
 Giants	O
 beat	O
@@ -42672,7 +42521,7 @@ win	O
 St	O
 Louis	O
 defeated	O
-Colorado	O
+Colorado	I-LOC
 for	O
 just	O
 the	O
@@ -42730,7 +42579,7 @@ Rockies	O
 
 
 In	O
-Pittsburgh	O
+Pittsburgh	I-ORG
 ,	O
 Sean	O
 Berry	O
@@ -42804,8 +42653,7 @@ win	O
 .	O
 
 
--DOCSTART-	-X-	O
-
+-DOCSTART-	O
 
 
 TENNIS	O
@@ -42822,8 +42670,8 @@ Richard	O
 Finn	O
 
 
-NEW	O
-YORK	O
+NEW	I-LOC
+YORK	I-LOC
 1996-08-30	O
 
 
@@ -43363,8 +43211,7 @@ tonight	O
 "	O
 
 
--DOCSTART-	-X-	O
-
+-DOCSTART-	O
 
 
 BOXING	O
@@ -43378,7 +43225,7 @@ TITLE	O
 .	O
 
 
-DUBLIN	O
+DUBLIN	I-LOC
 1996-08-31	O
 
 
@@ -43394,10 +43241,10 @@ title	O
 on	O
 Saturday	O
 when	O
-Mexico	O
+Mexico	I-LOC
 's	O
 Manuel	O
-Medina	O
+Medina	I-LOC
 was	O
 retired	O
 by	O
@@ -43413,13 +43260,12 @@ round	O
 .	O
 
 
--DOCSTART-	-X-	O
-
+-DOCSTART-	O
 
 
 SOCCER	O
 -	O
-AUSTRIA	O
+AUSTRIA	I-LOC
 DOMINATE	O
 SCOTLAND	O
 IN	O
@@ -43430,14 +43276,14 @@ QUALIFIER	O
 
 
 Steve	O
-Pagani	O
+Pagani	I-PER
 
 
-VIENNA	O
+VIENNA	I-LOC
 1996-08-31	O
 
 
-Austria	O
+Austria	I-LOC
 dominated	O
 their	O
 World	O
@@ -43479,7 +43325,7 @@ Scotland	O
 ,	O
 who	O
 thrashed	O
-Belarus	O
+Belarus	I-LOC
 5-1	O
 in	O
 their	O
@@ -43497,7 +43343,7 @@ performance	O
 .	O
 
 
-Austria	O
+Austria	I-LOC
 's	O
 best	O
 chance	O
@@ -43511,7 +43357,7 @@ Stephan	O
 Marasek	O
 of	O
 SC	O
-Freiburg	O
+Freiburg	I-ORG
 taking	O
 advantage	O
 of	O
@@ -43564,8 +43410,8 @@ wide	O
 
 Everton	O
 's	O
-Duncan	O
-Ferguson	O
+Duncan	I-PER
+Ferguson	I-PER
 went	O
 close	O
 for	O
@@ -43597,7 +43443,7 @@ yellow	O
 cards	O
 ,	O
 captain	O
-Gary	O
+Gary	I-PER
 McAllister	O
 for	O
 bringing	O
@@ -43605,7 +43451,7 @@ down	O
 Andreas	O
 Heraf	O
 and	O
-Ferguson	O
+Ferguson	I-PER
 for	O
 arguing	O
 against	O
@@ -43660,7 +43506,7 @@ good	O
 "	O
 
 
-SK	O
+SK	I-ORG
 Rapid	O
 's	O
 Dietmar	O
@@ -43758,7 +43604,7 @@ Teams	O
 :	O
 
 
-Austria	O
+Austria	I-LOC
 :	O
 Michael	O
 Konsel	O
@@ -43826,8 +43672,8 @@ Hendry	O
 Thomas	O
 McKinley	O
 ,	O
-Duncan	O
-Ferguson	O
+Duncan	I-PER
+Ferguson	I-PER
 ,	O
 Stuart	O
 McCall	O
@@ -43848,13 +43694,12 @@ Collins	O
 .	O
 
 
--DOCSTART-	-X-	O
-
+-DOCSTART-	O
 
 
 BOXING	O
 -	O
-JOHNSON	O
+JOHNSON	I-LOC
 WINS	O
 UNANIMOUS	O
 POIUNTS	O
@@ -43862,13 +43707,13 @@ VERDICT	O
 .	O
 
 
-DUBLIN	O
+DUBLIN	I-LOC
 1996-08-31	O
 
 
 American	O
 Tom	O
-Johnson	O
+Johnson	I-PER
 successfully	O
 defended	O
 his	O
@@ -43883,22 +43728,21 @@ unanimous	O
 points	O
 decision	O
 over	O
-Venezuela	O
+Venezuela	I-LOC
 's	O
-Ramon	O
+Ramon	I-PER
 Guzman	O
 on	O
 Saturday	O
 .	O
 
 
--DOCSTART-	-X-	O
-
+-DOCSTART-	O
 
 
 SOCCER	O
 -	O
-FRANCE	O
+FRANCE	I-LOC
 LAUNCH	O
 1998	O
 WORLD	O
@@ -43910,7 +43754,7 @@ WIN	O
 .	O
 
 
-PARIS	O
+PARIS	I-LOC
 1996-08-31	O
 
 
@@ -43932,7 +43776,7 @@ Cup	O
 hosts	O
 France	O
 beat	O
-Mexico	O
+Mexico	I-LOC
 2-0	O
 in	O
 a	O
@@ -43977,7 +43821,7 @@ by	O
 the	O
 sending-off	O
 of	O
-Chelsea	O
+Chelsea	I-LOC
 central	O
 defender	O
 Franck	O
@@ -44002,7 +43846,7 @@ fouling	O
 Mexican	O
 substitute	O
 Ricardo	O
-Pelaez	O
+Pelaez	I-PER
 who	O
 minutes	O
 earlier	O
@@ -44016,7 +43860,7 @@ card	O
 for	O
 pushing	O
 the	O
-Chelsea	O
+Chelsea	I-LOC
 defender	O
 in	O
 the	O
@@ -44033,7 +43877,7 @@ the	O
 second	O
 half	O
 after	O
-France	O
+France	I-LOC
 had	O
 surprised	O
 the	O
@@ -44090,7 +43934,7 @@ has	O
 joined	O
 Espanyol	O
 of	O
-Barcelona	O
+Barcelona	I-LOC
 from	O
 Nantes	O
 since	O
@@ -44149,7 +43993,7 @@ past	O
 diving	O
 goalkeeper	O
 Osvaldo	O
-Sanchez	O
+Sanchez	I-PER
 .	O
 
 
@@ -44196,7 +44040,7 @@ Teams	O
 :	O
 
 
-France	O
+France	I-LOC
 -	O
 1	O
 -	O
@@ -44249,7 +44093,7 @@ Deschamps	O
 ,	O
 10	O
 -	O
-Youri	O
+Youri	I-PER
 Djorkaeff	O
 ,	O
 6	O
@@ -44289,12 +44133,12 @@ Zidane	O
 )	O
 
 
-Mexico	O
+Mexico	I-LOC
 -	O
 1	O
 -	O
 Osvaldo	O
-Sanchez	O
+Sanchez	I-PER
 (	O
 12	O
 -	O
@@ -44311,7 +44155,7 @@ Pardo	O
 2	O
 -	O
 Claudio	O
-Suarez	O
+Suarez	I-PER
 ,	O
 5	O
 -	O
@@ -44329,7 +44173,7 @@ Villa	O
 (	O
 16	O
 -	O
-Gomez	O
+Gomez	I-PER
 86th	O
 )	O
 ;	O
@@ -44356,12 +44200,12 @@ Blanco	O
 -	O
 Alberto	O
 Garcia	O
-Aspe	O
+Aspe	I-PER
 ,	O
 7	O
 -	O
-Ramon	O
-Ramirez	O
+Ramon	I-PER
+Ramirez	I-PER
 (	O
 15	O
 -	O
@@ -44378,7 +44222,7 @@ Alfaro	O
 17	O
 -	O
 Francisco	O
-Palencia	O
+Palencia	I-LOC
 78th	O
 )	O
 ,	O
@@ -44390,34 +44234,33 @@ Garcia	O
 19	O
 -	O
 Ricardo	O
-Pelaez	O
+Pelaez	I-PER
 69th	O
 )	O
 .	O
 
 
--DOCSTART-	-X-	O
-
+-DOCSTART-	O
 
 
 SOCCER	O
 -	O
-FRANCE	O
+FRANCE	I-LOC
 BEAT	O
-MEXICO	O
+MEXICO	I-LOC
 2-0	O
 IN	O
 FRIENDLY	O
 .	O
 
 
-PARIS	O
+PARIS	I-LOC
 1996-08-31	O
 
 
-France	O
+France	I-LOC
 beat	O
-Mexico	O
+Mexico	I-LOC
 2-0	O
 (	O
 halftime	O
@@ -44454,13 +44297,12 @@ Attendance	O
 18,000	O
 
 
--DOCSTART-	-X-	O
-
+-DOCSTART-	O
 
 
 SOCCER	O
 -	O
-BELGIUM	O
+BELGIUM	I-LOC
 SCRAPE	O
 PAST	O
 TURKEY	O
@@ -44474,11 +44316,11 @@ Bert	O
 Lauwers	O
 
 
-BRUSSELS	O
+BRUSSELS	I-LOC
 1996-08-31	O
 
 
-Belgium	O
+Belgium	I-LOC
 kicked	O
 off	O
 their	O
@@ -44493,7 +44335,7 @@ hard-fought	O
 victory	O
 over	O
 10-man	O
-Turkey	O
+Turkey	I-LOC
 in	O
 a	O
 tense	O
@@ -44664,7 +44506,7 @@ area	O
 
 Brazilian-born	O
 Luis	O
-Oliveira	O
+Oliveira	I-PER
 then	O
 gleefully	O
 slipped	O
@@ -44690,7 +44532,7 @@ before	O
 the	O
 interval	O
 ,	O
-Turkey	O
+Turkey	I-LOC
 's	O
 best	O
 first-half	O
@@ -44772,7 +44614,7 @@ finals	O
 in	O
 France	O
 ,	O
-Belgium	O
+Belgium	I-LOC
 could	O
 not	O
 afford	O
@@ -44821,7 +44663,7 @@ ball	O
 .	O
 
 
-Belgium	O
+Belgium	I-LOC
 's	O
 best	O
 second-half	O
@@ -44887,7 +44729,7 @@ Schepens	O
 15	O
 -	O
 Nico	O
-Van	O
+Van	I-PER
 Kerckhoven	O
 ,	O
 81st	O
@@ -44923,7 +44765,7 @@ Nilis	O
 ,	O
 11-	O
 Luis	O
-Oliveira	O
+Oliveira	I-PER
 (	O
 18	O
 -	O
@@ -44936,7 +44778,7 @@ Bilde	O
 .	O
 
 
-Turkey	O
+Turkey	I-LOC
 -	O
 1	O
 -	O
@@ -44982,7 +44824,7 @@ Kafkas	O
 ,	O
 10	O
 -	O
-Oguz	O
+Oguz	I-PER
 Cetin	O
 (	O
 13	O
@@ -45020,14 +44862,14 @@ Cikirikci	O
 Belgian	O
 coach	O
 Wilfried	O
-Van	O
+Van	I-PER
 Moer	O
 said	O
 he	O
 had	O
 not	O
 expected	O
-Turkey	O
+Turkey	I-LOC
 to	O
 be	O
 so	O
@@ -45055,13 +44897,13 @@ suffered	O
 ,	O
 "	O
 said	O
-Van	O
+Van	I-PER
 Moer	O
 ,	O
 who	O
 succeeded	O
 Paul	O
-Van	O
+Van	I-PER
 Himst	O
 as	O
 coach	O
@@ -45072,12 +44914,12 @@ April	O
 
 It	O
 was	O
-Belgium	O
+Belgium	I-LOC
 's	O
 first	O
 victory	O
 under	O
-Van	O
+Van	I-PER
 Moer	O
 after	O
 two	O
@@ -45085,14 +44927,13 @@ draws	O
 in	O
 friendlies	O
 against	O
-Russia	O
+Russia	I-LOC
 and	O
-Italy	O
+Italy	I-LOC
 .	O
 
 
--DOCSTART-	-X-	O
-
+-DOCSTART-	O
 
 
 SOCCER	O
@@ -45106,7 +44947,7 @@ DIVISION	O
 .	O
 
 
-MADRID	O
+MADRID	I-LOC
 1996-08-30	O
 
 
@@ -45153,8 +44994,7 @@ Attendancce	O
 .	O
 
 
--DOCSTART-	-X-	O
-
+-DOCSTART-	O
 
 
 SOCCER	O
@@ -45167,7 +45007,7 @@ DIVISION	O
 .	O
 
 
-MADRID	O
+MADRID	I-LOC
 1996-08-31	O
 
 
@@ -45195,15 +45035,14 @@ Madrid	O
 1	O
 
 
--DOCSTART-	-X-	O
-
+-DOCSTART-	O
 
 
 SOCCER	O
 -	O
-BELGIUM	O
+BELGIUM	I-LOC
 BEAT	O
-TURKEY	O
+TURKEY	I-LOC
 2-1	O
 IN	O
 WORLD	O
@@ -45212,13 +45051,13 @@ QUALIFIER	O
 .	O
 
 
-BRUSSELS	O
+BRUSSELS	I-LOC
 1996-08-31	O
 
 
 Belgium	O
 beat	O
-Turkey	O
+Turkey	I-LOC
 2-1	O
 
 
@@ -45254,13 +45093,13 @@ Degryse	O
 )	O
 ,	O
 Luis	O
-Oliveira	O
+Oliveira	I-PER
 (	O
 38th	O
 )	O
 
 
-Turkey	O
+Turkey	I-LOC
 -	O
 Sergen	O
 Yalcin	O
@@ -45274,13 +45113,12 @@ Attendance	O
 30,000	O
 
 
--DOCSTART-	-X-	O
-
+-DOCSTART-	O
 
 
 SOCCER	O
 -	O
-AUSTRIA	O
+AUSTRIA	I-LOC
 DRAW	O
 0-0	O
 WITH	O
@@ -45292,11 +45130,11 @@ QUALIFIER	O
 .	O
 
 
-VIENNA	O
+VIENNA	I-LOC
 1996-08-31	O
 
 
-Austria	O
+Austria	I-LOC
 and	O
 Scotland	O
 drew	O
@@ -45320,8 +45158,7 @@ Attendance	O
 29,500	O
 
 
--DOCSTART-	-X-	O
-
+-DOCSTART-	O
 
 
 BOXING	O
@@ -45334,7 +45171,7 @@ TITLE	O
 .	O
 
 
-DUBLIN	O
+DUBLIN	I-LOC
 1996-08-31	O
 
 
@@ -45487,8 +45324,7 @@ distance	O
 .	O
 
 
--DOCSTART-	-X-	O
-
+-DOCSTART-	O
 
 
 SOCCER	O
@@ -45497,7 +45333,7 @@ DUTCH	O
 DRAW	O
 2-2	O
 WITH	O
-BRAZIL	O
+BRAZIL	I-LOC
 IN	O
 FRIENDLY	O
 INTERNATIONAL	O
@@ -45515,7 +45351,7 @@ drew	O
 with	O
 
 
-Brazil	O
+Brazil	I-LOC
 (	O
 half-time	O
 0-1	O
@@ -45543,7 +45379,7 @@ Boer	O
 minute	O
 )	O
 ,	O
-Van	O
+Van	I-PER
 Gastel	O
 
 
@@ -45554,9 +45390,9 @@ pen	O
 )	O
 
 
-Brazil	O
+Brazil	I-LOC
 -	O
-Giovanni	O
+Giovanni	I-PER
 (	O
 14th	O
 )	O
@@ -45568,8 +45404,7 @@ Goncalves	O
 )	O
 
 
--DOCSTART-	-X-	O
-
+-DOCSTART-	O
 
 
 BOXING	O
@@ -45582,7 +45417,7 @@ TITLE	O
 .	O
 
 
-DUBLIN	O
+DUBLIN	I-LOC
 1996-08-31	O
 
 
@@ -45614,8 +45449,7 @@ Saturday	O
 .	O
 
 
--DOCSTART-	-X-	O
-
+-DOCSTART-	O
 
 
 HORSE	O
@@ -45628,7 +45462,7 @@ RESULT	O
 .	O
 
 
-DUBLIN	O
+DUBLIN	I-LOC
 1996-08-31	O
 
 
@@ -45671,8 +45505,8 @@ joint-favourite	O
 (	O
 ridden	O
 by	O
-David	O
-Harrison	O
+David	I-PER
+Harrison	I-PER
 )	O
 
 
@@ -45687,10 +45521,10 @@ Bloomfield	O
 
 
 3.	O
-Pelham	O
+Pelham	I-PER
 10-1	O
 (	O
-Warren	O
+Warren	I-PER
 O'Connor	O
 )	O
 
@@ -45734,8 +45568,7 @@ $	O
 233,600	O
 
 
--DOCSTART-	-X-	O
-
+-DOCSTART-	O
 
 
 SOCCER	O
@@ -45818,7 +45651,7 @@ Klinsmann	O
 said	O
 he	O
 believed	O
-Germany	O
+Germany	I-LOC
 could	O
 win	O
 in	O
@@ -45896,7 +45729,7 @@ for	O
 
 
 Coach	O
-Berti	O
+Berti	I-PER
 Vogts	O
 has	O
 called	O
@@ -45911,9 +45744,9 @@ week	O
 's	O
 friendly	O
 against	O
-Poland	O
+Poland	I-LOC
 --	O
-Germany	O
+Germany	I-LOC
 's	O
 first	O
 match	O
@@ -45923,8 +45756,7 @@ Euro	O
 .	O
 
 
--DOCSTART-	-X-	O
-
+-DOCSTART-	O
 
 
 SOCCER	O
@@ -45955,10 +45787,10 @@ Saturday	O
 :	O
 
 
-Karlsruhe	O
+Karlsruhe	I-ORG
 2	O
 Hansa	O
-Rostock	O
+Rostock	I-ORG
 0	O
 
 
@@ -45981,15 +45813,14 @@ time	O
 )	O
 
 
--DOCSTART-	-X-	O
-
+-DOCSTART-	O
 
 
 SOCCER	O
 -	O
-ROMANIA	O
+ROMANIA	I-LOC
 BEAT	O
-LITHUANIA	O
+LITHUANIA	I-LOC
 IN	O
 U-21	O
 QUALIFIER	O
@@ -46000,14 +45831,14 @@ BUCHAREST	O
 1996-08-30	O
 
 
-Romania	O
+Romania	I-LOC
 beat	O
 2-1	O
 (	O
 halftime	O
 1-1	O
 )	O
-Lithuania	O
+Lithuania	I-LOC
 in	O
 their	O
 European	O
@@ -46023,7 +45854,7 @@ Scorers	O
 :	O
 
 
-Romania	O
+Romania	I-LOC
 -	O
 Cosmin	O
 Contra	O
@@ -46038,7 +45869,7 @@ Tararache	O
 )	O
 
 
-Lithuania	O
+Lithuania	I-LOC
 -	O
 Danius	O
 Gleveckas	O
@@ -46052,8 +45883,7 @@ Attendence	O
 200	O
 
 
--DOCSTART-	-X-	O
-
+-DOCSTART-	O
 
 
 Paper	O
@@ -46066,7 +45896,7 @@ astrologer	O
 .	O
 
 
-LONDON	O
+LONDON	I-LOC
 1996-09-01	O
 
 
@@ -46340,8 +46170,7 @@ schedule	O
 .	O
 
 
--DOCSTART-	-X-	O
-
+-DOCSTART-	O
 
 
 Reuters	O
@@ -46353,7 +46182,7 @@ September	O
 .	O
 
 
-LONDON	O
+LONDON	I-LOC
 1996-08-31	O
 
 
@@ -46436,7 +46265,7 @@ Duke	O
 of	O
 Orleans	O
 besieging	O
-Turin	O
+Turin	I-LOC
 were	O
 defeated	O
 by	O
@@ -46458,7 +46287,7 @@ trying	O
 to	O
 capture	O
 northern	O
-Italy	O
+Italy	I-LOC
 .	O
 
 
@@ -46529,13 +46358,13 @@ Borodino	O
 miles	O
 west	O
 of	O
-Moscow	O
+Moscow	I-LOC
 .	O
 
 
 Napoleon	O
 entered	O
-Moscow	O
+Moscow	I-LOC
 a	O
 week	O
 later	O
@@ -46544,11 +46373,11 @@ later	O
 
 1822	O
 -	O
-Brazil	O
+Brazil	I-LOC
 proclaimed	O
 independence	O
 from	O
-Portugal	O
+Portugal	I-LOC
 and	O
 Pedro	O
 I	O
@@ -46556,7 +46385,7 @@ became	O
 first	O
 Emperor	O
 of	O
-Brazil	O
+Brazil	I-LOC
 in	O
 December	O
 1822	O
@@ -46575,7 +46404,7 @@ born	O
 
 
 As	O
-Liberal	O
+Liberal	I-ORG
 prime	O
 minister	O
 1905-1908	O
@@ -46615,7 +46444,7 @@ strike	O
 1860	O
 -	O
 Giuseppe	O
-Garibaldi	O
+Garibaldi	I-PER
 leading	O
 his	O
 "	O
@@ -46639,7 +46468,7 @@ Austrians	O
 1901	O
 -	O
 In	O
-China	O
+China	I-LOC
 ,	O
 the	O
 Boxer	O
@@ -46776,8 +46605,8 @@ Days	O
 -	O
 James	O
 Alfred	O
-Van	O
-Allen	O
+Van	I-PER
+Allen	I-PER
 born	O
 .	O
 
@@ -46846,12 +46675,12 @@ Goering	O
 began	O
 its	O
 "	O
-Blitz	O
+Blitz	I-PER
 "	O
 bombing	O
 campaign	O
 on	O
-London	O
+London	I-LOC
 .	O
 
 
@@ -46960,7 +46789,7 @@ Gulf	O
 .	O
 
 
-Iraq	O
+Iraq	I-LOC
 ordered	O
 many	O
 restaurants	O
@@ -46988,7 +46817,7 @@ Percivale	O
 (	O
 A.J.P.	O
 )	O
-Taylor	O
+Taylor	I-PER
 died	O
 .	O
 
@@ -47035,17 +46864,17 @@ former	O
 Soviet	O
 republics	O
 ,	O
-Russia	O
+Russia	I-LOC
 ,	O
-Belarus	O
+Belarus	I-LOC
 ,	O
-Kazakhstan	O
+Kazakhstan	I-LOC
 ,	O
 Uzbekistan	O
 ,	O
-Armenia	O
+Armenia	I-LOC
 and	O
-Tajikistan	O
+Tajikistan	I-LOC
 ,	O
 signed	O
 framework	O
@@ -47080,7 +46909,7 @@ U.S.	O
 army	O
 headquarters	O
 in	O
-Berlin	O
+Berlin	I-LOC
 ,	O
 formally	O
 ending	O
@@ -47099,8 +46928,7 @@ century	O
 .	O
 
 
--DOCSTART-	-X-	O
-
+-DOCSTART-	O
 
 
 Escaped	O
@@ -47110,7 +46938,7 @@ recaptured	O
 .	O
 
 
-LONDON	O
+LONDON	I-LOC
 1996-08-31	O
 
 
@@ -47235,11 +47063,11 @@ theme	O
 park	O
 south	O
 of	O
-London	O
+London	I-LOC
 .	O
 
 
-Holland	O
+Holland	I-LOC
 was	O
 moved	O
 to	O
@@ -47274,7 +47102,7 @@ child	O
 sex	O
 scandal	O
 in	O
-Belgium	O
+Belgium	I-LOC
 in	O
 which	O
 two	O
@@ -47300,8 +47128,7 @@ problem	O
 .	O
 
 
--DOCSTART-	-X-	O
-
+-DOCSTART-	O
 
 
 Scottish	O
@@ -47512,13 +47339,12 @@ Party	O
 .	O
 
 
--DOCSTART-	-X-	O
-
+-DOCSTART-	O
 
 
 Britain	O
 condemns	O
-Iraq	O
+Iraq	I-LOC
 involvement	O
 in	O
 Arbil	O
@@ -47526,7 +47352,7 @@ attack	O
 .	O
 
 
-LONDON	O
+LONDON	I-LOC
 1996-08-31	O
 
 
@@ -47701,8 +47527,7 @@ information	O
 .	O
 
 
--DOCSTART-	-X-	O
-
+-DOCSTART-	O
 
 
 Seven	O
@@ -47713,7 +47538,7 @@ hijack	O
 .	O
 
 
-LONDON	O
+LONDON	I-LOC
 1996-08-31	O
 
 
@@ -47803,14 +47628,14 @@ which	O
 was	O
 flying	O
 from	O
-Khartoum	O
+Khartoum	I-LOC
 ,	O
-Sudan	O
+Sudan	I-LOC
 ,	O
 to	O
-Amman	O
+Amman	I-LOC
 ,	O
-Jordan	O
+Jordan	I-LOC
 .	O
 
 
@@ -47831,7 +47656,7 @@ airport	O
 ,	O
 north	O
 of	O
-London	O
+London	I-LOC
 .	O
 
 
@@ -47849,7 +47674,7 @@ were	O
 persecuted	O
 while	O
 in	O
-Iraq	O
+Iraq	I-LOC
 .	O
 
 
@@ -47923,8 +47748,7 @@ explosives	O
 .	O
 
 
--DOCSTART-	-X-	O
-
+-DOCSTART-	O
 
 
 Opposition	O
@@ -47934,11 +47758,11 @@ Iraqis	O
 advance	O
 in	O
 north	O
-Iraq	O
+Iraq	I-LOC
 .	O
 
 
-LONDON	O
+LONDON	I-LOC
 1996-08-31	O
 
 
@@ -47970,7 +47794,7 @@ of	O
 Arbil	O
 in	O
 northern	O
-Iraq	O
+Iraq	I-LOC
 .	O
 
 
@@ -48015,7 +47839,7 @@ rebel-controlled	O
 region	O
 of	O
 northern	O
-Iraq	O
+Iraq	I-LOC
 .	O
 
 
@@ -48023,7 +47847,7 @@ Iraq	O
 At	O
 4.50	O
 a.m.	O
-Iraq	O
+Iraq	I-LOC
 time	O
 (	O
 0050	O
@@ -48106,7 +47930,7 @@ city	O
 
 President	O
 Bill	O
-Clinton	O
+Clinton	I-PER
 on	O
 Friday	O
 ordered	O
@@ -48121,7 +47945,7 @@ any	O
 possible	O
 action	O
 as	O
-Washington	O
+Washington	I-LOC
 turned	O
 up	O
 the	O
@@ -48136,16 +47960,16 @@ troop	O
 movements	O
 in	O
 northern	O
-Iraq	O
+Iraq	I-LOC
 .	O
 
 
 On	O
 Thursday	O
 ,	O
-Iraq	O
+Iraq	I-LOC
 accused	O
-Iran	O
+Iran	I-LOC
 of	O
 aggression	O
 and	O
@@ -48165,7 +47989,7 @@ of	O
 troops	O
 into	O
 northern	O
-Iraq	O
+Iraq	I-LOC
 ,	O
 where	O
 fighting	O
@@ -48185,14 +48009,13 @@ ago	O
 .	O
 
 
--DOCSTART-	-X-	O
-
+-DOCSTART-	O
 
 
 Two	O
 die	O
 in	O
-Algeria	O
+Algeria	I-LOC
 restaurant	O
 blast	O
 -	O
@@ -48200,7 +48023,7 @@ radio	O
 .	O
 
 
-LONDON	O
+LONDON	I-LOC
 1996-08-31	O
 
 
@@ -48275,7 +48098,7 @@ in	O
 political	O
 violence	O
 in	O
-Algeria	O
+Algeria	I-LOC
 since	O
 1992	O
 ,	O
@@ -48297,8 +48120,7 @@ win	O
 .	O
 
 
--DOCSTART-	-X-	O
-
+-DOCSTART-	O
 
 
 Baseball-Results	O
@@ -48334,7 +48156,7 @@ Samsung	O
 
 Ssangbangwool	O
 2	O
-Hyundai	O
+Hyundai	I-PER
 1	O
 
 
@@ -48370,7 +48192,7 @@ PCT	O
 GB	O
 
 
-Haitai	O
+Haitai	I-ORG
 64	O
 2	O
 43	O
@@ -48394,7 +48216,7 @@ Hanwha	O
 6	O
 
 
-Hyundai	O
+Hyundai	I-ORG
 57	O
 5	O
 50	O
@@ -48436,8 +48258,7 @@ OB	O
 20	O
 
 
--DOCSTART-	-X-	O
-
+-DOCSTART-	O
 
 
 S.	O
@@ -48506,7 +48327,7 @@ a	O
 news	O
 conference	O
 in	O
-Pretoria	O
+Pretoria	I-LOC
 self-determination	O
 for	O
 Afrikaners	O
@@ -48608,7 +48429,7 @@ by	O
 cooperating	O
 with	O
 President	O
-Nelson	O
+Nelson	I-PER
 Mandela	O
 's	O
 majority	O
@@ -48723,8 +48544,7 @@ Afrikaans	O
 .	O
 
 
--DOCSTART-	-X-	O
-
+-DOCSTART-	O
 
 
 Rwandan	O
@@ -48738,7 +48558,7 @@ census	O
 .	O
 
 
-NAIROBI	O
+NAIROBI	I-LOC
 1996-08-31	O
 
 
@@ -48782,7 +48602,7 @@ Refugees	O
 and	O
 Democracy	O
 in	O
-Rwanda	O
+Rwanda	I-LOC
 (	O
 RDR	O
 )	O
@@ -48881,7 +48701,7 @@ were	O
 forced	O
 back	O
 into	O
-Rwanda	O
+Rwanda	I-LOC
 .	O
 
 
@@ -48917,7 +48737,7 @@ Zairean	O
 border	O
 town	O
 of	O
-Goma	O
+Goma	I-LOC
 .	O
 
 
@@ -48931,7 +48751,7 @@ are	O
 returning	O
 voluntarily	O
 to	O
-Rwanda	O
+Rwanda	I-LOC
 in	O
 contrast	O
 to	O
@@ -48951,7 +48771,7 @@ Prime	O
 Minister	O
 Kengo	O
 wa	O
-Dondo	O
+Dondo	I-PER
 said	O
 at	O
 the	O
@@ -48960,7 +48780,7 @@ of	O
 a	O
 visit	O
 to	O
-Rwanda	O
+Rwanda	I-LOC
 last	O
 week	O
 that	O
@@ -49054,7 +48874,7 @@ and	O
 nearly	O
 600,000	O
 in	O
-Tanzania	O
+Tanzania	I-LOC
 refuse	O
 to	O
 go	O
@@ -49069,7 +48889,7 @@ the	O
 1994	O
 genocide	O
 in	O
-Rwanda	O
+Rwanda	I-LOC
 of	O
 up	O
 to	O
@@ -49081,11 +48901,10 @@ Hutus	O
 .	O
 
 
--DOCSTART-	-X-	O
+-DOCSTART-	O
 
 
-
-NATO	O
+NATO	I-ORG
 monitors	O
 Moslem	O
 move	O
@@ -49101,7 +48920,7 @@ Bosnia	O
 1996-08-31	O
 
 
-NATO	O
+NATO	I-ORG
 said	O
 it	O
 was	O
@@ -49176,7 +48995,7 @@ Max	O
 Marriner	O
 said	O
 in	O
-Sarajevo	O
+Sarajevo	I-LOC
 .	O
 
 
@@ -49194,7 +49013,7 @@ on	O
 the	O
 road	O
 between	O
-Tuzla	O
+Tuzla	I-LOC
 and	O
 Mahala	O
 to	O
@@ -49317,8 +49136,7 @@ overhead	O
 .	O
 
 
--DOCSTART-	-X-	O
-
+-DOCSTART-	O
 
 
 Chechens	O
@@ -49335,9 +49153,9 @@ Liutauras	O
 Stremaitis	O
 
 
-URUS-MARTAN	O
+URUS-MARTAN	I-LOC
 ,	O
-Russia	O
+Russia	I-LOC
 1996-08-31	O
 
 
@@ -49674,7 +49492,7 @@ Urus-Martan	O
 .	O
 
 
-Urus-Martan	O
+Urus-Martan	I-LOC
 is	O
 a	O
 traditionally	O
@@ -49766,7 +49584,7 @@ them	O
 .	O
 
 
-Mouldi	O
+Mouldi	I-PER
 Mamatuyev	O
 ,	O
 in	O
@@ -49946,8 +49764,7 @@ war	O
 "	O
 
 
--DOCSTART-	-X-	O
-
+-DOCSTART-	O
 
 
 Polish	O
@@ -49963,7 +49780,7 @@ paper	O
 .	O
 
 
-WARSAW	O
+WARSAW	I-LOC
 1996-08-31	O
 
 
@@ -50025,7 +49842,7 @@ by	O
 Polish	O
 businessman	O
 Zygmunt	O
-Solorz	O
+Solorz	I-PER
 were	O
 forming	O
 a	O
@@ -50072,7 +49889,7 @@ be	O
 offered	O
 on	O
 the	O
-Warsaw	O
+Warsaw	I-ORG
 stock	O
 exchange	O
 .	O
@@ -50156,7 +49973,7 @@ case	O
 when	O
 he	O
 visits	O
-Poland	O
+Poland	I-LOC
 in	O
 September	O
 ,	O
@@ -50176,7 +49993,7 @@ about	O
 65	O
 percent	O
 of	O
-Poland	O
+Poland	I-LOC
 's	O
 press	O
 distribution	O
@@ -50283,7 +50100,7 @@ outlets	O
 
 
 Initially	O
-Poland	O
+Poland	I-LOC
 offered	O
 up	O
 to	O
@@ -50411,8 +50228,7 @@ Barker	O
 9700	O
 
 
--DOCSTART-	-X-	O
-
+-DOCSTART-	O
 
 
 Three	O
@@ -50446,7 +50262,7 @@ an	O
 anti-aircraft	O
 installation	O
 outside	O
-Moscow	O
+Moscow	I-LOC
 ,	O
 Interfax	O
 news	O
@@ -50508,7 +50324,7 @@ have	O
 become	O
 frequent	O
 in	O
-Russia	O
+Russia	I-LOC
 where	O
 the	O
 number	O
@@ -50527,8 +50343,7 @@ growing	O
 .	O
 
 
--DOCSTART-	-X-	O
-
+-DOCSTART-	O
 
 
 Cuban	O
@@ -50542,13 +50357,13 @@ at	O
 .	O
 
 
-HAVANA	O
+HAVANA	I-ORG
 1996-08-31	O
 
 
 One	O
 of	O
-Cuba	O
+Cuba	I-LOC
 's	O
 most	O
 acclaimed	O
@@ -50599,7 +50414,7 @@ revolution	O
 brought	O
 President	O
 Fidel	O
-Castro	O
+Castro	I-PER
 to	O
 power	O
 .	O
@@ -50626,7 +50441,7 @@ life	O
 of	O
 Santiago	O
 de	O
-Cuba	O
+Cuba	I-LOC
 ,	O
 Puig	O
 's	O
@@ -50840,8 +50655,7 @@ said	O
 .	O
 
 
--DOCSTART-	-X-	O
-
+-DOCSTART-	O
 
 
 U.N.	O
@@ -50853,7 +50667,7 @@ Chile	O
 .	O
 
 
-SANTIAGO	O
+SANTIAGO	I-ORG
 1996-08-31	O
 
 
@@ -50958,7 +50772,7 @@ Albright	O
 who	O
 arrived	O
 from	O
-Uruguay	O
+Uruguay	I-LOC
 ,	O
 will	O
 rest	O
@@ -50989,7 +50803,7 @@ leave	O
 that	O
 day	O
 for	O
-Bolivia	O
+Bolivia	I-LOC
 to	O
 attend	O
 a	O
@@ -51001,7 +50815,7 @@ in	O
 the	O
 city	O
 of	O
-Cochabamba	O
+Cochabamba	I-LOC
 .	O
 
 
@@ -51012,12 +50826,11 @@ also	O
 include	O
 Honduras	O
 and	O
-Guatemala	O
+Guatemala	I-LOC
 .	O
 
 
--DOCSTART-	-X-	O
-
+-DOCSTART-	O
 
 
 Mexican	O
@@ -51031,7 +50844,7 @@ report	O
 .	O
 
 
-MEXICO	O
+MEXICO	I-LOC
 CITY	O
 1996-08-30	O
 
@@ -51212,11 +51025,10 @@ about	O
 .	O
 
 
--DOCSTART-	-X-	O
+-DOCSTART-	O
 
 
-
-China	O
+China	I-LOC
 said	O
 to	O
 fear	O
@@ -51227,7 +51039,7 @@ criminals	O
 .	O
 
 
-MANILA	O
+MANILA	I-LOC
 1996-08-31	O
 
 
@@ -51237,9 +51049,9 @@ of	O
 veteran	O
 dissident	O
 Wang	O
-Donghai	O
+Donghai	I-PER
 showed	O
-China	O
+China	I-LOC
 's	O
 determination	O
 to	O
@@ -51282,7 +51094,7 @@ group	O
 Human	O
 Rights	O
 in	O
-China	O
+China	I-LOC
 ,	O
 said	O
 Wang	O
@@ -51362,7 +51174,7 @@ interview	O
 
 
 "	O
-China	O
+China	I-LOC
 is	O
 going	O
 through	O
@@ -51391,7 +51203,7 @@ said	O
 Xiao	O
 ,	O
 in	O
-Manila	O
+Manila	I-LOC
 to	O
 attend	O
 an	O
@@ -51402,7 +51214,7 @@ on	O
 human	O
 rights	O
 in	O
-China	O
+China	I-LOC
 .	O
 
 
@@ -51461,7 +51273,7 @@ worse	O
 and	O
 one	O
 day	O
-China	O
+China	I-LOC
 would	O
 pay	O
 a	O
@@ -51507,10 +51319,10 @@ arrested	O
 in	O
 the	O
 east	O
-China	O
+China	I-LOC
 city	O
 of	O
-Hangzhou	O
+Hangzhou	I-PER
 by	O
 security	O
 officers	O
@@ -51613,13 +51425,12 @@ said	O
 .	O
 
 
--DOCSTART-	-X-	O
+-DOCSTART-	O
 
 
-
-Manila	O
+Manila	I-LOC
 hails	O
-Indonesia	O
+Indonesia	I-LOC
 ,	O
 OIC	O
 for	O
@@ -51629,7 +51440,7 @@ support	O
 .	O
 
 
-MANILA	O
+MANILA	I-LOC
 1996-08-31	O
 
 
@@ -51712,7 +51523,7 @@ Saturday	O
 .	O
 
 
-Jakarta	O
+Jakarta	I-LOC
 served	O
 as	O
 the	O
@@ -51747,11 +51558,11 @@ scheduled	O
 on	O
 Monday	O
 in	O
-Manila	O
+Manila	I-LOC
 .	O
 
 
-Ramos	O
+Ramos	I-ORG
 said	O
 the	O
 peace	O
@@ -51798,8 +51609,7 @@ century	O
 .	O
 
 
--DOCSTART-	-X-	O
-
+-DOCSTART-	O
 
 
 Burma	O
@@ -51827,7 +51637,7 @@ Burma	O
 democracy	O
 leader	O
 Aung	O
-San	O
+San	I-LOC
 Suu	O
 Kyi	O
 hit	O
@@ -51910,7 +51720,7 @@ home	O
 
 
 Suu	O
-Kyi	O
+Kyi	I-PER
 said	O
 at	O
 least	O
@@ -52057,7 +51867,7 @@ state	O
 
 But	O
 Suu	O
-Kyi	O
+Kyi	I-PER
 disagreed	O
 with	O
 the	O
@@ -52122,7 +51932,7 @@ said	O
 
 
 Suu	O
-Kyi	O
+Kyi	I-PER
 ,	O
 who	O
 spearheads	O
@@ -52267,7 +52077,7 @@ trial	O
 
 
 Suu	O
-Kyi	O
+Kyi	I-PER
 said	O
 once	O
 the	O
@@ -52438,7 +52248,7 @@ five	O
 weeks	O
 after	O
 James	O
-Leander	O
+Leander	I-PER
 (	O
 Leo	O
 )	O
@@ -52467,7 +52277,7 @@ Insein	O
 
 
 Suu	O
-Kyi	O
+Kyi	I-PER
 said	O
 the	O
 government	O
@@ -52543,14 +52353,13 @@ Burma	O
 "	O
 
 
--DOCSTART-	-X-	O
-
+-DOCSTART-	O
 
 
 Dow	O
 Chemical	O
 in	O
-China	O
+China	I-LOC
 ethylene	O
 venture	O
 .	O
@@ -52583,10 +52392,10 @@ Tianjin	O
 city	O
 in	O
 northern	O
-China	O
+China	I-LOC
 ,	O
 the	O
-China	O
+China	I-LOC
 Daily	O
 said	O
 on	O
@@ -52656,7 +52465,7 @@ a	O
 bonded	O
 zone	O
 in	O
-Tianjin	O
+Tianjin	I-LOC
 ,	O
 the	O
 newspaper	O
@@ -52677,10 +52486,10 @@ were	O
 also	O
 attracted	O
 to	O
-Tianjin	O
+Tianjin	I-LOC
 due	O
 to	O
-China	O
+China	I-LOC
 's	O
 rising	O
 demand	O
@@ -52704,8 +52513,7 @@ details	O
 .	O
 
 
--DOCSTART-	-X-	O
-
+-DOCSTART-	O
 
 
 N.	O
@@ -52748,7 +52556,7 @@ the	O
 1950-53	O
 war	O
 ,	O
-Seoul	O
+Seoul	I-LOC
 's	O
 unification	O
 ministry	O
@@ -52780,7 +52588,7 @@ Korean	O
 Red	O
 Cross	O
 president	O
-Li	O
+Li	I-PER
 Song-ho	O
 said	O
 in	O
@@ -52797,7 +52605,7 @@ Young-hoon	O
 .	O
 
 
-Li	O
+Li	I-PER
 said	O
 Kim	O
 had	O
@@ -52892,7 +52700,7 @@ if	O
 the	O
 North	O
 accepted	O
-Seoul	O
+Seoul	I-LOC
 's	O
 requests	O
 ,	O
@@ -52926,7 +52734,7 @@ in	O
 1993	O
 unconditionally	O
 repatriated	O
-Li	O
+Li	I-PER
 In-mo	O
 ,	O
 a	O
@@ -52949,8 +52757,7 @@ decades	O
 .	O
 
 
--DOCSTART-	-X-	O
-
+-DOCSTART-	O
 
 
 Chinese	O
@@ -52972,7 +52779,7 @@ detained	O
 veteran	O
 dissident	O
 Wang	O
-Donghai	O
+Donghai	I-PER
 ,	O
 the	O
 New	O
@@ -52982,7 +52789,7 @@ group	O
 Human	O
 Rights	O
 in	O
-China	O
+China	I-LOC
 said	O
 on	O
 Saturday	O
@@ -52991,7 +52798,7 @@ Saturday	O
 
 Police	O
 in	O
-Hangzhou	O
+Hangzhou	I-PER
 ,	O
 capital	O
 of	O
@@ -53101,7 +52908,7 @@ Wang	O
 's	O
 family	O
 and	O
-Hangzhou	O
+Hangzhou	I-LOC
 police	O
 could	O
 not	O
@@ -53127,7 +52934,7 @@ was	O
 a	O
 dangerous	O
 signal	O
-China	O
+China	I-LOC
 was	O
 returning	O
 to	O
@@ -53225,7 +53032,7 @@ demonstrations	O
 by	O
 students	O
 at	O
-Beijing	O
+Beijing	I-LOC
 's	O
 Tiananmen	O
 Square	O
@@ -53281,16 +53088,15 @@ said	O
 .	O
 
 
--DOCSTART-	-X-	O
+-DOCSTART-	O
 
 
-
-China	O
+China	I-LOC
 police	O
 detains	O
 dissident	O
 Wang	O
-Donghai	O
+Donghai	I-PER
 .	O
 
 
@@ -53304,7 +53110,7 @@ have	O
 detained	O
 dissident	O
 Wang	O
-Donghai	O
+Donghai	I-PER
 ,	O
 the	O
 New	O
@@ -53314,7 +53120,7 @@ group	O
 Human	O
 Rights	O
 in	O
-China	O
+China	I-LOC
 said	O
 on	O
 Saturday	O
@@ -53365,7 +53171,7 @@ often	O
 a	O
 euphemism	O
 in	O
-China	O
+China	I-LOC
 for	O
 ideological	O
 reform	O
@@ -53473,7 +53279,7 @@ demonstrations	O
 by	O
 students	O
 at	O
-Beijing	O
+Beijing	I-LOC
 's	O
 Tiananmen	O
 Square	O
@@ -53491,8 +53297,7 @@ life	O
 .	O
 
 
--DOCSTART-	-X-	O
-
+-DOCSTART-	O
 
 
 Hong	O
@@ -53615,9 +53420,9 @@ which	O
 fled	O
 from	O
 mainland	O
-China	O
+China	I-LOC
 to	O
-Taiwan	O
+Taiwan	I-LOC
 in	O
 1949	O
 ,	O
@@ -53661,8 +53466,7 @@ mattress	O
 .	O
 
 
--DOCSTART-	-X-	O
-
+-DOCSTART-	O
 
 
 China	O
@@ -53700,7 +53504,7 @@ fight	O
 pollution	O
 ,	O
 the	O
-China	O
+China	I-LOC
 Daily	O
 said	O
 on	O
@@ -53775,7 +53579,7 @@ said	O
 .	O
 
 
-Wuhan	O
+Wuhan	I-LOC
 consumes	O
 more	O
 than	O
@@ -53796,7 +53600,7 @@ said	O
 The	O
 boomtown	O
 of	O
-Guangzhou	O
+Guangzhou	I-PER
 ,	O
 capital	O
 of	O
@@ -53845,8 +53649,7 @@ details	O
 .	O
 
 
--DOCSTART-	-X-	O
-
+-DOCSTART-	O
 
 
 Iraqi	O
@@ -53856,7 +53659,7 @@ Iranian	O
 troops	O
 enter	O
 north	O
-Iraq	O
+Iraq	I-LOC
 .	O
 
 
@@ -53871,7 +53674,7 @@ Saturday	O
 entered	O
 Kurdish-controlled	O
 northern	O
-Iraq	O
+Iraq	I-LOC
 in	O
 the	O
 wake	O
@@ -53880,7 +53683,7 @@ an	O
 assault	O
 backed	O
 by	O
-Baghdad	O
+Baghdad	I-LOC
 into	O
 the	O
 region	O
@@ -53944,11 +53747,11 @@ Reuters	O
 by	O
 telephone	O
 from	O
-Ankara	O
+Ankara	I-LOC
 .	O
 
 
-Nerweyi	O
+Nerweyi	I-PER
 said	O
 he	O
 did	O
@@ -53964,7 +53767,7 @@ Iranian	O
 force	O
 in	O
 northern	O
-Iraq	O
+Iraq	I-LOC
 ,	O
 but	O
 said	O
@@ -54004,7 +53807,7 @@ said	O
 .	O
 
 
-Nerweyi	O
+Nerweyi	I-PER
 said	O
 he	O
 did	O
@@ -54022,7 +53825,7 @@ A	O
 U.N.	O
 official	O
 in	O
-Baghdad	O
+Baghdad	I-LOC
 said	O
 the	O
 KDP	O
@@ -54057,7 +53860,7 @@ Saturday	O
 U.S.	O
 President	O
 Bill	O
-Clinton	O
+Clinton	I-PER
 has	O
 authorised	O
 the	O
@@ -54085,7 +53888,7 @@ that	O
 the	O
 rival	O
 Patriotic	O
-Union	O
+Union	I-ORG
 of	O
 Kurdistan	O
 ,	O
@@ -54103,7 +53906,7 @@ December	O
 has	O
 backing	O
 from	O
-Iran	O
+Iran	I-LOC
 .	O
 
 
@@ -54120,7 +53923,7 @@ Baghdad	O
 
 
 Northern	O
-Iraq	O
+Iraq	I-LOC
 has	O
 been	O
 under	O
@@ -54141,7 +53944,7 @@ allied	O
 planes	O
 based	O
 in	O
-Turkey	O
+Turkey	I-LOC
 are	O
 intended	O
 to	O
@@ -54149,12 +53952,11 @@ protect	O
 the	O
 Kurds	O
 from	O
-Baghdad	O
+Baghdad	I-LOC
 .	O
 
 
--DOCSTART-	-X-	O
-
+-DOCSTART-	O
 
 
 Ceasefire	O
@@ -54163,7 +53965,7 @@ to	O
 meet	O
 in	O
 south	O
-Lebanon	O
+Lebanon	I-LOC
 .	O
 
 
@@ -54178,7 +53980,7 @@ the	O
 ceasefire	O
 agreement	O
 between	O
-Israel	O
+Israel	I-LOC
 and	O
 Hizbollah	O
 guerrillas	O
@@ -54186,7 +53988,7 @@ will	O
 meet	O
 in	O
 south	O
-Lebanon	O
+Lebanon	I-LOC
 on	O
 Sunday	O
 to	O
@@ -54216,11 +54018,11 @@ up	O
 the	O
 committee	O
 --	O
-Israel	O
+Israel	I-LOC
 ,	O
-Lebanon	O
+Lebanon	I-LOC
 ,	O
-Syria	O
+Syria	I-LOC
 ,	O
 France	O
 and	O
@@ -54249,7 +54051,7 @@ U.N.	O
 Interim	O
 Force	O
 in	O
-Lebanon	O
+Lebanon	I-LOC
 (	O
 UNIFIL	O
 )	O
@@ -54265,7 +54067,7 @@ following	O
 a	O
 complaint	O
 by	O
-Israel	O
+Israel	I-LOC
 over	O
 an	O
 incident	O
@@ -54324,7 +54126,7 @@ days	O
 of	O
 fighting	O
 between	O
-Israel	O
+Israel	I-LOC
 and	O
 the	O
 guerrillas	O
@@ -54357,7 +54159,7 @@ militia	O
 allies	O
 in	O
 south	O
-Lebanon	O
+Lebanon	I-LOC
 .	O
 
 
@@ -54373,7 +54175,7 @@ km	O
 nine-mile	O
 )	O
 south	O
-Lebanon	O
+Lebanon	I-LOC
 occupation	O
 zone	O
 which	O
@@ -54408,15 +54210,14 @@ guerrilla	O
 war	O
 to	O
 oust	O
-Israel	O
+Israel	I-LOC
 from	O
 the	O
 area	O
 .	O
 
 
--DOCSTART-	-X-	O
-
+-DOCSTART-	O
 
 
 KPD	O
@@ -54428,7 +54229,7 @@ official	O
 .	O
 
 
-BAGHDAD	O
+BAGHDAD	I-LOC
 1996-08-31	O
 
 
@@ -54440,7 +54241,7 @@ KDP	O
 )	O
 of	O
 Massoud	O
-Barzani	O
+Barzani	I-PER
 said	O
 that	O
 it	O
@@ -54470,7 +54271,7 @@ senior	O
 U.N.	O
 official	O
 in	O
-Baghdad	O
+Baghdad	I-LOC
 said	O
 .	O
 
@@ -54524,8 +54325,7 @@ Reuters	O
 .	O
 
 
--DOCSTART-	-X-	O
-
+-DOCSTART-	O
 
 
 Fire	O
@@ -54537,7 +54337,7 @@ village	O
 .	O
 
 
-MANAMA	O
+MANAMA	I-LOC
 1996-08-31	O
 
 
@@ -54588,7 +54388,7 @@ west	O
 of	O
 the	O
 capital	O
-Manama	O
+Manama	I-LOC
 .	O
 
 
@@ -54619,15 +54419,14 @@ comment	O
 .	O
 
 
--DOCSTART-	-X-	O
+-DOCSTART-	O
 
 
-
-Iraq	O
+Iraq	I-LOC
 's	O
-Aziz	O
+Aziz	I-PER
 says	O
-Baghdad	O
+Baghdad	I-LOC
 aiding	O
 KDP	O
 against	O
@@ -54635,17 +54434,17 @@ rivals	O
 .	O
 
 
-BAGHDAD	O
+BAGHDAD	I-LOC
 1996-08-31	O
 
 
-Iraq	O
+Iraq	I-LOC
 's	O
 Deputy	O
 Prime	O
 Minister	O
 Tareq	O
-Aziz	O
+Aziz	I-PER
 said	O
 on	O
 Saturday	O
@@ -54655,14 +54454,14 @@ were	O
 fighting	O
 in	O
 northern	O
-Iraq	O
+Iraq	I-LOC
 to	O
 aid	O
 Kurdish	O
 rebel	O
 leader	O
 Massoud	O
-Barzani	O
+Barzani	I-PER
 against	O
 rival	O
 forces	O
@@ -54683,7 +54482,7 @@ aid	O
 to	O
 Mr	O
 Massoud	O
-Barzani	O
+Barzani	I-PER
 and	O
 his	O
 comrades	O
@@ -54700,16 +54499,16 @@ aggression	O
 from	O
 (	O
 Patriotic	O
-Union	O
+Union	I-ORG
 of	O
 Kurdistan	O
 chief	O
 )	O
 Jalal	O
-Talabani	O
+Talabani	I-PER
 ,	O
 "	O
-Aziz	O
+Aziz	I-PER
 said	O
 in	O
 a	O
@@ -54722,14 +54521,14 @@ Iraqi	O
 News	O
 Agency	O
 (	O
-INA	O
+INA	I-ORG
 )	O
 .	O
 
 
-Aziz	O
+Aziz	I-PER
 said	O
-Iraq	O
+Iraq	I-LOC
 's	O
 military	O
 intervention	O
@@ -54750,7 +54549,7 @@ protect	O
 Iraqi	O
 Kurds	O
 against	O
-Baghdad	O
+Baghdad	I-LOC
 ,	O
 was	O
 in	O
@@ -54759,7 +54558,7 @@ to	O
 a	O
 plea	O
 from	O
-Barzani	O
+Barzani	I-PER
 to	O
 President	O
 Saddam	O
@@ -54777,13 +54576,13 @@ attacks	O
 by	O
 Iran	O
 and	O
-Talabani	O
+Talabani	I-PER
 .	O
 
 
 He	O
 said	O
-Barzani	O
+Barzani	I-PER
 sent	O
 a	O
 message	O
@@ -54830,7 +54629,7 @@ put	O
 an	O
 end	O
 to	O
-Talabani	O
+Talabani	I-PER
 's	O
 treason	O
 and	O
@@ -54871,8 +54670,7 @@ flags	O
 .	O
 
 
--DOCSTART-	-X-	O
-
+-DOCSTART-	O
 
 
 U.N.	O
@@ -54887,7 +54685,7 @@ Arbil	O
 .	O
 
 
-BAGHDAD	O
+BAGHDAD	I-LOC
 1996-08-31	O
 
 
@@ -54904,7 +54702,7 @@ in	O
 Arbil	O
 in	O
 northern	O
-Iraq	O
+Iraq	I-LOC
 was	O
 between	O
 rival	O
@@ -54984,14 +54782,13 @@ Reuters	O
 .	O
 
 
--DOCSTART-	-X-	O
-
+-DOCSTART-	O
 
 
 PRESS	O
 DIGEST	O
 -	O
-Tunisia	O
+Tunisia	I-LOC
 -	O
 Aug	O
 31	O
@@ -55038,7 +54835,7 @@ PRESSE	O
 
 -	O
 After	O
-Tunisia	O
+Tunisia	I-LOC
 called	O
 on	O
 France	O
@@ -55060,7 +54857,7 @@ residents	O
 
 
 -	O
-Tunisia	O
+Tunisia	I-LOC
 's	O
 exports	O
 of	O
@@ -55084,7 +54881,7 @@ TEMPS	O
 Trade	O
 talks	O
 between	O
-Tunisia	O
+Tunisia	I-LOC
 and	O
 the	O
 Palestinian	O
@@ -55100,14 +54897,14 @@ Habib	O
 Boulares	O
 arrives	O
 in	O
-Tripoli	O
+Tripoli	I-LOC
 to	O
 represent	O
 President	O
 Zine	O
 al-Abidine	O
 Ben	O
-Ali	O
+Ali	I-PER
 at	O
 the	O
 Libyan	O
@@ -55126,8 +54923,7 @@ dinar	O
 )	O
 
 
--DOCSTART-	-X-	O
-
+-DOCSTART-	O
 
 
 Automakers	O
@@ -55142,7 +54938,7 @@ ads	O
 .	O
 
 
-DETROIT	O
+DETROIT	I-ORG
 1996-08-31	O
 
 
@@ -55527,8 +55323,7 @@ message	O
 "	O
 
 
--DOCSTART-	-X-	O
-
+-DOCSTART-	O
 
 
 Two	O
@@ -55628,7 +55423,7 @@ said	O
 
 Eyewitnesses	O
 told	O
-Boston	O
+Boston	I-LOC
 television	O
 stations	O
 they	O
@@ -55704,8 +55499,7 @@ injuries	O
 .	O
 
 
--DOCSTART-	-X-	O
-
+-DOCSTART-	O
 
 
 Car	O
@@ -55720,7 +55514,7 @@ race	O
 .	O
 
 
-DALLAS	O
+DALLAS	I-LOC
 1996-08-31	O
 
 
@@ -55867,8 +55661,7 @@ youths	O
 .	O
 
 
--DOCSTART-	-X-	O
-
+-DOCSTART-	O
 
 
 U.S.	O
@@ -55878,7 +55671,7 @@ ships	O
 in	O
 Gulf	O
 await	O
-Clinton	O
+Clinton	I-PER
 order	O
 .	O
 
@@ -55887,7 +55680,7 @@ Jim	O
 Adams	O
 
 
-WASHINGTON	O
+WASHINGTON	I-LOC
 1996-08-31	O
 
 
@@ -55907,7 +55700,7 @@ in	O
 case	O
 President	O
 Bill	O
-Clinton	O
+Clinton	I-PER
 ordered	O
 the	O
 use	O
@@ -55920,7 +55713,7 @@ military	O
 action	O
 in	O
 northern	O
-Iraq	O
+Iraq	I-LOC
 ,	O
 U.S.	O
 defense	O
@@ -56038,7 +55831,7 @@ steps	O
 "	O
 
 
-Clinton	O
+Clinton	I-PER
 said	O
 on	O
 Saturday	O
@@ -56069,7 +55862,7 @@ Kurdish	O
 dissidents	O
 in	O
 northern	O
-Iraq	O
+Iraq	I-LOC
 .	O
 
 
@@ -56083,7 +55876,7 @@ grave	O
 concern	O
 ,	O
 "	O
-Clinton	O
+Clinton	I-PER
 said	O
 at	O
 a	O
@@ -56145,7 +55938,7 @@ both	O
 northern	O
 and	O
 southern	O
-Iraq	O
+Iraq	I-LOC
 doubled	O
 over	O
 the	O
@@ -56153,7 +55946,7 @@ weekend	O
 .	O
 
 
-Clinton	O
+Clinton	I-PER
 said	O
 Iraqi	O
 military	O
@@ -56179,7 +55972,7 @@ says	O
 are	O
 backed	O
 by	O
-Iran	O
+Iran	I-LOC
 .	O
 
 
@@ -56188,17 +55981,17 @@ were	O
 unconfirmed	O
 reports	O
 that	O
-Iran	O
+Iran	I-LOC
 had	O
 sent	O
 troops	O
 into	O
 northern	O
-Iraq	O
+Iraq	I-LOC
 in	O
 response	O
 to	O
-Iraq	O
+Iraq	I-LOC
 's	O
 attack	O
 .	O
@@ -56360,7 +56153,7 @@ three	O
 ships	O
 in	O
 the	O
-Tarawa	O
+Tarawa	I-LOC
 Amphibious	O
 Readiness	O
 Group	O
@@ -56398,8 +56191,7 @@ of	O
 .	O
 
 
--DOCSTART-	-X-	O
-
+-DOCSTART-	O
 
 
 Two	O
@@ -56411,7 +56203,7 @@ unharmed	O
 .	O
 
 
-BRUSSELS	O
+BRUSSELS	I-LOC
 1996-08-31	O
 
 
@@ -56557,7 +56349,7 @@ scandal	O
 which	O
 has	O
 rocked	O
-Belgium	O
+Belgium	I-LOC
 in	O
 the	O
 past	O
@@ -56566,8 +56358,7 @@ weeks	O
 .	O
 
 
--DOCSTART-	-X-	O
-
+-DOCSTART-	O
 
 
 Algeria	O
@@ -56580,7 +56371,7 @@ newSpaper	O
 .	O
 
 
-PARIS	O
+PARIS	I-LOC
 1996-08-31	O
 
 
@@ -56787,7 +56578,7 @@ people	O
 have	O
 died	O
 in	O
-Algeria	O
+Algeria	I-LOC
 's	O
 violence	O
 pitting	O
@@ -56818,11 +56609,10 @@ lead	O
 .	O
 
 
--DOCSTART-	-X-	O
+-DOCSTART-	O
 
 
-
-Iran	O
+Iran	I-LOC
 agents	O
 stormed	O
 German	O
@@ -56830,7 +56620,7 @@ diplomat	O
 's	O
 home	O
 --	O
-Bonn	O
+Bonn	I-LOC
 .	O
 
 
@@ -56862,7 +56652,7 @@ guests	O
 for	O
 questioning	O
 ,	O
-Bonn	O
+Bonn	I-LOC
 's	O
 foreign	O
 ministry	O
@@ -56977,7 +56767,7 @@ to	O
 the	O
 ministry	O
 in	O
-Bonn	O
+Bonn	I-LOC
 to	O
 hear	O
 a	O
@@ -57003,7 +56793,7 @@ added	O
 .	O
 
 
-Iran	O
+Iran	I-LOC
 subsequently	O
 said	O
 it	O
@@ -57054,7 +56844,7 @@ the	O
 testimony	O
 in	O
 a	O
-Berlin	O
+Berlin	I-LOC
 court	O
 of	O
 former	O
@@ -57096,17 +56886,17 @@ Kurdish	O
 leaders	O
 in	O
 a	O
-Berlin	O
+Berlin	I-LOC
 restaurant	O
 in	O
 1992	O
 .	O
 
 
-Iran	O
+Iran	I-LOC
 has	O
 asked	O
-Germany	O
+Germany	I-LOC
 to	O
 extradite	O
 Banisadr	O
@@ -57118,7 +56908,7 @@ is	O
 due	O
 back	O
 in	O
-Berlin	O
+Berlin	I-LOC
 next	O
 Thursday	O
 to	O
@@ -57161,7 +56951,7 @@ conduct	O
 
 
 If	O
-Germany	O
+Germany	I-LOC
 were	O
 to	O
 extradite	O
@@ -57188,11 +56978,11 @@ prosecutors	O
 have	O
 already	O
 accused	O
-Iran	O
+Iran	I-LOC
 's	O
 intelligence	O
 minister	O
-Ali	O
+Ali	I-PER
 Fallahiyan	O
 of	O
 ordering	O
@@ -57205,7 +56995,7 @@ leaders	O
 .	O
 
 
-Iran	O
+Iran	I-LOC
 ,	O
 which	O
 denies	O
@@ -57229,15 +57019,14 @@ relations	O
 .	O
 
 
--DOCSTART-	-X-	O
+-DOCSTART-	O
 
 
-
-Italy	O
+Italy	I-LOC
 's	O
-Dini	O
+Dini	I-PER
 meets	O
-Burundi	O
+Burundi	I-LOC
 negotiator	O
 Nyerere	O
 .	O
@@ -57265,7 +57054,7 @@ the	O
 international	O
 negotiator	O
 for	O
-Burundi	O
+Burundi	I-LOC
 ,	O
 the	O
 ministry	O
@@ -57276,7 +57065,7 @@ said	O
 Nyerere	O
 arrived	O
 in	O
-Rome	O
+Rome	I-LOC
 this	O
 week	O
 on	O
@@ -57292,7 +57081,7 @@ U.S.	O
 special	O
 envoy	O
 to	O
-Burundi	O
+Burundi	I-LOC
 ,	O
 Howard	O
 Wolpe	O
@@ -57313,7 +57102,7 @@ which	O
 has	O
 been	O
 monitoring	O
-Burundi	O
+Burundi	I-LOC
 closely	O
 .	O
 
@@ -57341,7 +57130,7 @@ with	O
 particular	O
 respect	O
 to	O
-Burundi	O
+Burundi	I-LOC
 following	O
 the	O
 military	O
@@ -57399,7 +57188,7 @@ Sunday	O
 
 He	O
 leaves	O
-Rome	O
+Rome	I-LOC
 on	O
 Monday	O
 .	O
@@ -57460,7 +57249,7 @@ an	O
 arms	O
 embargo	O
 against	O
-Burundi	O
+Burundi	I-LOC
 and	O
 flatly	O
 ruled	O
@@ -57482,7 +57271,7 @@ civilians	O
 have	O
 died	O
 in	O
-Burundi	O
+Burundi	I-LOC
 since	O
 1993	O
 when	O
@@ -57504,8 +57293,7 @@ coup	O
 .	O
 
 
--DOCSTART-	-X-	O
-
+-DOCSTART-	O
 
 
 Nato	O
@@ -57514,11 +57302,11 @@ comment	O
 on	O
 fighting	O
 in	O
-Iraq	O
+Iraq	I-LOC
 .	O
 
 
-BRUSSELS	O
+BRUSSELS	I-LOC
 1996-08-31	O
 
 
@@ -57541,7 +57329,7 @@ armed	O
 conflict	O
 in	O
 northern	O
-Iraq	O
+Iraq	I-LOC
 .	O
 
 
@@ -57591,12 +57379,11 @@ of	O
 Arbil	O
 in	O
 northern	O
-Iraq	O
+Iraq	I-LOC
 .	O
 
 
--DOCSTART-	-X-	O
-
+-DOCSTART-	O
 
 
 More	O
@@ -57604,11 +57391,11 @@ automatic	O
 weapons	O
 stolen	O
 in	O
-Belgium	O
+Belgium	I-LOC
 .	O
 
 
-BRUSSELS	O
+BRUSSELS	I-LOC
 1996-08-31	O
 
 
@@ -57629,7 +57416,7 @@ an	O
 arms	O
 store	O
 in	O
-Belgium	O
+Belgium	I-LOC
 ,	O
 police	O
 said	O
@@ -57695,7 +57482,7 @@ shooting	O
 range	O
 in	O
 southern	O
-Belgium	O
+Belgium	I-LOC
 ,	O
 including	O
 Kalashnikov	O
@@ -57708,8 +57495,7 @@ weapons	O
 .	O
 
 
--DOCSTART-	-X-	O
-
+-DOCSTART-	O
 
 
 No	O
@@ -57719,11 +57505,11 @@ two	O
 missing	O
 teenagers	O
 in	O
-Belgium	O
+Belgium	I-LOC
 .	O
 
 
-BRUSSELS	O
+BRUSSELS	I-LOC
 1996-08-31	O
 
 
@@ -57890,7 +57676,7 @@ scandal	O
 which	O
 has	O
 rocked	O
-Belgium	O
+Belgium	I-LOC
 in	O
 the	O
 past	O
@@ -57899,8 +57685,7 @@ weeks	O
 .	O
 
 
--DOCSTART-	-X-	O
-
+-DOCSTART-	O
 
 
 Controversial	O
@@ -57913,20 +57698,20 @@ festival	O
 .	O
 
 
-Vera	O
+Vera	I-LOC
 Haller	O
 
 
-VENICE	O
+VENICE	I-ORG
 ,	O
-Italy	O
+Italy	I-LOC
 1996-08-31	O
 
 
 Dublin-born	O
 director	O
 Neil	O
-Jordan	O
+Jordan	I-LOC
 says	O
 he	O
 never	O
@@ -58027,11 +57812,11 @@ tensions	O
 in	O
 British-ruled	O
 Northern	O
-Ireland	O
+Ireland	I-LOC
 .	O
 
 
-Jordan	O
+Jordan	I-LOC
 defends	O
 his	O
 decision	O
@@ -58086,7 +57871,7 @@ the	O
 time	O
 ,	O
 "	O
-Jordan	O
+Jordan	I-LOC
 said	O
 in	O
 a	O
@@ -58116,7 +57901,7 @@ rarely	O
 "	O
 
 
-Jordan	O
+Jordan	I-LOC
 ,	O
 whose	O
 1992	O
@@ -58173,15 +57958,15 @@ from	O
 Mao	O
 Tse-Tung	O
 in	O
-China	O
+China	I-LOC
 to	O
 Yitzak	O
 Shamir	O
 in	O
-Israel	O
+Israel	I-LOC
 ,	O
 "	O
-Jordan	O
+Jordan	I-LOC
 said	O
 .	O
 
@@ -58252,7 +58037,7 @@ the	O
 lead	O
 role	O
 in	O
-Jordan	O
+Jordan	I-LOC
 's	O
 film	O
 .	O
@@ -58293,9 +58078,9 @@ shot	O
 on	O
 location	O
 in	O
-Dublin	O
+Dublin	I-LOC
 with	O
-Jordan	O
+Jordan	I-LOC
 using	O
 thousands	O
 of	O
@@ -58337,7 +58122,7 @@ he	O
 maintained	O
 "	O
 ,	O
-Jordan	O
+Jordan	I-LOC
 said	O
 he	O
 made	O
@@ -58485,7 +58270,7 @@ important	O
 one	O
 ,	O
 "	O
-Jordan	O
+Jordan	I-LOC
 said	O
 .	O
 
@@ -58509,7 +58294,7 @@ north	O
 and	O
 south	O
 of	O
-Ireland	O
+Ireland	I-LOC
 as	O
 they	O
 are	O
@@ -58518,11 +58303,10 @@ today	O
 "	O
 
 
--DOCSTART-	-X-	O
+-DOCSTART-	O
 
 
-
-Dhaka	O
+Dhaka	I-LOC
 stocks	O
 seen	O
 steady	O
@@ -58534,14 +58318,14 @@ players	O
 .	O
 
 
-DHAKA	O
+DHAKA	I-LOC
 1996-08-31	O
 
 
 Shares	O
 on	O
 the	O
-Dhaka	O
+Dhaka	I-LOC
 Stock	O
 Exchange	O
 (	O
@@ -58652,14 +58436,14 @@ chips	O
 like	O
 IDLC	O
 ,	O
-Bangladesh	O
+Bangladesh	I-LOC
 Lamps	O
 ,	O
 Chittagong	O
 Cement	O
 and	O
 Atlas	O
-Bangladesh	O
+Bangladesh	I-LOC
 were	O
 expected	O
 to	O
@@ -58719,7 +58503,7 @@ Thursday	O
 
 
 --	O
-Dhaka	O
+Dhaka	I-LOC
 Newsroom	O
 880-2-506363	O
 

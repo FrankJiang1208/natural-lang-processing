@@ -7,28 +7,41 @@
 import argparse
 import collections
 import itertools
+import sys
 from geotext import GeoText
 from nltk.classify import MaxentClassifier
 from nltk.corpus import names
 from nltk.corpus import stopwords
 
-### Functions for formatting raw data ###
+### Functions to format raw data ###
 
-def group_words_sentences(features_list):
+def split_raw_data(raw_data):
+    """
+    Helper function to convert List-of-RawData-Lines to List-of-Dicts
+    Args:
+        raw_data: Test or training data read into List-of-Strings
+    Returns:
+
+    """
+    return [
+        line if line == "\n"
+        else line.split("\t")
+        for line in raw_data
+    ]
+
+def group_features_by_sentence(raw_data_split):
     """
     Group words into sentences (sentence = [str, ...]) and removes str "\n" dividing them
     Args:
-        features_list: List whose elements are features w/ tags
+        raw_data_split: List whose elements are features w/ tags
     Returns:
         List of lists, where each list contains words from a sentence.
     """
     sentences_list = []
-    for _, g in itertools.groupby(features_list, lambda x: x == "\n"):
+    for _, g in itertools.groupby(raw_data_split, lambda x: x == "\n"):
         sentences_list.append(list(g)) # Store group iterator as a list
 
-    sentences_list = [g for g in sentences_list if g not in [["\n"], ["\n", "\n"]] ]
-
-    return sentences_list
+    return [g for g in sentences_list if g not in [["\n"], ["\n", "\n"]] ]
 
 
 def feature_dict(feature_vector):
@@ -38,39 +51,50 @@ def feature_dict(feature_vector):
         "chunk": feature_vector[2].strip(),
     }
 
-def convert_sentence(sentence, is_training):
-    """
-    Converts a sentence (list of lists, inner list = each word and its tags) into correct format for MaxEnt
-    Args:
-        sentence: each sentence is a list of lists. Each element of the outer list is an inner list that corresponds to a word and its tags
-    Returns:
-        If training data: [ [({dict of features for a token}, nametag), ...] ]
-        If test data: [ {dict of features for a token}, {dict of features for a token}, ...]
-    """
-    if is_training:
-        return [
-            (feature_dict(feature_vector), feature_vector[3].strip())
-            for feature_vector in sentence
-        ]
-    else:
-        return [feature_dict(feature_vector) for feature_vector in sentence]
+# def convert_sentence(sentence, is_training):
+#     """
+#     Converts a sentence (list of lists, inner list = each word and its tags) into correct format for MaxEnt
+#     Args:
+#         sentence: each sentence is a list of lists. Each element of the outer list is an inner list that corresponds to a word and its tags
+#     Returns:
+#         If training data: [ [({dict of features for a token}, nametag), ...] ]
+#         If test data: [ {dict of features for a token}, {dict of features for a token}, ...]
+#     """
+#     if is_training:
+#         return [
+#             (feature_dict(feature_vector), feature_vector[3].strip())
+#             for feature_vector in sentence
+#         ]
+#     else:
+#         return [feature_dict(feature_vector) for feature_vector in sentence]
 
-def keep_orig_tokens(features_list):
+def extract_labels(sentence):
+    return [feature_vector[3].strip() for feature_vector in sentence ]
+
+
+def extract_features_dict(sentence):
+    return [feature_dict(feature_vector) for feature_vector in sentence]
+
+
+def extract_orig_tokens(raw_data_split):
     """
-    Takes features_list and returns only the original tokens with "DOCSTART" and "\n" preserved
+    Takes raw_data_split and returns only the original tokens with "\n" preserved
     """
     return [
-            line if (line == "\n" or "DOCSTART" in line)
+            line if line == "\n"
             else line[0]
-            for line in features_list
+            for line in raw_data_split
         ]
 
 
 class FeatureBuilder:
     def __init__(self, filepath, is_training):
         self.filepath = filepath
-        self.data = None
         self.is_training = is_training
+
+        self.sentences_features_dicts = None
+        self.features = None
+        self.labels = None
         self.orig_data = None # For output of test/dev data
 
         self.load()
@@ -87,38 +111,41 @@ class FeatureBuilder:
         with open(self.filepath, "r") as f:
             raw_data = f.readlines()
 
-        self.convert_data(raw_data, self.is_training)
+        split_data = split_raw_data(raw_data)
+
+        self.extract_features_dicts_by_sentence(split_data)
+        self.extract_labels(split_data)
+        self.extract_orig_data(split_data)
 
 
-    def convert_data(self, raw_data, is_training):
-        """
-        Helper function to convert List-of-RawData-Lines to List-of-Dicts
-        Args:
-            raw_data: Test or training data read into List-of-Strings
-            training: Bool, True if data is training else False.
-        Returns:
-            Data converted into test/training format for MaxEnt
-        """
-        features_list = [
-            line if (line == "\n" or "DOCSTART" in line) else line.split("\t")
-            for line in raw_data
-        ]
+    def extract_features_dicts_by_sentence(self, split_data):
+        features_grouped = group_features_by_sentence(split_data)
 
-        # prepare self.data for FeatureBuilder:
-        features_grouped = [line for line in features_list if "DOCSTART" not in line]
-        features_grouped = group_words_sentences(features_list)
-        self.data = [convert_sentence(sentence, self.is_training) for sentence in features_grouped]
+        self.sentences_features_dicts = [extract_features_dict(sentence) for sentence in features_grouped]
 
-        # keep DOCSTART and "\n" in orig_data if test/dev, but keep only tokens from lines
+    def extract_labels(self, split_data):
+        features_grouped = group_features_by_sentence(split_data)
+
+        if self.is_training:
+            labels = [extract_labels(sentence) for sentence in features_grouped]
+            # need to flatten out the structure of sentences within the larger list, because features list will also be flattened
+            self.labels = list(itertools.chain.from_iterable(labels))
+
+
+    def extract_orig_data(self, split_data):
+        # for orig_data, keep only token in each line
         if not self.is_training:
-            self.orig_data = keep_orig_tokens(features_list)
+            self.orig_data = extract_orig_tokens(split_data)
+
+    def format_data_maxent(self):
+        return list(zip(self.features, self.labels))
 
 
     ###########################################################
     ### Sentence-level features ###
     ###########################################################
 
-    def add_sentence_position(self, sentence, is_training):
+    def add_sentence_position(self, sentence):
         """
         Adds sentence position key-value pairs to tokens in a single [sentence]
         Args:
@@ -128,17 +155,12 @@ class FeatureBuilder:
         Returns:
             sentence with new key-value for token position in sentence
         """
-        if is_training:
-            for counter, value in enumerate(sentence):
-                value[0]["token_position"] = counter # value is a tuple ({dict}, nametag)
-
-        else:
-            for counter, value in enumerate(sentence):
-                value["token_position"] = counter
+        for counter, value in enumerate(sentence):
+            value["token_position"] = counter
 
         return sentence
 
-    def add_sentence_boundaries(self, sentence, is_training):
+    def add_sentence_boundaries(self, sentence):
         """
         Add key-value pairs for start and end tokens. Value is Bool. Must be run after token_position is created with add_positions_sentence()
         Args:
@@ -146,17 +168,18 @@ class FeatureBuilder:
         Returns:
             sentence with new key-values for start and end tokens
         """
-        if is_training:
-            for feature in sentence:
-                feature[0]["start_token"] = feature[0]["token_position"] == 0
-                feature[0]["end_token"] = feature[0]["token_position"] == len(sentence) - 1
-
-        else:
-            for feature in sentence:
-                feature["start_token"] = feature["token_position"] == 0
-                feature["end_token"] = feature["token_position"] == len(sentence) - 1
+        for feature in sentence:
+            feature["start_token"] = feature["token_position"] == 0
+            feature["end_token"] = feature["token_position"] == len(sentence) - 1
 
         return sentence
+
+
+    def add_prior_state(self, sentence, is_training):
+        """
+        """
+        pass
+
 
     def add_sentence_features(self):
         """
@@ -165,35 +188,21 @@ class FeatureBuilder:
 
         Returns:
         """
-        for sentence in self.data:
-            sentence = self.add_sentence_position(sentence, is_training = self.is_training)
-            sentence = self.add_sentence_boundaries(sentence, is_training = self.is_training)
+        features_dicts = []
+        for sentence in self.sentences_features_dicts:
+            sentence = self.add_sentence_position(sentence)
+            sentence = self.add_sentence_boundaries(sentence)
+            features_dicts.append(sentence)
 
-        return self
+        self.features = list(itertools.chain.from_iterable(features_dicts))
 
-    def add_prior_state(self, sentence, is_training):
-        """
-        """
-        pass
 
-    def sentence_features(self):
-        """
-        Add all features that are dependent on sentence-level structure.
-        When finished, flatten List-of-Lists (of sentences) into single list of tokens.
-        Args:
-
-        Returns:
-        """
-        self.add_sentence_features()
-        self.data = list(itertools.chain.from_iterable(self.data))
-
-        return self
 
     ###########################################################
     ### Token-level features ###
     ###########################################################
 
-    ### Operate on a single token's dict of features
+    ### Operate on a single token's features_dict
     def add_case(self, features_dict):
         features_dict["case"] = "lower" if features_dict["token"] == features_dict["token"].lower() else "upper"
 
@@ -209,22 +218,12 @@ class FeatureBuilder:
     def add_geo(self, features_dict):
         features_dict["is_geo_place"] = bool(GeoText(features_dict["token"]).cities or GeoText(features_dict["token"]).countries)
 
-    def tokens_features(self):
-        if self.is_training:
-            for (features_dict, _) in self.data:
-                self.add_case(features_dict)
-                self.add_last_char(features_dict)
-                self.add_stopword(features_dict)
-                self.add_geo(features_dict)
-
-        else:
-            for features_dict in self.data:
-                self.add_case(features_dict)
-                self.add_last_char(features_dict)
-                self.add_stopword(features_dict)
-                self.add_geo(features_dict)
-
-        return self
+    def token_features(self):
+        for features_dict in self.features:
+            self.add_case(features_dict)
+            self.add_last_char(features_dict)
+            self.add_stopword(features_dict)
+            self.add_geo(features_dict)
 
 
 ### Functions for output of dev/test data
@@ -233,42 +232,39 @@ def label_test_data(predicted_classifications, test_fb, output):
     iter_classifications = iter(predicted_classifications)
 
     for line in test_fb.orig_data:
-        if line == "\n" or "DOCSTART" in line:
+        if line == "\n":
             print(line, file = output)
         else:
             print("{}\t{}".format(line, next(iter_classifications)), file = output)
 
-    print(file = output)
-
-    # for (features, label) in zip(test_fb.data, predicted_classifications):
-    #     print("{}, {}".format(features, label), file = output)
-    # print(file = output)
 
 
 
 if __name__ == "__main__":
+
     parser = argparse.ArgumentParser()
     parser.add_argument("training", help = "path to the training data")
-    parser.add_argument("test", help="path to the test data")
+    parser.add_argument("test", help = "path to the test data")
+    parser.add_argument("n_iterations", help = "num iterations for MaxEnt")
     parser.add_argument("-o", "--output", help = "file path to write to") # optional
     args = parser.parse_args()
 
     training_fb = FeatureBuilder(args.training, is_training = True)
-    training_fb.sentence_features()
-    training_fb.tokens_features()
+    training_fb.add_sentence_features()
+    training_fb.token_features()
 
     test_fb = FeatureBuilder(args.test, is_training = False)
-    test_fb.sentence_features()
-    test_fb.tokens_features()
+    test_fb.add_sentence_features()
+    test_fb.token_features()
 
-    classifier = MaxentClassifier.train(training_fb.data, max_iter = 2)
+    classifier = MaxentClassifier.train(training_fb.format_data_maxent(), max_iter = args.n_iterations)
 
-    predicted_classifications = classifier.classify_many(test_fb.data)
+    predicted_classifications = classifier.classify_many(test_fb.features)
 
-    counter = collections.Counter(predicted_classifications)
-    print(counter)
+    # counter = collections.Counter(predicted_classifications) # see how many tokens in each class
+    # print(counter)
 
-    print(classifier.show_most_informative_features(10))
+    # print(classifier.show_most_informative_features(10))
 
     if args.output is not None:
         with open(args.output, "w") as f:
