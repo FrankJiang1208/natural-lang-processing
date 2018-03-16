@@ -12,31 +12,13 @@ from nltk.classify import MaxentClassifier
 from nltk.corpus import names
 from nltk.corpus import stopwords
 
-### Functions for loading data ###
-
-def convert_data(raw_data, is_training):
-    """
-    Helper function to convert List-of-RawData-Lines to List-of-Dicts
-    Args:
-        raw_data: Test or training data read into List-of-Strings
-        training: Bool, True if data is training else False.
-    Returns:
-        Data converted into test/training format for MaxEnt
-    """
-    features_list = [
-        line if line == "\n" else line.split("\t")
-        for line in raw_data
-        if "DOCSTART" not in line
-    ]
-
-    features_grouped = group_words_sentences(features_list)
-    return [convert_sentence(sentence, is_training = is_training) for sentence in features_grouped]
+### Functions for formatting raw data ###
 
 def group_words_sentences(features_list):
     """
-    Group words into sentences (which are lists separated by "\n") so that token position (e.g. start/end of sentence) can be extracted.
+    Group words into sentences (sentence = [str, ...]) and removes str "\n" dividing them
     Args:
-        features_list: List whose elements are features w/ tags, with sentences separated by newlines.
+        features_list: List whose elements are features w/ tags
     Returns:
         List of lists, where each list contains words from a sentence.
     """
@@ -44,7 +26,7 @@ def group_words_sentences(features_list):
     for _, g in itertools.groupby(features_list, lambda x: x == "\n"):
         sentences_list.append(list(g)) # Store group iterator as a list
 
-    sentences_list = [g for g in sentences_list if g not in [["\n"], ["\n", "\n"]] ] # double newline around "DOCSTART" lines
+    sentences_list = [g for g in sentences_list if g not in [["\n"], ["\n", "\n"]] ]
 
     return sentences_list
 
@@ -73,34 +55,70 @@ def convert_sentence(sentence, is_training):
     else:
         return [feature_dict(feature_vector) for feature_vector in sentence]
 
+def keep_orig_tokens(features_list):
+    """
+    Takes features_list and returns only the original tokens with "DOCSTART" and "\n" preserved
+    """
+    return [
+            line if (line == "\n" or "DOCSTART" in line)
+            else line[0]
+            for line in features_list
+        ]
+
 
 class FeatureBuilder:
-    def __init__(self, data, is_training):
-        self.data = data
+    def __init__(self, filepath, is_training):
+        self.filepath = filepath
+        self.data = None
         self.is_training = is_training
+        self.orig_data = None # For output of test/dev data
 
+        self.load()
 
-    @classmethod
-    def load(cls, filepath, is_training):
+    def load(self):
         """
         Load training or test data and convert to List-of-Dicts format.
         Args:
             filepath: Path to test or training data
-            training: Bool, True if data is training (incl. token, POS, chunk, and name).
-                    False if data is dev/test (token, POS, and chunk only)
+            training: Bool, True if data is training
         Returns:
             Data converted into test/training format for MaxEnt
         """
-        with open(filepath, "r") as f:
+        with open(self.filepath, "r") as f:
             raw_data = f.readlines()
 
-        return cls(convert_data(raw_data, is_training), is_training)
+        self.convert_data(raw_data, self.is_training)
+
+
+    def convert_data(self, raw_data, is_training):
+        """
+        Helper function to convert List-of-RawData-Lines to List-of-Dicts
+        Args:
+            raw_data: Test or training data read into List-of-Strings
+            training: Bool, True if data is training else False.
+        Returns:
+            Data converted into test/training format for MaxEnt
+        """
+        features_list = [
+            line if (line == "\n" or "DOCSTART" in line) else line.split("\t")
+            for line in raw_data
+        ]
+
+        # prepare self.data for FeatureBuilder:
+        features_grouped = [line for line in features_list if "DOCSTART" not in line]
+        features_grouped = group_words_sentences(features_list)
+        self.data = [convert_sentence(sentence, self.is_training) for sentence in features_grouped]
+
+        # keep DOCSTART and "\n" in orig_data if test/dev, but keep only tokens from lines
+        if not self.is_training:
+            self.orig_data = keep_orig_tokens(features_list)
+
 
     ###########################################################
     ### Sentence-level features ###
     ###########################################################
 
-    def add_token_positions_to_sentence(self, sentence, is_training):
+    def add_sentence_position(self, sentence, is_training):
         """
         Adds sentence position key-value pairs to tokens in a single [sentence]
         Args:
@@ -140,7 +158,7 @@ class FeatureBuilder:
 
         return sentence
 
-    def add_token_positions(self):
+    def add_sentence_features(self):
         """
         Add sentence positions and boundaries to all sentences in data
         Args:
@@ -148,7 +166,7 @@ class FeatureBuilder:
         Returns:
         """
         for sentence in self.data:
-            sentence = self.add_token_positions_to_sentence(sentence, is_training = self.is_training)
+            sentence = self.add_sentence_position(sentence, is_training = self.is_training)
             sentence = self.add_sentence_boundaries(sentence, is_training = self.is_training)
 
         return self
@@ -158,7 +176,7 @@ class FeatureBuilder:
         """
         pass
 
-    def add_all_sentence_features(self):
+    def sentence_features(self):
         """
         Add all features that are dependent on sentence-level structure.
         When finished, flatten List-of-Lists (of sentences) into single list of tokens.
@@ -166,7 +184,7 @@ class FeatureBuilder:
 
         Returns:
         """
-        self.add_token_positions()
+        self.add_sentence_features()
         self.data = list(itertools.chain.from_iterable(self.data))
 
         return self
@@ -176,43 +194,55 @@ class FeatureBuilder:
     ###########################################################
 
     ### Operate on a single token's dict of features
-    def add_case_feat(self, features_dict):
+    def add_case(self, features_dict):
         features_dict["case"] = "lower" if features_dict["token"] == features_dict["token"].lower() else "upper"
 
-    def add_last_char_feat(self, features_dict):
+    def add_last_char(self, features_dict):
         features_dict["last_char"] = features_dict["token"][-1]
 
-    def add_stopword_feat(self, features_dict):
+    def add_stopword(self, features_dict):
         features_dict["nltk_stopword"] = features_dict["token"] in stopwords.words("english")
 
-    def add_nltk_name_feat(self, features_dict):
+    def add_nltk_name(self, features_dict):
         features_dict["is_nltk_name"] = features_dict["token"].lower() in (n.lower() for n in names.words())
 
-    def add_geo_feat(self, features_dict):
+    def add_geo(self, features_dict):
         features_dict["is_geo_place"] = bool(GeoText(features_dict["token"]).cities or GeoText(features_dict["token"]).countries)
 
-    def add_all_token_features(self):
+    def tokens_features(self):
         if self.is_training:
             for (features_dict, _) in self.data:
-                self.add_case_feat(features_dict)
-                self.add_last_char_feat(features_dict)
-                self.add_stopword_feat(features_dict)
-                self.add_geo_feat(features_dict)
+                self.add_case(features_dict)
+                self.add_last_char(features_dict)
+                self.add_stopword(features_dict)
+                self.add_geo(features_dict)
 
         else:
             for features_dict in self.data:
-                self.add_case_feat(features_dict)
-                self.add_last_char_feat(features_dict)
-                self.add_stopword_feat(features_dict)
-                self.add_geo_feat(features_dict)
+                self.add_case(features_dict)
+                self.add_last_char(features_dict)
+                self.add_stopword(features_dict)
+                self.add_geo(features_dict)
 
         return self
 
-def label_test_data(predicted_classifications, test_fb, output):
 
-    for (features, label) in zip(test_fb, predicted_classifications):
-        print("{}, {}".format(features, label), file = output)
+### Functions for output of dev/test data
+
+def label_test_data(predicted_classifications, test_fb, output):
+    iter_classifications = iter(predicted_classifications)
+
+    for line in test_fb.orig_data:
+        if line == "\n" or "DOCSTART" in line:
+            print(line, file = output)
+        else:
+            print("{}\t{}".format(line, next(iter_classifications)), file = output)
+
     print(file = output)
+
+    # for (features, label) in zip(test_fb.data, predicted_classifications):
+    #     print("{}, {}".format(features, label), file = output)
+    # print(file = output)
 
 
 
@@ -223,21 +253,19 @@ if __name__ == "__main__":
     parser.add_argument("-o", "--output", help = "file path to write to") # optional
     args = parser.parse_args()
 
-    training_fb = FeatureBuilder.load(args.training, is_training = True)
-    training_fb.add_all_sentence_features()
-    training_fb.add_all_token_features()
+    training_fb = FeatureBuilder(args.training, is_training = True)
+    training_fb.sentence_features()
+    training_fb.tokens_features()
 
-    test_fb = FeatureBuilder.load(args.test, is_training = False)
-    test_fb.add_all_sentence_features()
-    test_fb.add_all_token_features()
+    test_fb = FeatureBuilder(args.test, is_training = False)
+    test_fb.sentence_features()
+    test_fb.tokens_features()
 
-    # run maxent
-    classifier = MaxentClassifier.train(training_fb.data, max_iter = 10)
+    classifier = MaxentClassifier.train(training_fb.data, max_iter = 2)
 
     predicted_classifications = classifier.classify_many(test_fb.data)
 
-    #label_counts = [(key, len(list(group))) for key, group in itertools.groupby(predicted_labels)]
-    counter = collections.Counter(predicted_labels)
+    counter = collections.Counter(predicted_classifications)
     print(counter)
 
     print(classifier.show_most_informative_features(10))
