@@ -226,18 +226,16 @@ class FeatureBuilder:
             self.add_geo(features_dict)
 
 
-### Functions for output of dev/test data
+### Functions for output of dev/test data ###
 
 def label_test_data(predicted_classifications, test_fb, output):
     iter_classifications = iter(predicted_classifications)
 
     for line in test_fb.orig_data:
         if line == "\n":
-            print(line, file = output)
+            print(line.strip(), file = output)
         else:
             print("{}\t{}".format(line, next(iter_classifications)), file = output)
-
-
 
 
 if __name__ == "__main__":
