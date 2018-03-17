@@ -245,7 +245,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("training", help = "path to the training data")
     parser.add_argument("test", help = "path to the test data")
-    parser.add_argument("n_iterations", help = "num iterations for MaxEnt")
+    parser.add_argument("n_iterations", help = "num iterations for MaxEnt", type = int)
     parser.add_argument("-o", "--output", help = "file path to write to") # optional
     args = parser.parse_args()
 
