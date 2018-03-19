@@ -241,9 +241,9 @@ class FeatureBuilder:
         """
         features_dicts = []
         for sentence in self.sentences_features_dicts:
-            sentence = self.add_sentence_position(sentence)
-            sentence = self.add_sentence_boundaries(sentence)
-            sentence = self.add_prior_future_state(sentence)
+            sentence = add_sentence_position(sentence)
+            sentence = add_sentence_boundaries(sentence)
+            sentence = add_prior_future_state(sentence)
             features_dicts.append(sentence)
 
         self.features = list(itertools.chain.from_iterable(features_dicts)) # flatten the List-of-Lists structure
