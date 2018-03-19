@@ -13,7 +13,9 @@ from nltk.classify import MaxentClassifier
 from nltk.corpus import names
 from nltk.corpus import stopwords
 
+###########################################################
 ### Helper functions to format training/test data ###
+###########################################################
 
 def split_raw_data(raw_data):
     """
@@ -96,7 +98,9 @@ def extract_orig_tokens(raw_data_split):
         ]
 
 
+###########################################################
 ### Helper functions for adding sentence-level features ###
+###########################################################
 
 def add_sentence_position(sentence):
         """
@@ -125,16 +129,34 @@ def add_sentence_position(sentence):
 
         return sentence
 
+    def add_prior_future_state(sentence):
+        """
+        Add features for previous token and next token
+        """
+        for feature in sentence:
+            current_position = feature["token_position"]
+            if not feature["start_token"]:
+                feature["prev_token"] = sentence[current_position - 1]["token"]
+            else:
+                feature["prev_token"] = None
+
+            if not feature["end_token"]:
+                feature["next_token"] = sentence[current_position + 1]["token"]
+            else:
+                feature["next_token"] = None
+
+        return sentence
 
 
-### Main class to add features for MaxEnt ###
+###########################################################
+###########################################################
 
 class FeatureBuilder:
     def __init__(self, filepath, is_training):
         self.filepath = filepath
         self.is_training = is_training
 
-        self.sentences_features_dicts = None # temporary data that is used to generate features for self.features
+        self.sentences_features_dicts = None # temporary data with sentence structure in place, used to generate features for self.features
         self.features = None
         self.labels = None # will be populated for training data
         self.orig_data = None # for output of test/dev data
@@ -159,14 +181,24 @@ class FeatureBuilder:
 
     def extract_features_dicts_by_sentence(self, split_data):
         """
-
+        Converts data from split_raw_data() to format for self.sentences_features_dicts
+        Args:
+            split_data: raw data that has gone through split_raw_data()
+        Returns:
+            List of lists of feature dicts (sentence structure is still preserved, each inner list represents one sentence)
         """
         features_grouped = group_features_by_sentence(split_data)
 
         self.sentences_features_dicts = [extract_features_dict(sentence) for sentence in features_grouped]
 
+
     def extract_labels(self, split_data):
         """
+        Extracts list of named entity labels from training data to populate self.labels
+        Args:
+            split_data: raw data that has gone through split_raw_data()
+        Returns:
+            [nametag] in a flat list
         """
         features_grouped = group_features_by_sentence(split_data)
 
@@ -181,9 +213,12 @@ class FeatureBuilder:
         Populates self.orig_data if it is test/dev data
         Args:
             split_data : [ [token, pos, ...], "\n", ] where "\n" indicates boundary between "sentences"
+        Returns:
+            Populates self.orig_data with [str] containing just tokens and "\n" between sentences
         """
         if not self.is_training:
             self.orig_data = extract_orig_tokens(split_data)
+
 
     def format_data_maxent(self):
         """
@@ -193,39 +228,31 @@ class FeatureBuilder:
         """
         return list(zip(self.features, self.labels))
 
-
-    ###########################################################
+    ##########################################################
     ### Sentence-level features ###
-    ###########################################################
-
-
-    def add_prior_state(self, sentence):
-        """
-        """
-        pass
+    ##########################################################
 
 
     def add_sentence_features(self):
         """
-        Add key-value pairs for token position in sentence (position #, start, end)
+        Add key-value pairs for token position in sentence (position #, start, end), from sentences_features_dicts
         Returns:
-            Populates self.features with [{features_dicts}]
+            Populates self.features with [{features_dicts}] with each element representing a token in the raw data
         """
         features_dicts = []
         for sentence in self.sentences_features_dicts:
             sentence = self.add_sentence_position(sentence)
             sentence = self.add_sentence_boundaries(sentence)
+            sentence = self.add_prior_future_state(sentence)
             features_dicts.append(sentence)
 
         self.features = list(itertools.chain.from_iterable(features_dicts)) # flatten the List-of-Lists structure
 
 
+    ##########################################################
+    ## Token-level features                                ###
+    ##########################################################
 
-    ###########################################################
-    ### Token-level features ###
-    ###########################################################
-
-    ### Operate on a single token's features_dict
     def add_case(self, features_dict):
         features_dict["case"] = "lower" if features_dict["token"] == features_dict["token"].lower() else "upper"
 
@@ -242,6 +269,9 @@ class FeatureBuilder:
         features_dict["is_geo_place"] = bool(GeoText(features_dict["token"]).cities or GeoText(features_dict["token"]).countries)
 
     def token_features(self):
+        """
+        Runs each of the token-level functions and mutates self.features
+        """
         for features_dict in self.features:
             self.add_case(features_dict)
             self.add_last_char(features_dict)
@@ -252,11 +282,14 @@ class FeatureBuilder:
 ### Functions for output of dev/test data ###
 
 def label_test_data(predicted_classifications, test_fb, output):
+    """
+    Prints or outputs file of tokens from test data, annotated with named entity tags.
+    """
     iter_classifications = iter(predicted_classifications)
 
     for line in test_fb.orig_data:
         if line == "\n":
-            print(line.strip(), file = output)
+            print(line.strip(), file = output) # preserve newlines separating sentences in original data
         else:
             print("{}\t{}".format(line, next(iter_classifications)), file = output)
 
