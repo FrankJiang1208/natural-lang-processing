@@ -115,37 +115,37 @@ def add_sentence_position(sentence):
 
         return sentence
 
-    def add_sentence_boundaries(sentence):
-        """
-        Add key-value pairs for start and end tokens. ** Must be run after add_sentence_position() **
-        Args:
-            sentence: [{Dict of features},... ] with each element corresponding to a token in the sentence
-        Returns:
-            sentence with new key-values for start and end tokens
-        """
-        for feature in sentence:
-            feature["start_token"] = feature["token_position"] == 0
-            feature["end_token"] = feature["token_position"] == len(sentence) - 1
+def add_sentence_boundaries(sentence):
+    """
+    Add key-value pairs for start and end tokens. ** Must be run after add_sentence_position() **
+    Args:
+        sentence: [{Dict of features},... ] with each element corresponding to a token in the sentence
+    Returns:
+        sentence with new key-values for start and end tokens
+    """
+    for feature in sentence:
+        feature["start_token"] = feature["token_position"] == 0
+        feature["end_token"] = feature["token_position"] == len(sentence) - 1
 
-        return sentence
+    return sentence
 
-    def add_prior_future_state(sentence):
-        """
-        Add features for previous token and next token
-        """
-        for feature in sentence:
-            current_position = feature["token_position"]
-            if not feature["start_token"]:
-                feature["prev_token"] = sentence[current_position - 1]["token"]
-            else:
-                feature["prev_token"] = None
+def add_prior_future_state(sentence):
+    """
+    Add features for previous token and next token
+    """
+    for feature in sentence:
+        current_position = feature["token_position"]
+        if not feature["start_token"]:
+            feature["prev_token"] = sentence[current_position - 1]["token"]
+        else:
+            feature["prev_token"] = None
 
-            if not feature["end_token"]:
-                feature["next_token"] = sentence[current_position + 1]["token"]
-            else:
-                feature["next_token"] = None
+        if not feature["end_token"]:
+            feature["next_token"] = sentence[current_position + 1]["token"]
+        else:
+            feature["next_token"] = None
 
-        return sentence
+    return sentence
 
 
 ###########################################################
