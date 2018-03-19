@@ -17,10 +17,11 @@ from nltk.corpus import stopwords
 
 def split_raw_data(raw_data):
     """
-    Helper function to convert List-of-RawData-Lines to List-of-Dicts
+    Helper function to convert raw data
     Args:
-        raw_data: Test or training data read into List-of-Strings
+        raw_data: Test or training data read into [str]
     Returns:
+        [ [token, pos, ...], "\n", ] "\n" indicates boundary between "sentences"
 
     """
     return [
@@ -31,7 +32,7 @@ def split_raw_data(raw_data):
 
 def group_features_by_sentence(raw_data_split):
     """
-    Group words into sentences (sentence = [str, ...]) and removes str "\n" dividing them
+    Group words into sentences (sentence = [token, ...]) and removes str "\n" boundary
     Args:
         raw_data_split: List whose elements are features w/ tags
     Returns:
@@ -45,35 +46,41 @@ def group_features_by_sentence(raw_data_split):
 
 
 def feature_dict(feature_vector):
+    """
+    Converts [feature vector] into {Dict of features}
+    Args:
+        feature vector : in the format [token, pos, chunk, ...]
+    Returns:
+        {Dict of features }
+    """
     return {
         "token": feature_vector[0],
         "pos": feature_vector[1],
         "chunk": feature_vector[2].strip(),
     }
 
-# def convert_sentence(sentence, is_training):
-#     """
-#     Converts a sentence (list of lists, inner list = each word and its tags) into correct format for MaxEnt
-#     Args:
-#         sentence: each sentence is a list of lists. Each element of the outer list is an inner list that corresponds to a word and its tags
-#     Returns:
-#         If training data: [ [({dict of features for a token}, nametag), ...] ]
-#         If test data: [ {dict of features for a token}, {dict of features for a token}, ...]
-#     """
-#     if is_training:
-#         return [
-#             (feature_dict(feature_vector), feature_vector[3].strip())
-#             for feature_vector in sentence
-#         ]
-#     else:
-#         return [feature_dict(feature_vector) for feature_vector in sentence]
-
-def extract_labels(sentence):
-    return [feature_vector[3].strip() for feature_vector in sentence ]
-
 
 def extract_features_dict(sentence):
+    """
+    Apply feature_dict to all feature_vectors in a sentence
+    Args:
+        sentence: [ [feature_vector], [feature_vector], ... ] where each feature_vector corresponds to a token
+    Returns:
+        [ {Dict of features}, {Dict of features}]
+    """
     return [feature_dict(feature_vector) for feature_vector in sentence]
+
+
+def extract_labels(sentence):
+    """
+    Extract label (name) from training data by sentence
+    Args:
+        sentence: [ [feature_vector], [feature_vector], ... ] where each feature_vector corresponds to a token
+            and 4th element (if it exists) is the named entity label for that feature
+    Returns:
+        [str of feature labels]
+    """
+    return [feature_vector[3].strip() for feature_vector in sentence ]
 
 
 def extract_orig_tokens(raw_data_split):
