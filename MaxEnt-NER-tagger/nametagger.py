@@ -129,21 +129,28 @@ def add_sentence_boundaries(sentence):
 
     return sentence
 
-def add_prior_future_state(sentence):
+def add_prior_future_n_states(sentence, n):
     """
-    Add features for previous token and next token
+    Add features for previous token and next token at distances of [1, n] tokens
+    Args:
+        n: max distance of token window from a given token
+        sentence: [{Dict of features},... ] with each element corresponding to a token in the sentence
+    Returns:
+        sentence with new key-value pairs for all prev_tokens and next_tokens within the range of n.
+        Value of key is None if token does not exist in that window
     """
-    for feature in sentence:
-        current_position = feature["token_position"]
-        if not feature["start_token"]:
-            feature["prev_token"] = sentence[current_position - 1]["token"]
-        else:
-            feature["prev_token"] = None
+    for i in range(1, n+1):
+        for feature in sentence:
+            current_position = feature["token_position"]
+            if feature["token_position"] - i >= 0:
+                feature["prev_token_{}".format(i)] = sentence[current_position - i]["token"]
+            else:
+                feature["prev_token_{}".format(i)] = None
 
-        if not feature["end_token"]:
-            feature["next_token"] = sentence[current_position + 1]["token"]
-        else:
-            feature["next_token"] = None
+            if feature["token_position"] + n < len(sentence):
+                feature["next_token_{}".format(i)] = sentence[current_position + i]["token"]
+            else:
+                feature["next_token_{}".format(i)] = None
 
     return sentence
 
@@ -243,7 +250,7 @@ class FeatureBuilder:
         for sentence in self.sentences_features_dicts:
             sentence = add_sentence_position(sentence)
             sentence = add_sentence_boundaries(sentence)
-            sentence = add_prior_future_state(sentence)
+            sentence = add_prior_future_n_states(sentence, 2)
             features_dicts.append(sentence)
 
         self.features = list(itertools.chain.from_iterable(features_dicts)) # flatten the List-of-Lists structure
