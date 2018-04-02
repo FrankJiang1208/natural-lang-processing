@@ -250,7 +250,7 @@ class FeatureBuilder:
         for sentence in self.sentences_features_dicts:
             sentence = add_sentence_position(sentence)
             sentence = add_sentence_boundaries(sentence)
-            sentence = add_prior_future_n_states(sentence, 2)
+            sentence = add_prior_future_n_states(sentence, 1)
             features_dicts.append(sentence)
 
         self.features = list(itertools.chain.from_iterable(features_dicts)) # flatten the List-of-Lists structure
