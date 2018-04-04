@@ -157,6 +157,62 @@ def add_prior_future_n_states(sentence, n):
 
 ###########################################################
 ###########################################################
+
+### GloveModel helper functions ###
+###########################################################
+
+def separate_words_dims(raw_data):
+    """
+    Helper function to extract list of words and list of lists of dimensions
+    Args:
+        raw_data: raw data read in from trained vectors file
+    Returns:
+        words: list of words in order
+        dims: list of lists of dimensions corresponding to the words
+    """
+    num_dims = len(raw_data[0])
+    words = []
+    dims = []
+
+    for line in raw_data:
+        words.append(line[0]) # first elem in each list is the word
+        dims.append(line[1:num_dims]) # elem 1:n in each list are the dimensions values
+
+    return words, dims
+
+def create_dimensions_dict(dimensions_vector):
+    """
+    Creates a dimensions_dict from a dimensions_vector
+    Args:
+        dimensions_vect [list of floats]
+    Returns:
+        dimensions_dict of sequentially numbered keys and values from dimensions_vect
+        e.g. {"1": float, "2": float, ...}
+
+    """
+    return {
+        counter: value
+        for counter, value in enumerate(dimensions_vector)
+    }
+
+def word_vector_dicts(words, dims):
+    """
+    Creates {word: dimensions_dict} from a word and a dimensions_vector
+    Args:
+        words: [list of words as str]
+        dims: [list of dimensions_vectors, which are themselves lists]
+    Returns:
+        {word1: {dimensions_dict1}, word2: {dimensions_dict2}, ...}
+    """
+    return {
+                word: create_dimensions_dict(dimensions_vector)
+        for word, dimensions_vector in zip(words, dims)
+    }
+
+
+
+###########################################################
+###########################################################
 ### Class for GLOVE trained word vectors ###
 ###########################################################
 
@@ -327,7 +383,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("training", help = "path to the training data")
     parser.add_argument("test", help = "path to the test data")
-    parser.dd_argument("trained_glove_model", help = "path to trained glove word vector file")
+    parser.add_argument("trained_glove_model", help = "path to trained glove word vector file")
     parser.add_argument("n_iterations", help = "num iterations for MaxEnt", type = int)
     parser.add_argument("-o", "--output", help = "file path to write to") # optional
     args = parser.parse_args()
