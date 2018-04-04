@@ -157,6 +157,27 @@ def add_prior_future_n_states(sentence, n):
 
 ###########################################################
 ###########################################################
+### Class for GLOVE trained word vectors ###
+###########################################################
+
+class GloveModel:
+
+    def __init__(self, filepath):
+        """
+        """
+        self.filepath = filepath
+        self.trained_vector = None
+
+        self.load_trained_vectors()
+
+
+    def load_trained_vectors(self):
+        with open(self.filepath, "r") as f:
+            f.readlines()
+
+
+###########################################################
+###########################################################
 
 class FeatureBuilder:
     def __init__(self, filepath, is_training):
@@ -306,6 +327,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("training", help = "path to the training data")
     parser.add_argument("test", help = "path to the test data")
+    parser.dd_argument("trained_glove_model", help = "path to trained glove word vector file")
     parser.add_argument("n_iterations", help = "num iterations for MaxEnt", type = int)
     parser.add_argument("-o", "--output", help = "file path to write to") # optional
     args = parser.parse_args()
