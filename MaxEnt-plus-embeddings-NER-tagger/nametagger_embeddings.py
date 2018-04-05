@@ -157,7 +157,6 @@ def add_prior_future_n_states(sentence, n):
 
 ###########################################################
 ###########################################################
-
 ### GloveModel helper functions ###
 ###########################################################
 
@@ -175,10 +174,11 @@ def separate_words_dims(raw_data):
     dims = []
 
     for line in raw_data:
+        line = line.split()
         words.append(line[0]) # first elem in each list is the word
         dims.append(line[1:num_dims]) # elem 1:n in each list are the dimensions values
 
-    return words, dims
+    return words, dims, num_dims
 
 def create_dimensions_dict(dimensions_vector):
     """
@@ -210,7 +210,6 @@ def word_vector_dicts(words, dims):
     }
 
 
-
 ###########################################################
 ###########################################################
 ### Class for GLOVE trained word vectors ###
@@ -222,21 +221,41 @@ class GloveModel:
         """
         """
         self.filepath = filepath
-        self.trained_vector = None
+        self.trained_vectors = None
+        self.num_dims = None
 
         self.load_trained_vectors()
+        self.generate_default()
 
 
     def load_trained_vectors(self):
+        """
+        Loads and converts trained vectors from filepath to dict format
+        """
         with open(self.filepath, "r") as f:
-            f.readlines()
+            raw_data = [line.strip() for line in f.readlines()]
+
+        words, dims, self.num_dims = separate_words_dims(raw_data)
+
+        self.trained_vectors = word_vector_dicts(words, dims)
+
+    def generate_default(self):
+        """
+        Generates a word vector dict with all values = 0, for tokens not in trained_vectors dict
+        """
+        # return {
+        #     count: 0
+        #     for count in range(self.num_dims)
+        # }
+        pass
+
 
 
 ###########################################################
 ###########################################################
 
 class FeatureBuilder:
-    def __init__(self, filepath, is_training):
+    def __init__(self, filepath, is_training, glove_model):
         self.filepath = filepath
         self.is_training = is_training
 
@@ -244,6 +263,7 @@ class FeatureBuilder:
         self.features = None
         self.labels = None # will be populated for training data
         self.orig_data = None # for output of test/dev data
+        self.glove = glove_model
 
         self.load()
 
@@ -347,10 +367,24 @@ class FeatureBuilder:
         features_dict["nltk_stopword"] = features_dict["token"] in stopwords.words("english")
 
     def add_nltk_name(self, features_dict):
+        """
+        Adds bool for names identified from NLTK names corpus
+        """
         features_dict["is_nltk_name"] = features_dict["token"].lower() in (n.lower() for n in names.words())
 
     def add_geo(self, features_dict):
+        """
+        Adds bool for locations identified in GeoText library
+        """
         features_dict["is_geo_place"] = bool(GeoText(features_dict["token"]).cities or GeoText(features_dict["token"]).countries)
+
+    def add_word_vectors(self, features_dict):
+        """
+        Adds word vectors dict for "token" to features_dict
+        """
+        features_dict["word_vectors"] = self.glove.get(features_dict["token"].lower(),
+            None
+            )
 
     def token_features(self):
         """
@@ -361,9 +395,13 @@ class FeatureBuilder:
             self.add_last_char(features_dict)
             self.add_stopword(features_dict)
             self.add_geo(features_dict)
+            self.add_word_vectors(features_dict)
 
 
+##########################################################
 ### Functions for output of dev/test data ###
+##########################################################
+
 
 def label_test_data(predicted_classifications, test_fb, output):
     """
@@ -378,17 +416,21 @@ def label_test_data(predicted_classifications, test_fb, output):
             print("{}\t{}".format(line, next(iter_classifications)), file = output)
 
 
+##########################################################
+##########################################################
+
+
 if __name__ == "__main__":
 
     parser = argparse.ArgumentParser()
     parser.add_argument("training", help = "path to the training data")
     parser.add_argument("test", help = "path to the test data")
-    parser.add_argument("trained_glove_model", help = "path to trained glove word vector file")
+    parser.add_argument("glove_filepath", help = "path to trained glove word vector file")
     parser.add_argument("n_iterations", help = "num iterations for MaxEnt", type = int)
     parser.add_argument("-o", "--output", help = "file path to write to") # optional
     args = parser.parse_args()
 
-    training_fb = FeatureBuilder(args.training, is_training = True)
+    training_fb = FeatureBuilder(args.training, is_training = True, GloveModel(args.glove_filepath))
     training_fb.add_sentence_features()
     training_fb.token_features()
 
