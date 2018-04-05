@@ -169,16 +169,17 @@ def separate_words_dims(raw_data):
         words: list of words in order
         dims: list of lists of dimensions corresponding to the words
     """
-    num_dims = len(raw_data[0])
     words = []
     dims = []
 
     for line in raw_data:
         line = line.split()
-        words.append(line[0]) # first elem in each list is the word
-        dims.append(line[1:num_dims]) # elem 1:n in each list are the dimensions values
 
-    return words, dims, num_dims
+        words.append(line[0]) # first elem in each list is the word
+        dims.append(line[1:len(line)]) # elem 1:n in each list are the dimensions values
+
+    return words, dims, (len(line) - 1) # need num of dimensions of the vector not including the word
+
 
 def create_dimensions_dict(dimensions_vector):
     """
@@ -225,7 +226,7 @@ class GloveModel:
         self.num_dims = None
 
         self.load_trained_vectors()
-        self.generate_default()
+        self.default = self.generate_default()
 
 
     def load_trained_vectors(self):
@@ -243,12 +244,13 @@ class GloveModel:
         """
         Generates a word vector dict with all values = 0, for tokens not in trained_vectors dict
         """
-        # return {
-        #     count: 0
-        #     for count in range(self.num_dims)
-        # }
-        pass
+        return {
+            feature_num: 0
+            for feature_num in range(self.num_dims)
+        }
 
+    def get(self, token):
+        return self.trained_vectors.get(token, self.default)
 
 
 ###########################################################
@@ -258,12 +260,12 @@ class FeatureBuilder:
     def __init__(self, filepath, is_training, glove_model):
         self.filepath = filepath
         self.is_training = is_training
+        self.glove = glove_model
 
         self.sentences_features_dicts = None # temporary data with sentence structure in place, used to generate features for self.features
         self.features = None
         self.labels = None # will be populated for training data
         self.orig_data = None # for output of test/dev data
-        self.glove = glove_model
 
         self.load()
 
@@ -380,11 +382,15 @@ class FeatureBuilder:
 
     def add_word_vectors(self, features_dict):
         """
-        Adds word vectors dict for "token" to features_dict
+        Flattens word vectors dict into features_dict
         """
-        features_dict["word_vectors"] = self.glove.get(features_dict["token"].lower(),
-            None
+        word_vectors = self.glove.get(features_dict["token"].lower(),
+            glove.default # uses default dict where all values are 0 if token not in word_vectors
             )
+
+        for key, value in word_vectors.items():
+            features_dict[key] = value
+
 
     def token_features(self):
         """
@@ -430,11 +436,13 @@ if __name__ == "__main__":
     parser.add_argument("-o", "--output", help = "file path to write to") # optional
     args = parser.parse_args()
 
-    training_fb = FeatureBuilder(args.training, is_training = True, GloveModel(args.glove_filepath))
+    glove_model = GloveModel(args.glove_filepath)
+
+    training_fb = FeatureBuilder(args.training, is_training = True, glove_model = glove_model)
     training_fb.add_sentence_features()
     training_fb.token_features()
 
-    test_fb = FeatureBuilder(args.test, is_training = False)
+    test_fb = FeatureBuilder(args.test, is_training = False, glove_model = glove_model)
     test_fb.add_sentence_features()
     test_fb.token_features()
 
@@ -442,10 +450,6 @@ if __name__ == "__main__":
 
     predicted_classifications = classifier.classify_many(test_fb.features)
 
-    # counter = collections.Counter(predicted_classifications) # see how many tokens in each class
-    # print(counter)
-
-    # print(classifier.show_most_informative_features(10))
 
     if args.output is not None:
         with open(args.output, "w") as f:
