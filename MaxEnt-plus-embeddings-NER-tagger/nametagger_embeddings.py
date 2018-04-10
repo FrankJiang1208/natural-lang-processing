@@ -384,9 +384,7 @@ class FeatureBuilder:
         """
         Flattens word vectors dict into features_dict
         """
-        word_vectors = self.glove.get(features_dict["token"].lower(),
-            glove.default # uses default dict where all values are 0 if token not in word_vectors
-            )
+        word_vectors = self.glove.get(features_dict["token"].lower())
 
         for key, value in word_vectors.items():
             features_dict[key] = value
