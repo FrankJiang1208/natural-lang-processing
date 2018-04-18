@@ -9,15 +9,19 @@
 #SBATCH --mem=60GB
 #SBATCH --mail-type=END
 #SBATCH --mail-user=lh1036@nyu.edu
- 
+
 module purge
 module load python3/intel/3.6.3
-RUNDIR=$SCRATCH/my_project/run-${SLURM_JOB_ID/.*} 
+RUNDIR=$SCRATCH/my_project/run-${SLURM_JOB_ID/.*}
 mkdir -p $RUNDIR
 
 echo $RUNDIR
 
-cp nametagger_embeddings_with_geotext.py $RUNDIR
+cp main.py $RUNDIR
+cp __init__.py $RUNDIR
+cp glovebinarized.py $RUNDIR
+cp glove.py $RUNDIR
+cp featurebuilder.py $RUNDIR
 cp CONLL_train.pos-chunk-name $RUNDIR
 cp CONLL_test.pos-chunk $RUNDIR
 cp glove50d.txt $RUNDIR
@@ -31,6 +35,7 @@ ls
 
 source py3.5/bin/activate
 
-python3 nametagger_embeddings_with_geotext.py CONLL_train.pos-chunk-name CONLL_test.pos-chunk glove50d.txt 100 -o response100i.name
+python3 main.py CONLL_train.pos-chunk-name CONLL_test.pos-chunk glove50d.txt 100 -o response100i.name
 
 exit
+
