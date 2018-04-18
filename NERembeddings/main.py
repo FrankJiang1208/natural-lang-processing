@@ -4,7 +4,8 @@
 # Natural Language Processing Assignment 7
 # April 26, 2018
 
-from glove import GloveModel
+from glovebinarized import GloveModel
+# from glove import GloveModel # toggle this to use raw word embeddings instead of binarized
 from featurebuilder import FeatureBuilder
 
 import argparse
