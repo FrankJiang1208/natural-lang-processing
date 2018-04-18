@@ -4,6 +4,8 @@
 # Natural Language Processing Assignment 7
 # April 26, 2018
 
+import numpy as np
+
 ###########################################################
 ### GloveModel helper functions ###
 ###########################################################
@@ -36,7 +38,7 @@ def create_dimensions_dict(dimensions_vector):
         dimensions_vect [list of floats]
     Returns:
         dimensions_dict of sequentially numbered keys and values from dimensions_vect
-        e.g. {"1": float, "2": float, ...}
+        e.g. {"0": float, "2": float, ...}
 
     """
     return {
@@ -62,7 +64,6 @@ def word_vector_dicts(words, dims):
 ###########################################################
 # GloveModel Class
 
-
 class GloveModel:
 
     def __init__(self, filepath):
@@ -70,9 +71,11 @@ class GloveModel:
         """
         self.filepath = filepath
         self.trained_vectors = None
+        self.binarized_vectors = None
         self.num_dims = None
 
         self.load_trained_vectors()
+        self.binarize_vectors()
         self.default = self.generate_default()
 
 
@@ -86,6 +89,43 @@ class GloveModel:
         words, dims, self.num_dims = separate_words_dims(raw_data)
 
         self.trained_vectors = word_vector_dicts(words, dims)
+
+    def calculate_dimension_means(self):
+        """
+        For each dimension in word embeddings, calculate (over all words) mean of positive values and mean of negative values
+        """
+        dimension_means = dict()
+
+        for counter in range(self.num_dims):
+            dimension_values = [vector[counter] for vector in self.trained_vectors]
+
+            pos_mean = np.mean([val for val in dimension_values if val > 0])
+            neg_mean = np.mean([val for val in dimension_values if val < 0])
+
+            dimension_means[counter] = {"pos_mean": pos_mean,
+                "neg_mean": neg_mean
+            }
+
+        return dimension_means
+
+    def binarize_vectors(self):
+        """
+        Binarize each dimension of the word embedding vector
+        """
+        dimension_means = self.calculate_dimension_means()
+
+        vectors = self.trained_vectors # each "vector" is a dictionary for a word with keys in 0:49 and values corresponding to embedding dim
+
+        for vector in vectors:
+            for key in vector.keys():
+                if vector[key] >= dimension_means[key]["pos_mean"]:
+                    vector[key] = "U_plus"
+                elif vector[key] <= dimension_means[key]["neg_mean"]:
+                    vector[key] = "B_minus"
+                else:
+                    vector[key] = 0
+
+        self.binarized_vectors = vectors
 
     def generate_default(self):
         """
