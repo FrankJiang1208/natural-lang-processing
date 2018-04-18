@@ -97,5 +97,8 @@ class GloveModel:
         }
 
     def get(self, token):
+        """
+        Gets word vector dict else returns default dict if word is unknown
+        """
         return self.trained_vectors.get(token, self.default)
 
