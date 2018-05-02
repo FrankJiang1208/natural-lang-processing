@@ -1,0 +1,5 @@
+*.name
+*.pos-chunk
+*.pos-chunk-name
+*.pos
+*.words
